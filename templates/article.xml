@@ -1,0 +1,66 @@
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="de_DE" date_submitted="2020-07-15"
+         stage="production" date_published="2020-06-23" section_ref="ART" seq="1" access_status="0">
+    <id type="internal" advice="ignore">{{ article.id }}</id>
+    {% if article.doi %}
+        <id type="doi" advice="update">{{ article.doi }}</id>
+    {% endif %}
+    {% for language in languages %}
+        <title locale="{{ language }}">{{ article.title|get_value_for_language:language }}</title>
+        {% with prefix = article.prefix|get_value_for_language:language %}
+            {% if prefix %}
+                <prefix locale="{{ language }}">{{ prefix }}</prefix>
+            {% endif %}
+        {% endwith %}
+        {% with abstract = article.abstract|get_value_for_language:language %}
+            {% if abstract %}
+                <abstract locale="{{ language }}">{{ abstract }}</abstract>
+            {% endif %}
+        <type locale="{{ language }}">text</type>
+        {% if article.keywords %}
+            <keywords locale="{{ language }}">
+                {% for keyword in article.keywords %}
+                    <keyword>{{ keyword }}</keyword>
+                {% endfor %}
+            </keywords>
+        {% endif %}
+    {% endfor %}
+
+    <authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+        {% for author in article.authors %}
+            <author include_in_browse="true" user_group_ref="{{ user_group_reference_label }}">
+                {% for language in languages %}
+                    <givenname locale="{{ language }}">{{ author.given_name }}</givenname>
+                    <familyname locale="{{ language }}">{{ author.family_name }}</familyname>
+                {% endfor %}
+            </author>
+        {% endfor %}
+    </authors>
+
+    {% for submission in article.submission_files %}
+        {% with revision_number = 1, submission_id = article.get_submission_file_id %}
+            <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="{{ submission_id }}"
+                             xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+              <revision number="{{ revision_number }}" genre="{{ article_text_genre_label }}"
+                        filename="{{ submission.name }}" viewable="false" date_uploaded="{{ submission.date_uploaded }}"
+                        date_modified="{{ submission.date_modified }}" filesize="{{ submission.size }}"
+                        filetype="{{ submission.mime_type }}" uploader="{{ file_uploading_ojs_user }}">
+                  {% for language in languages %}
+                    <name locale="{{ language }}">{{ submission.name|get_value_for_language:language }}</name>
+                  {% endfor %}
+                <embed encoding="base64">{{ submission.get_data_in_base64_encoding }}</embed>
+              </revision>
+            </submission_file>
+            <article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false"
+                            xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+                <id type="internal" advice="ignore">{{ submission.id }}</id>
+                {% for language in languages %}
+                    <name locale="{{ language }}">{{ submission.name|get_value_for_language:language|get_file_suffix|capitalize</name>
+                {% endfor %}
+                <seq>0</seq>
+                <submission_file_ref id="{{ submission.id }}" revision="{{ revision_number }}"/>
+            </article_galley>
+        {% endwith %}
+    {% endfor %}
+
+    <pages>{{ article.page_range }}</pages>
+</article>
