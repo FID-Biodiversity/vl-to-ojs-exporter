@@ -1,5 +1,6 @@
-<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="de_DE" date_submitted="2020-07-15"
-         stage="production" date_published="2020-06-23" section_ref="ART" seq="1" access_status="0">
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="{{ article.language }}"
+         date_submitted="{{ article.submission_date }}" stage="production" date_published="{{ article.submission_date }}"
+         section_ref="{{ article_reference_label }}" seq="{{ loop.index }}" access_status="0">
     <id type="internal" advice="ignore">{{ article.id }}</id>
     {% if article.doi %}
         <id type="doi" advice="update">{{ article.doi }}</id>
