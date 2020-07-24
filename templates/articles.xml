@@ -1,5 +1,7 @@
 <articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
     {% for article in articles %}
-        {% include 'article.xml'}
+        {% with article_loop = loop %}
+            {% include 'article.xml' %}
+        {% endwith %}
     {% endfor %}
 </articles>

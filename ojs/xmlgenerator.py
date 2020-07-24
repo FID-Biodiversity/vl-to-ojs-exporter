@@ -1,10 +1,35 @@
+import xml.dom.minidom
+import re
+
+import pathlib
 from VisualLibrary import Journal, Volume, Issue, Article, VisualLibraryExportElement
 from abc import ABC, abstractmethod
-from bs4 import BeautifulSoup as Soup
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 
-from templates.global_functions import register_global_values_to_environment
+from templates.template_functions import register_custom_filters_to_environment
+
+ROOT_DIRECTORY_PATH = pathlib.Path('..')
+
+
+def remove_letters_from_alphanumeric_string(string):
+    """ This functions removes letters from the beginning and the end of a given string.
+        :param string: A string containing both letters and numbers.
+        :type string: str
+        :returns: The string without any letters.
+        :rtype: int
+        :except: A ValueException is thrown if the returned value is not numeric (i.e. also if it is empty!).
+
+        This function helps to normalize e.g. issue labels like '101 AB', which is not accepted by OJS Import XML.
+    """
+
+    cleanded_string = re.sub(r'\D*', '', string, re.MULTILINE)
+
+    if not cleanded_string.isnumeric():
+        raise ValueError('After processing the given value {input} is not numeric! Result: {output}'.format(
+            input=string, output=cleanded_string))
+
+    return cleanded_string
 
 
 class XmlGenerator(ABC):
@@ -13,9 +38,9 @@ class XmlGenerator(ABC):
     OJS_XML_TEMPLATE_FOLDER = 'templates'
 
     def __init__(self, template_configuration):
-        template_file_loader = FileSystemLoader(self.OJS_XML_TEMPLATE_FOLDER)
+        template_file_loader = FileSystemLoader(str(ROOT_DIRECTORY_PATH.absolute() / self.OJS_XML_TEMPLATE_FOLDER))
         self.template_environment = Environment(loader=template_file_loader, autoescape=True)
-        register_global_values_to_environment(self.template_environment.globals)
+        register_custom_filters_to_environment(self.template_environment)
 
         self.template_configuration = template_configuration
 
@@ -28,6 +53,16 @@ class XmlGenerator(ABC):
         return None
 
     def add_variable_to_template_configuration(self, variable_name, variable_value):
+        """ Add a variable with name and value to the template environment.
+            :param variable_name: The name the variable should be called in the templates.
+            :type variable_name: str
+            :param variable_value: The value that should be returned in the templates.
+            :type variable_value: object
+
+            When adding a custom template which needs specific variables, this function should be called before
+            the XML is generated.
+        """
+
         self.template_configuration[variable_name] = variable_value
 
     def generate_xml(self):
@@ -37,7 +72,12 @@ class XmlGenerator(ABC):
         """
 
         template = self.template_environment.get_template(self.template_file_name)
-        return template.render(self.template_configuration)
+        xml_string = template.render(self.template_configuration)
+        prettified_xml_string = xml.dom.minidom.parseString(xml_string).toprettyxml()
+        return self._remove_empty_lines_from_xml(prettified_xml_string)
+
+    def _remove_empty_lines_from_xml(self, xml_string):
+        return '\n'.join([line for line in xml_string.split('\n') if line.strip()])
 
 
 class OjsArticle(XmlGenerator):
@@ -45,8 +85,8 @@ class OjsArticle(XmlGenerator):
 
     PREFIX_WORDS_DE = {'der', 'die', 'das', 'ein', 'eine', 'eines'}
     PREFIX_WORDS = PREFIX_WORDS_DE
-    ARTICLES_TEMPLATE_FILE_NAME = 'articles.xml'
-    ARTICLES_STRING = 'articles'
+    ARTICLES_TEMPLATE_FILE_NAME = 'article.xml'
+    ARTICLES_STRING = 'article'
 
     def __init__(self, vl_article: Article, template_configuration):
         super().__init__(template_configuration)
@@ -62,26 +102,38 @@ class OjsArticle(XmlGenerator):
         self.prefix = self._get_title_prefix(vl_article.title)
         self.submission_files = vl_article.files
         self.title = vl_article.title
+        self.subtitle = vl_article.subtitle
         self.language = self._get_primary_language(vl_article.languages)
         self.submission_date = self._get_submission_date_from_files(vl_article.files)
 
-        # Variables expected in the template
-        self.add_variable_to_template_configuration(self.ARTICLES_STRING, [self])
+        self._submission_ids = {}
+        self._submission_counter = 0
+
+        self.add_variable_to_template_configuration(self.ARTICLES_STRING, self)
 
     @property
     def template_file_name(self) -> str:
         return self.ARTICLES_TEMPLATE_FILE_NAME
 
-    def _get_title_prefix(self, article_title: str) -> (str, None):
-        """ Estimates the prefix of the article's title. """
+    def get_submission_id_for_file(self, file):
+        """ Generates a unique submission ID for any given submission of this article.
+            :param file: A file that needs a submission ID.
+            :type file: File
+            :returns: A submission ID for this file. If the file was already given, the previously generated
+            submission ID is returned.
+            :rtype: int
+        """
 
-        first_word_in_title = article_title.split(' ')[0]
-        if first_word_in_title in self.PREFIX_WORDS:
-            return first_word_in_title
+        if file not in self._submission_ids:
+            self._submission_counter += 1
+            self._submission_ids[file] = self._submission_counter
+            return self._submission_counter
         else:
-            return None
+            return self._submission_ids[file]
 
     def _get_primary_language(self, languages) -> (str, None):
+        """ Returns the first language given. """
+
         if languages:
             if isinstance(languages, list):
                 return languages[0]
@@ -90,15 +142,25 @@ class OjsArticle(XmlGenerator):
 
         return None
 
-    def _get_submission_date_from_files(self, submission_files: list) -> str:
+    def _get_submission_date_from_files(self, submission_files: list) -> datetime:
         for submission_file in submission_files:
             if submission_file.date_uploaded is not None:
                 return submission_file.date_uploaded
 
-        return datetime.today().date().isoformat()
+        return datetime.today()
+
+    def _get_title_prefix(self, article_title: str) -> (str, None):
+        """ Estimates the prefix of the article's title. """
+
+        first_word_in_title = article_title.split(' ')[0]
+        if first_word_in_title.lower() in self.PREFIX_WORDS:
+            return first_word_in_title
+        else:
+            return None
 
 
 class OjsIssue(XmlGenerator):
+    """ A representation of an Issue in OJS. """
 
     ISSUE_STRING = Issue.ISSUE_STRING
     ISSUES_STRING = 'issues'
@@ -118,13 +180,14 @@ class OjsIssue(XmlGenerator):
         volume_number = self._get_volume_number(vl_issue)
 
         self.articles = [OjsArticle(article, template_configuration) for article in vl_issue.articles]
-        self.volume_number = volume_number if volume_number is not None else vl_issue.parent.number
-        self.issue_number = vl_issue.number
+        volume_number = volume_number if volume_number is not None else vl_issue.parent.number
+        self.volume_number = remove_letters_from_alphanumeric_string(volume_number)
+        self.issue_number = remove_letters_from_alphanumeric_string(vl_issue.number)
         self.publication_year = vl_issue.publication_date
         self.is_current_issue = False
         self.id = vl_issue.id
-        self.date_published = datetime.strptime(vl_issue.publication_date, '%Y').date().isoformat()
-        self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y').date().isoformat()
+        self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
+        self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')
 
         self.add_variable_to_template_configuration(self.ISSUES_STRING, [self])
 
@@ -144,6 +207,7 @@ class OjsIssue(XmlGenerator):
 
 
 class OjsVolume(XmlGenerator):
+    """ A representation of a Volume in OJS. """
 
     def __init__(self, vl_volume: Volume, template_configuration):
         super().__init__(template_configuration)
@@ -169,6 +233,7 @@ class OjsVolume(XmlGenerator):
 
 
 class OjsXmlGenerator:
+    """ A factory object that generates XML generating objects. """
 
     def __init__(self, xml_configuration_data):
         self.xml_configuration = xml_configuration_data

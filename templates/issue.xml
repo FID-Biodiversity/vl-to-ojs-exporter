@@ -1,4 +1,4 @@
-<issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" published="1" current="{{ issue.is_current_issue }}" access_status="1">
+<issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" published="1" access_status="1">
     <id type="internal" advice="ignore">{{ issue.id }}</id>
     <issue_identification>
         <volume>{{ issue.volume_number }}</volume>
@@ -6,12 +6,14 @@
             <number>{{ issue.number }}</number>
         {% endif %}
         <year>{{ issue.publication_year }}</year>
-        {% for language in languages %}
-            <title locale="{{ language }}">{{ issue.title|get_value_for_language:language }}</title>
-        {% endfor %}
+        {% if issue.title %}
+            {% for language in languages %}
+                <title locale="{{ language }}">{{ issue.title|get_value_for_language(language) }}</title>
+            {% endfor %}
+        {% endif %}
     </issue_identification>
-    <date_published>{{ issue.date_published }}</date_published>
-    <last_modified>{{ issue.date_modified }}</last_modified>
+    <date_published>{{ issue.date_published|to_iso_date }}</date_published>
+    <last_modified>{{ issue.date_modified|to_iso_date }}</last_modified>
     <issue_galleys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"/>
     {% with articles = issue.articles %}
         {% include 'articles.xml' %}

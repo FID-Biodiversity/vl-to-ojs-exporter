@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id advice="ignore" type="internal">10903392</id>
+	<id advice="update" type="doi">https://doi.org/10.1234/test.123</id>
+	<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+	<prefix locale="de_DE">Die</prefix>
+	<abstract locale="de_DE">Das ist eine Zusammenfassung des Textes.</abstract>
+	<type locale="de_DE">text</type>
+	<keywords locale="de_DE">
+		<keyword>test</keyword>
+		<keyword>some strange keyword</keyword>
+		<keyword>another-keyword</keyword>
+	</keywords>
+	<title locale="en_US">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+	<prefix locale="en_US">Die</prefix>
+	<abstract locale="en_US">Das ist eine Zusammenfassung des Textes.</abstract>
+	<type locale="en_US">text</type>
+	<keywords locale="en_US">
+		<keyword>test</keyword>
+		<keyword>some strange keyword</keyword>
+		<keyword>another-keyword</keyword>
+	</keywords>
+	<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+		<author include_in_browse="true" user_group_ref="Autor*in">
+			<givenname locale="de_DE">Werner</givenname>
+			<familyname locale="de_DE">Paeckelmann</familyname>
+			<givenname locale="en_US">Werner</givenname>
+			<familyname locale="en_US">Paeckelmann</familyname>
+		</author>
+	</authors>
+	<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+		<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903392" filesize="1745365" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
+			<name locale="de_DE">pdf_10903392</name>
+			<name locale="en_US">pdf_10903392</name>
+			<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x1029e9b50&gt;&gt;</embed>
+		</revision>
+	</submission_file>
+	<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+		<name locale="de_DE">PDF</name>
+		<name locale="en_US">PDF</name>
+		<seq>1</seq>
+		<submission_file_ref id="1" revision="1"/>
+	</article_galley>
+	<pages>108-116</pages>
+</article>
