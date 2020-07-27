@@ -3,17 +3,6 @@ This package allows to call for data from the Visual Library and converts it int
 
 Be aware that currently this package only takes VisualLibraryExportElements from the [visual-library](https://dev.git.ub.uni-frankfurt.de/apachzelt/visual-library) package. If you want to convert data from another source, you made need to make some changes to the code.
 
-## Installation
-Simply call
-
-```shell script
-source {path_to_your_virtual_environment}/bin/activate
-
-cd VlToOjsExporter
-
-pip3 install -r requirements.txt
-```
-
 ## Usage
 
 ```python
@@ -80,8 +69,6 @@ source {path_to_your_virtual_environment}/bin/activate
 
 cd vl-to-ojs-exporter
 pip3 install -r requierements.txt
-
-pip3 install -e .
 ```
 
 ## Tests
