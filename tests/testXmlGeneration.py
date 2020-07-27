@@ -1,4 +1,5 @@
 import os
+import pathlib
 
 from configuration.Configurator import Configurator
 from VisualLibrary import VisualLibrary
@@ -20,7 +21,8 @@ class MockConfigurator(Configurator):
             'user_group_reference_label': 'Autor*in',
             'article_text_genre_label': 'Artikeltext',
             'file_uploading_ojs_user': 'ojs_admin',
-            'article_reference_label': 'ART'
+            'article_reference_label': 'ART',
+            'dummy_mail_address': 'dummy@mactest.com'
         }
 
 
@@ -45,10 +47,15 @@ class TestXmlGeneration:
         assert ojs_issue.id == '10802368'
         assert not ojs_issue.is_current_issue
 
-        result_xml_string = ojs_issue.generate_xml()
-        i = 1
+        for article in ojs_issue.articles:
+            add_dummy_submission_file_data(article.submission_files)
 
-        #self._validate_ojs_native_xsd_consistency(result_xml_string)
+        result_xml_string = ojs_issue.generate_xml()
+
+        expected_xml_string = self.get_expectation_xml_string(xml_test_file)
+        assert result_xml_string == expected_xml_string
+
+        validate_ojs_native_xsd_consistency(result_xml_string)
 
     def test_article_xml_generation(self):
         xml_test_file = '{base_dir}/generator-test-article.xml'.format(base_dir=TEST_DATA_DIRECTORY)
@@ -80,17 +87,44 @@ class TestXmlGeneration:
         ojs_article.doi = 'https://doi.org/10.1234/test.123'
         ojs_article.keywords = ['test', 'some strange keyword', 'another-keyword']
 
+        add_dummy_submission_file_data(ojs_article.submission_files)
+
         result_xml_string = ojs_article.generate_xml()
 
-        self._validate_ojs_native_xsd_consistency(result_xml_string)
+        expected_xml_string = self.get_expectation_xml_string(xml_test_file)
+        assert result_xml_string == expected_xml_string
 
-    def _validate_ojs_native_xsd_consistency(self, xml_string):
-        ojs_native_xsd_file_path = '{base_dir}/xsd/ojs-native.xsd'.format(base_dir=TEST_DATA_DIRECTORY)
+        validate_ojs_native_xsd_consistency(result_xml_string)
 
-        with open(ojs_native_xsd_file_path, 'r') as xsd_file:
-            ojs_native_xsd = xsd_file.read()
+    def get_expectation_xml_string(self, test_file_path):
+        input_file_path = pathlib.Path(test_file_path)
+        output_file_path = input_file_path.parent / '{file_name}-outcome.xml'.format(file_name=input_file_path.stem)
 
-        schema_root = etree.XML(ojs_native_xsd)
-        schema = etree.XMLSchema(schema_root)
-        parser = etree.XMLParser(schema=schema)
-        etree.fromstring(xml_string, parser)
+        with open(str(output_file_path), 'r') as outcome_file:
+            expected_outcome_string = outcome_file.read()
+
+        return expected_outcome_string
+
+
+def validate_ojs_native_xsd_consistency(xml_string):
+    xsd_files_path = '{base_dir}/xsd'.format(base_dir=TEST_DATA_DIRECTORY)
+    ojs_native_xsd_file_path = '{xsd_path}/ojs-native.xsd'.format(xsd_path=xsd_files_path)
+
+    current_dir = os.curdir
+    os.chdir(xsd_files_path)
+    with open(ojs_native_xsd_file_path, 'r') as xsd_file:
+        ojs_native_xsd = xsd_file.read()
+    os.chdir(current_dir)
+
+    schema_root = etree.XML(ojs_native_xsd)
+    xml_schema = etree.XMLSchema(schema_root)
+
+    xml_parser = etree.XMLParser(schema=xml_schema)
+
+    # Raises an exception when validation fails
+    etree.fromstring(xml_string, xml_parser)
+
+
+def add_dummy_submission_file_data(submission_files):
+    for submission_file in submission_files:
+        submission_file.data = b'This should be a PDF!'

@@ -10,235 +10,447 @@
 		<last_modified>1942-01-01</last_modified>
 		<issue_galleys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"/>
 		<articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903380</id>
-				<title locale="de_DE">Geologie des Rodderberges südlich von Bonn</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Max</givenname>
-						<familyname locale="de_DE">Richter</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903380" filesize="4335648" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903380</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x1108283d0&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903380</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>1-24</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Geologie des Rodderberges südlich von Bonn</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Max</givenname>
+							<familyname locale="de_DE">Richter</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>1-24</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Geologie des Rodderberges südlich von Bonn</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Max</givenname>
+							<familyname locale="en_US">Richter</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>1-24</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903381</id>
-				<title locale="de_DE">Einige neue Krinoiden aus dem Mittel-Devon der Eifel</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">J.</givenname>
-						<familyname locale="de_DE">Wanner</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903381" filesize="2479171" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903381</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x1108f5650&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903381</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>25-38</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Einige neue Krinoiden aus dem Mittel-Devon der Eifel</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">J.</givenname>
+							<familyname locale="de_DE">Wanner</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>25-38</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Einige neue Krinoiden aus dem Mittel-Devon der Eifel</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">J.</givenname>
+							<familyname locale="en_US">Wanner</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>25-38</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903382</id>
-				<title locale="de_DE">Ueber die Realstruktur der Kristalle</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Will</givenname>
-						<familyname locale="de_DE">Kleber</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903382" filesize="1894291" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903382</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110996750&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903382</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>39-48</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Ueber die Realstruktur der Kristalle</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Will</givenname>
+							<familyname locale="de_DE">Kleber</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>39-48</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Ueber die Realstruktur der Kristalle</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Will</givenname>
+							<familyname locale="en_US">Kleber</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>39-48</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903383</id>
-				<title locale="de_DE">Nach Goniatiten gegliederte Profile im sauerländischen Kulm</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Hermann</givenname>
-						<familyname locale="de_DE">Schmidt</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903383" filesize="2900282" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903383</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110a522d0&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903383</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>49-63</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Nach Goniatiten gegliederte Profile im sauerländischen Kulm</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Hermann</givenname>
+							<familyname locale="de_DE">Schmidt</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>49-63</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Nach Goniatiten gegliederte Profile im sauerländischen Kulm</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Hermann</givenname>
+							<familyname locale="en_US">Schmidt</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>49-63</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903385</id>
-				<title locale="de_DE">Ungedruckte Briefe von Adolf Overweg</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Heinrich</givenname>
-						<familyname locale="de_DE">Schiffers</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903385" filesize="1460299" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903385</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110ae6490&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903385</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>64-70</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Ungedruckte Briefe von Adolf Overweg</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Heinrich</givenname>
+							<familyname locale="de_DE">Schiffers</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>64-70</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Ungedruckte Briefe von Adolf Overweg</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Heinrich</givenname>
+							<familyname locale="en_US">Schiffers</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>64-70</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903387</id>
-				<title locale="de_DE">Individualität und Ganzheit in der Biologie</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Hermann</givenname>
-						<familyname locale="de_DE">Wurmbach</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903387" filesize="5027921" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903387</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110c0a410&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903387</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>71-97</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Individualität und Ganzheit in der Biologie</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Hermann</givenname>
+							<familyname locale="de_DE">Wurmbach</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>71-97</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Individualität und Ganzheit in der Biologie</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Hermann</givenname>
+							<familyname locale="en_US">Wurmbach</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>71-97</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903390</id>
-				<title locale="de_DE">Revision der südamerikanischen Lycoriiden aus der Sammlung des Naturkundemuseums Stettin</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Franz</givenname>
-						<familyname locale="de_DE">Lengersdorf</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903390" filesize="497710" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903390</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110ad0a10&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903390</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>98-99</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Revision der südamerikanischen Lycoriiden aus der Sammlung des Naturkundemuseums Stettin</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Franz</givenname>
+							<familyname locale="de_DE">Lengersdorf</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>98-99</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Revision der südamerikanischen Lycoriiden aus der Sammlung des Naturkundemuseums Stettin</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Franz</givenname>
+							<familyname locale="en_US">Lengersdorf</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>98-99</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903391</id>
-				<title locale="de_DE">Beobachtungen über den Rosenkelch</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Friedrich</givenname>
-						<familyname locale="de_DE">Markgraf</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903391" filesize="1391255" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903391</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110c8d190&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903391</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>100-107</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Beobachtungen über den Rosenkelch</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Friedrich</givenname>
+							<familyname locale="de_DE">Markgraf</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>100-107</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Beobachtungen über den Rosenkelch</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Friedrich</givenname>
+							<familyname locale="en_US">Markgraf</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>100-107</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903392</id>
-				<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Werner</givenname>
-						<familyname locale="de_DE">Paeckelmann</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903392" filesize="1745365" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903392</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110d2d190&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903392</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>108-116</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+					<prefix locale="de_DE">Die</prefix>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Werner</givenname>
+							<familyname locale="de_DE">Paeckelmann</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>108-116</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+					<prefix locale="en_US">Die</prefix>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Werner</givenname>
+							<familyname locale="en_US">Paeckelmann</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>108-116</pages>
+				</publication>
 			</article>
-			<article date_submitted="2020-06-05" stage="production" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903393</id>
-				<title locale="de_DE">Beitrag zur Flechtenflora des Vereinsgebietes</title>
-				<type locale="de_DE">text</type>
-				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Ludwig</givenname>
-						<familyname locale="de_DE">Laven</familyname>
-					</author>
-				</authors>
-				<submission_file id="1" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903393" filesize="3002636" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903393</name>
-						<embed encoding="base64">&lt;bound method File.get_data_in_base64_encoding of &lt;importer.importer.File object at 0x110a972d0&gt;&gt;</embed>
+						<name locale="en_US">pdf_10903393</name>
+						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</revision>
 				</submission_file>
-				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-					<name locale="de_DE">PDF</name>
-					<seq>1</seq>
-					<submission_file_ref id="1" revision="1"/>
-				</article_galley>
-				<pages>117-130</pages>
+				<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="de_DE">Beitrag zur Flechtenflora des Vereinsgebietes</title>
+					<type locale="de_DE">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="de_DE">Ludwig</givenname>
+							<familyname locale="de_DE">Laven</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="de_DE">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>117-130</pages>
+				</publication>
+				<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+					<title locale="en_US">Beitrag zur Flechtenflora des Vereinsgebietes</title>
+					<type locale="en_US">text</type>
+					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+							<givenname locale="en_US">Ludwig</givenname>
+							<familyname locale="en_US">Laven</familyname>
+							<email>dummy@mactest.com</email>
+						</author>
+					</authors>
+					<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+						<name locale="en_US">PDF</name>
+						<seq>0</seq>
+						<submission_file_ref id="1" revision="1"/>
+					</article_galley>
+					<pages>117-130</pages>
+				</publication>
 			</article>
 		</articles>
 	</issue>

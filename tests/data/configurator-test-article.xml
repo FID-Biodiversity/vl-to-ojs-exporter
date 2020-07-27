@@ -1,0 +1,801 @@
+<OAI-PMH xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <responseDate>2020-07-24T06:40:23Z</responseDate>
+    <request verb="GetRecord" metadataPrefix="mets" identifier="10903392">http://vl.ub.uni-frankfurt.de/oai/</request>
+    <GetRecord>
+        <record>
+            <header>
+                <identifier>oai:vl.ub.uni-frankfurt.de:10903392</identifier>
+                <datestamp>2020-06-04T14:06:38Z</datestamp>
+                <setSpec>ubffmbiodiv</setSpec>
+                <setSpec>article</setSpec>
+            </header>
+            <metadata>
+                <mets:mets xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version18/mets.xsd" OBJID="3" LABEL="Digitale Sammlungen">
+                    <mets:metsHdr CREATEDATE="2020-07-24T08:40:23">
+                        <mets:agent ROLE="OTHER" TYPE="OTHER" OTHERTYPE="SOFTWARE">
+                            <mets:name>vls/1807</mets:name>
+                        </mets:agent>
+                        <mets:agent ROLE="OTHER" TYPE="OTHER" OTHERTYPE="INSTANCE">
+                            <mets:name>ubffm</mets:name>
+                        </mets:agent>
+                        <mets:agent ROLE="OTHER" TYPE="OTHER" OTHERTYPE="REPOSITORY">
+                            <mets:name>vl.ub.uni-frankfurt.de</mets:name>
+                        </mets:agent>
+                        <mets:agent ROLE="OTHER" TYPE="OTHER" OTHERTYPE="BUILDER">
+                            <mets:name>vd</mets:name>
+                        </mets:agent>
+                    </mets:metsHdr>
+                    <mets:dmdSec ID="md10801960">
+                        <mets:mdWrap MIMETYPE="text/xml" MDTYPE="MODS">
+                            <mets:xmlData>
+                                <mods:mods version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+                                    <mods:typeOfResource>text</mods:typeOfResource>
+                                    <mods:part>
+                                        <mods:detail>
+                                            <mods:number>101 AB</mods:number>
+                                        </mods:detail>
+                                        <mods:date encoding="w3cdtf">1942</mods:date>
+                                    </mods:part>
+                                    <mods:recordInfo>
+                                        <mods:recordIdentifier source="local">ubffm:10801960</mods:recordIdentifier>
+                                    </mods:recordInfo>
+                                </mods:mods>
+                            </mets:xmlData>
+                        </mets:mdWrap>
+                    </mets:dmdSec>
+                    <mets:dmdSec ID="md10802368">
+                        <mets:mdWrap MIMETYPE="text/xml" MDTYPE="MODS">
+                            <mets:xmlData>
+                                <mods:mods version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+                                    <mods:typeOfResource>text</mods:typeOfResource>
+                                    <mods:genre authority="marcgt">issue</mods:genre>
+                                    <mods:part order="1">
+                                        <mods:detail type="issue">
+                                            <mods:number>1. Lieferung</mods:number>
+                                        </mods:detail>
+                                        <mods:date encoding="w3cdtf">1942</mods:date>
+                                        <mods:detail type="volume">
+                                            <mods:number>101 AB</mods:number>
+                                        </mods:detail>
+                                        <mods:date encoding="w3cdtf">1942</mods:date>
+                                    </mods:part>
+                                    <mods:recordInfo>
+                                        <mods:recordIdentifier source="local">ubffm:10802368</mods:recordIdentifier>
+                                    </mods:recordInfo>
+                                    <mods:relatedItem type="host">
+                                        <mods:titleInfo>
+                                            <mods:title>Decheniana</mods:title>
+                                            <mods:subTitle>
+                                                Verhandlungen des Naturhistorischen Vereins der Rheinlande und Westfalens
+                                            </mods:subTitle>
+                                            <mods:partName>AB</mods:partName>
+                                        </mods:titleInfo>
+                                        <mods:name type="corporate" authority="gnd" authorityURI="http://d-nb.info/gnd/" valueURI="http://d-nb.info/gnd/40094-4">
+                                            <mods:displayForm>
+                                                Naturhistorischer Verein der Rheinlande und Westfalens
+                                            </mods:displayForm>
+                                            <mods:role>
+                                                <mods:roleTerm type="code" authority="marcrelator">isb</mods:roleTerm>
+                                                <mods:roleTerm type="text">Herausgebendes Organ</mods:roleTerm>
+                                            </mods:role>
+                                        </mods:name>
+                                        <mods:typeOfResource>text</mods:typeOfResource>
+                                        <mods:genre authority="hebis">Zeitschrift</mods:genre>
+                                        <mods:originInfo>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                            <mods:dateIssued>101.1942-102.1943</mods:dateIssued>
+                                            <mods:dateIssued>1937-1954</mods:dateIssued>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                        </mods:originInfo>
+                                        <mods:originInfo>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Frankfurt am Main</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>
+                                                Universitätsbibliothek Johann Christian Senckenberg
+                                            </mods:publisher>
+                                            <mods:dateIssued encoding="w3cdtf" point="start">2019</mods:dateIssued>
+                                            <mods:dateIssued encoding="w3cdtf" point="end">2019</mods:dateIssued>
+                                            <mods:edition>[Electronic ed.]</mods:edition>
+                                        </mods:originInfo>
+                                        <mods:language>
+                                            <mods:languageTerm authority="iso639-2b" type="code">ger</mods:languageTerm>
+                                        </mods:language>
+                                        <mods:note type="date/sequential designation">101.1942-102.1943</mods:note>
+                                        <mods:note>Reproduktion</mods:note>
+                                        <mods:note>
+                                            Die an sich geteilten Bd. 101 u. 102 haben gemeinsame Titelblätter mit der Zählung "Band 101AB" bzw. "Band 102A und B"
+                                        </mods:note>
+                                        <mods:identifier type="urn">urn:nbn:de:hebis:30:4-211104</mods:identifier>
+                                        <mods:relatedItem type="otherVersion">
+                                            <mods:note>Fortsetzung von</mods:note>
+                                            <mods:recordInfo>
+                                                <mods:recordIdentifier source="ubffmbiodiv">451037030</mods:recordIdentifier>
+                                            </mods:recordInfo>
+                                        </mods:relatedItem>
+                                        <mods:relatedItem type="otherVersion">
+                                            <mods:note>Fortsetzung von</mods:note>
+                                            <mods:recordInfo>
+                                                <mods:recordIdentifier source="ubffmbiodiv">451037375</mods:recordIdentifier>
+                                            </mods:recordInfo>
+                                        </mods:relatedItem>
+                                        <mods:relatedItem type="otherVersion">
+                                            <mods:note>Fortgesetzt durch</mods:note>
+                                            <mods:recordInfo>
+                                                <mods:recordIdentifier source="ubffmbiodiv">45102219X</mods:recordIdentifier>
+                                            </mods:recordInfo>
+                                        </mods:relatedItem>
+                                        <mods:extension>
+                                            <vlz:externalType recordSyntax="pica" code="Ob"/>
+                                            <vlz:info version="0"/>
+                                        </mods:extension>
+                                        <mods:recordInfo>
+                                            <mods:recordCreationDate encoding="marc">26-07-19</mods:recordCreationDate>
+                                            <mods:recordChangeDate encoding="marc">18-06-20</mods:recordChangeDate>
+                                            <mods:recordIdentifier source="ubffmbiodiv">451149114</mods:recordIdentifier>
+                                            <mods:descriptionStandard>rda</mods:descriptionStandard>
+                                        </mods:recordInfo>
+                                        <mods:extension>
+                                            <vl:id>10916017</vl:id>
+                                            <vl:odid>55</vl:odid>
+                                            <vl:datatype>1</vl:datatype>
+                                            <vl:type>24</vl:type>
+                                            <vl:state>1</vl:state>
+                                        </mods:extension>
+                                    </mods:relatedItem>
+                                </mods:mods>
+                            </mets:xmlData>
+                        </mets:mdWrap>
+                    </mets:dmdSec>
+                    <mets:dmdSec ID="md10903392">
+                        <mets:mdWrap MIMETYPE="text/xml" MDTYPE="MODS">
+                            <mets:xmlData>
+                                <mods:mods version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+                                    <mods:titleInfo>
+                                        <mods:title>Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</mods:title>
+                                        <mods:subTitle>mit 2 Abbildungen und 1 Tafel</mods:subTitle>
+                                    </mods:titleInfo>
+                                    <mods:name type="personal" authority="gnd" authorityURI="http://d-nb.info/gnd/" valueURI="http://d-nb.info/gnd/116015098">
+                                        <mods:displayForm>Paeckelmann, Werner</mods:displayForm>
+                                        <mods:namePart type="given">Werner</mods:namePart>
+                                        <mods:namePart type="family">Paeckelmann</mods:namePart>
+                                        <mods:role>
+                                            <mods:roleTerm type="code" authority="marcrelator">aut</mods:roleTerm>
+                                            <mods:roleTerm type="text">Verfasser</mods:roleTerm>
+                                        </mods:role>
+                                    </mods:name>
+                                    <mods:typeOfResource>text</mods:typeOfResource>
+                                    <mods:originInfo>
+                                        <mods:dateIssued keyDate="yes">1942</mods:dateIssued>
+                                    </mods:originInfo>
+                                    <mods:originInfo>
+                                        <mods:place>
+                                            <mods:placeTerm type="text">Frankfurt</mods:placeTerm>
+                                        </mods:place>
+                                        <mods:publisher>
+                                            Universitätsbibliothek Johann Christian Senckenberg
+                                        </mods:publisher>
+                                        <mods:dateIssued encoding="w3cdtf">2020</mods:dateIssued>
+                                        <mods:edition>[Electronic ed.]</mods:edition>
+                                    </mods:originInfo>
+                                    <mods:language>
+                                        <mods:languageTerm authority="iso639-2b" type="code">ger</mods:languageTerm>
+                                    </mods:language>
+                                    <mods:note type="statement of responsibility">von Werner Paeckelmann, Berlin</mods:note>
+                                    <mods:classification authority="dnb">550</mods:classification>
+                                    <mods:identifier type="urn">urn:nbn:de:hebis:30:4-198506</mods:identifier>
+                                    <mods:relatedItem type="host">
+                                        <mods:titleInfo>
+                                            <mods:title>Decheniana</mods:title>
+                                            <mods:subTitle>
+                                                Verhandlungen des Naturhistorischen Vereins der Rheinlande und Westfalens
+                                            </mods:subTitle>
+                                            <mods:partName>AB</mods:partName>
+                                        </mods:titleInfo>
+                                        <mods:name type="corporate" authority="gnd" authorityURI="http://d-nb.info/gnd/" valueURI="http://d-nb.info/gnd/40094-4">
+                                            <mods:displayForm>
+                                                Naturhistorischer Verein der Rheinlande und Westfalens
+                                            </mods:displayForm>
+                                            <mods:role>
+                                                <mods:roleTerm type="code" authority="marcrelator">isb</mods:roleTerm>
+                                                <mods:roleTerm type="text">Herausgebendes Organ</mods:roleTerm>
+                                            </mods:role>
+                                        </mods:name>
+                                        <mods:typeOfResource>text</mods:typeOfResource>
+                                        <mods:genre authority="hebis">Zeitschrift</mods:genre>
+                                        <mods:originInfo>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                            <mods:dateIssued>101.1942-102.1943</mods:dateIssued>
+                                            <mods:dateIssued>1937-1954</mods:dateIssued>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>Verein</mods:publisher>
+                                        </mods:originInfo>
+                                        <mods:originInfo>
+                                            <mods:place>
+                                                <mods:placeTerm type="text">Frankfurt am Main</mods:placeTerm>
+                                            </mods:place>
+                                            <mods:publisher>
+                                                Universitätsbibliothek Johann Christian Senckenberg
+                                            </mods:publisher>
+                                            <mods:dateIssued encoding="w3cdtf" point="start">2019</mods:dateIssued>
+                                            <mods:dateIssued encoding="w3cdtf" point="end">2019</mods:dateIssued>
+                                            <mods:edition>[Electronic ed.]</mods:edition>
+                                        </mods:originInfo>
+                                        <mods:language>
+                                            <mods:languageTerm authority="iso639-2b" type="code">ger</mods:languageTerm>
+                                        </mods:language>
+                                        <mods:note type="date/sequential designation">101.1942-102.1943</mods:note>
+                                        <mods:note>Reproduktion</mods:note>
+                                        <mods:note>
+                                            Die an sich geteilten Bd. 101 u. 102 haben gemeinsame Titelblätter mit der Zählung "Band 101AB" bzw. "Band 102A und B"
+                                        </mods:note>
+                                        <mods:identifier type="urn">urn:nbn:de:hebis:30:4-211104</mods:identifier>
+                                        <mods:relatedItem type="otherVersion">
+                                            <mods:note>Fortsetzung von</mods:note>
+                                            <mods:recordInfo>
+                                                <mods:recordIdentifier source="ubffmbiodiv">451037030</mods:recordIdentifier>
+                                            </mods:recordInfo>
+                                        </mods:relatedItem>
+                                        <mods:relatedItem type="otherVersion">
+                                            <mods:note>Fortsetzung von</mods:note>
+                                            <mods:recordInfo>
+                                                <mods:recordIdentifier source="ubffmbiodiv">451037375</mods:recordIdentifier>
+                                            </mods:recordInfo>
+                                        </mods:relatedItem>
+                                        <mods:relatedItem type="otherVersion">
+                                            <mods:note>Fortgesetzt durch</mods:note>
+                                            <mods:recordInfo>
+                                                <mods:recordIdentifier source="ubffmbiodiv">45102219X</mods:recordIdentifier>
+                                            </mods:recordInfo>
+                                        </mods:relatedItem>
+                                        <mods:extension>
+                                            <vlz:externalType recordSyntax="pica" code="Ob"/>
+                                            <vlz:info version="0"/>
+                                        </mods:extension>
+                                        <mods:recordInfo>
+                                            <mods:recordCreationDate encoding="marc">26-07-19</mods:recordCreationDate>
+                                            <mods:recordChangeDate encoding="marc">18-06-20</mods:recordChangeDate>
+                                            <mods:recordIdentifier source="ubffmbiodiv">451149114</mods:recordIdentifier>
+                                            <mods:descriptionStandard>rda</mods:descriptionStandard>
+                                        </mods:recordInfo>
+                                        <mods:extension>
+                                            <vl:id>10916017</vl:id>
+                                            <vl:odid>55</vl:odid>
+                                            <vl:datatype>1</vl:datatype>
+                                            <vl:type>24</vl:type>
+                                            <vl:state>1</vl:state>
+                                        </mods:extension>
+                                        <mods:part>
+                                            <mods:detail type="issue">
+                                                <mods:number>1. Lieferung</mods:number>
+                                            </mods:detail>
+                                            <mods:date encoding="w3cdtf">1942</mods:date>
+                                            <mods:detail type="volume">
+                                                <mods:number>101 AB</mods:number>
+                                            </mods:detail>
+                                            <mods:date encoding="w3cdtf">1942</mods:date>
+                                        </mods:part>
+                                    </mods:relatedItem>
+                                    <mods:part>
+                                        <mods:detail type="issue">
+                                            <mods:number>1</mods:number>
+                                        </mods:detail>
+                                        <mods:detail type="volume">
+                                            <mods:number>101 AB</mods:number>
+                                        </mods:detail>
+                                        <mods:extent unit="page">
+                                            <mods:start>108</mods:start>
+                                            <mods:end>116</mods:end>
+                                        </mods:extent>
+                                        <mods:date encoding="iso8601">1942</mods:date>
+                                    </mods:part>
+                                    <mods:extension>
+                                        <vlz:externalType recordSyntax="pica" code="Oo"/>
+                                        <vlz:info version="0"/>
+                                    </mods:extension>
+                                    <mods:recordInfo>
+                                        <mods:recordCreationDate encoding="marc">12-03-20</mods:recordCreationDate>
+                                        <mods:recordChangeDate encoding="marc">08-06-20</mods:recordChangeDate>
+                                        <mods:recordIdentifier source="ubffmbiodiv">460954148</mods:recordIdentifier>
+                                        <mods:descriptionStandard>rda</mods:descriptionStandard>
+                                    </mods:recordInfo>
+                                </mods:mods>
+                            </mets:xmlData>
+                        </mets:mdWrap>
+                    </mets:dmdSec>
+                    <mets:dmdSec ID="md10916017">
+                        <mets:mdWrap MIMETYPE="text/xml" MDTYPE="MODS">
+                            <mets:xmlData>
+                                <mods:mods version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+                                    <mods:titleInfo>
+                                        <mods:title>Decheniana</mods:title>
+                                        <mods:subTitle>
+                                            Verhandlungen des Naturhistorischen Vereins der Rheinlande und Westfalens
+                                        </mods:subTitle>
+                                        <mods:partName>AB</mods:partName>
+                                    </mods:titleInfo>
+                                    <mods:name type="corporate" authority="gnd" authorityURI="http://d-nb.info/gnd/" valueURI="http://d-nb.info/gnd/40094-4">
+                                        <mods:displayForm>
+                                            Naturhistorischer Verein der Rheinlande und Westfalens
+                                        </mods:displayForm>
+                                        <mods:role>
+                                            <mods:roleTerm type="code" authority="marcrelator">isb</mods:roleTerm>
+                                            <mods:roleTerm type="text">Herausgebendes Organ</mods:roleTerm>
+                                        </mods:role>
+                                    </mods:name>
+                                    <mods:typeOfResource>text</mods:typeOfResource>
+                                    <mods:genre authority="hebis">Zeitschrift</mods:genre>
+                                    <mods:originInfo>
+                                        <mods:place>
+                                            <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                        </mods:place>
+                                        <mods:publisher>Verein</mods:publisher>
+                                        <mods:place>
+                                            <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                        </mods:place>
+                                        <mods:publisher>Verein</mods:publisher>
+                                        <mods:dateIssued>101.1942-102.1943</mods:dateIssued>
+                                        <mods:dateIssued>1937-1954</mods:dateIssued>
+                                        <mods:place>
+                                            <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                        </mods:place>
+                                        <mods:publisher>Verein</mods:publisher>
+                                        <mods:place>
+                                            <mods:placeTerm type="text">Bonn</mods:placeTerm>
+                                        </mods:place>
+                                        <mods:publisher>Verein</mods:publisher>
+                                    </mods:originInfo>
+                                    <mods:originInfo>
+                                        <mods:place>
+                                            <mods:placeTerm type="text">Frankfurt am Main</mods:placeTerm>
+                                        </mods:place>
+                                        <mods:publisher>
+                                            Universitätsbibliothek Johann Christian Senckenberg
+                                        </mods:publisher>
+                                        <mods:dateIssued encoding="w3cdtf" point="start">2019</mods:dateIssued>
+                                        <mods:dateIssued encoding="w3cdtf" point="end">2019</mods:dateIssued>
+                                        <mods:edition>[Electronic ed.]</mods:edition>
+                                    </mods:originInfo>
+                                    <mods:language>
+                                        <mods:languageTerm authority="iso639-2b" type="code">ger</mods:languageTerm>
+                                    </mods:language>
+                                    <mods:note type="date/sequential designation">101.1942-102.1943</mods:note>
+                                    <mods:note>Reproduktion</mods:note>
+                                    <mods:note>
+                                        Die an sich geteilten Bd. 101 u. 102 haben gemeinsame Titelblätter mit der Zählung "Band 101AB" bzw. "Band 102A und B"
+                                    </mods:note>
+                                    <mods:identifier type="urn">urn:nbn:de:hebis:30:4-211104</mods:identifier>
+                                    <mods:relatedItem type="otherVersion">
+                                        <mods:note>Fortsetzung von</mods:note>
+                                        <mods:recordInfo>
+                                            <mods:recordIdentifier source="ubffmbiodiv">451037030</mods:recordIdentifier>
+                                        </mods:recordInfo>
+                                    </mods:relatedItem>
+                                    <mods:relatedItem type="otherVersion">
+                                        <mods:note>Fortsetzung von</mods:note>
+                                        <mods:recordInfo>
+                                            <mods:recordIdentifier source="ubffmbiodiv">451037375</mods:recordIdentifier>
+                                        </mods:recordInfo>
+                                    </mods:relatedItem>
+                                    <mods:relatedItem type="otherVersion">
+                                        <mods:note>Fortgesetzt durch</mods:note>
+                                        <mods:recordInfo>
+                                            <mods:recordIdentifier source="ubffmbiodiv">45102219X</mods:recordIdentifier>
+                                        </mods:recordInfo>
+                                    </mods:relatedItem>
+                                    <mods:extension>
+                                        <vlz:externalType recordSyntax="pica" code="Ob"/>
+                                        <vlz:info version="0"/>
+                                    </mods:extension>
+                                    <mods:recordInfo>
+                                        <mods:recordCreationDate encoding="marc">26-07-19</mods:recordCreationDate>
+                                        <mods:recordChangeDate encoding="marc">18-06-20</mods:recordChangeDate>
+                                        <mods:recordIdentifier source="ubffmbiodiv">451149114</mods:recordIdentifier>
+                                        <mods:descriptionStandard>rda</mods:descriptionStandard>
+                                    </mods:recordInfo>
+                                </mods:mods>
+                            </mets:xmlData>
+                        </mets:mdWrap>
+                    </mets:dmdSec>
+                    <mets:amdSec ID="amd10903392">
+                        <mets:rightsMD ID="rights10903392">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS">
+                                <mets:xmlData>
+                                    <dv:rights>
+                                        <dv:ownerLogo>
+                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                        </dv:ownerLogo>
+                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                    </dv:rights>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:rightsMD>
+                        <mets:digiprovMD ID="digiprov10903392">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVLINKS">
+                                <mets:xmlData>
+                                    <dv:links>
+                                        <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460954148</dv:reference>
+                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903392</dv:presentation>
+                                        <dv:sru>
+                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903392
+                                        </dv:sru>
+                                    </dv:links>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:digiprovMD>
+                    </mets:amdSec>
+                    <mets:amdSec ID="amd10802368">
+                        <mets:rightsMD ID="rights10802368">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS">
+                                <mets:xmlData>
+                                    <dv:rights>
+                                        <dv:ownerLogo>
+                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                        </dv:ownerLogo>
+                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                    </dv:rights>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:rightsMD>
+                        <mets:digiprovMD ID="digiprov10802368">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVLINKS">
+                                <mets:xmlData>
+                                    <dv:links>
+                                        <dv:reference>
+                                            https://hds.hebis.de/ubffm/Record/HEBubffm%3A10802368
+                                        </dv:reference>
+                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10802368</dv:presentation>
+                                        <dv:sru>
+                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10802368
+                                        </dv:sru>
+                                    </dv:links>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:digiprovMD>
+                    </mets:amdSec>
+                    <mets:amdSec ID="amd10801960">
+                        <mets:rightsMD ID="rights10801960">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS">
+                                <mets:xmlData>
+                                    <dv:rights>
+                                        <dv:ownerLogo>
+                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                        </dv:ownerLogo>
+                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                    </dv:rights>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:rightsMD>
+                        <mets:digiprovMD ID="digiprov10801960">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVLINKS">
+                                <mets:xmlData>
+                                    <dv:links>
+                                        <dv:reference>
+                                            https://hds.hebis.de/ubffm/Record/HEBubffm%3A10801960
+                                        </dv:reference>
+                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10801960</dv:presentation>
+                                        <dv:sru>
+                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10801960
+                                        </dv:sru>
+                                    </dv:links>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:digiprovMD>
+                    </mets:amdSec>
+                    <mets:amdSec ID="amd10916017">
+                        <mets:rightsMD ID="rights10916017">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS">
+                                <mets:xmlData>
+                                    <dv:rights>
+                                        <dv:ownerLogo>
+                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                        </dv:ownerLogo>
+                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                    </dv:rights>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:rightsMD>
+                        <mets:digiprovMD ID="digiprov10916017">
+                            <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVLINKS">
+                                <mets:xmlData>
+                                    <dv:links>
+                                        <dv:reference>https://hds.hebis.de/ubffm/Record/HEB451149114</dv:reference>
+                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10916017</dv:presentation>
+                                        <dv:sru>
+                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10916017
+                                        </dv:sru>
+                                    </dv:links>
+                                </mets:xmlData>
+                            </mets:mdWrap>
+                        </mets:digiprovMD>
+                    </mets:amdSec>
+                    <mets:fileSec>
+                        <mets:fileGrp USE="FRONTIMAGE">
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:09.349100Z" ID="IMG_FRONTIMAGE_10801661">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/304/10801661" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:40.357000Z" ID="IMG_FRONTIMAGE_10801780">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/304/10801780" LOCTYPE="URL"/>
+                            </mets:file>
+                        </mets:fileGrp>
+                        <mets:fileGrp USE="DOWNLOAD">
+                            <mets:file MIMETYPE="application/pdf" CHECKSUM="8f2c9bc57d2cc79d0b979a4902f96f5c96ac2fde" CREATED="2020-06-05T10:44:17.536200Z" CHECKSUMTYPE="SHA-1" SIZE="1745365" ID="PDF_10903392">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903392" LOCTYPE="URL"/>
+                            </mets:file>
+                        </mets:fileGrp>
+                        <mets:fileGrp USE="DEFAULT">
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:40.357000Z" ID="IMG_DEFAULT_10801780">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801780" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:41.841000Z" ID="IMG_DEFAULT_10801781">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801781" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:43.297000Z" ID="IMG_DEFAULT_10801782">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801782" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:44.673000Z" ID="IMG_DEFAULT_10801783">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801783" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:46.189000Z" ID="IMG_DEFAULT_10801784">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801784" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:47.705000Z" ID="IMG_DEFAULT_10801785">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801785" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:49.129000Z" ID="IMG_DEFAULT_10801786">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801786" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:50.481000Z" ID="IMG_DEFAULT_10801787">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801787" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:52.849000Z" ID="IMG_DEFAULT_10801788">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801788" LOCTYPE="URL"/>
+                            </mets:file>
+                        </mets:fileGrp>
+                        <mets:fileGrp USE="THUMBS">
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:40.357000Z" ID="IMG_THUMBS_10801780">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801780" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:41.841000Z" ID="IMG_THUMBS_10801781">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801781" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:43.297000Z" ID="IMG_THUMBS_10801782">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801782" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:44.673000Z" ID="IMG_THUMBS_10801783">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801783" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:46.189000Z" ID="IMG_THUMBS_10801784">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801784" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:47.705000Z" ID="IMG_THUMBS_10801785">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801785" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:49.129000Z" ID="IMG_THUMBS_10801786">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801786" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:50.481000Z" ID="IMG_THUMBS_10801787">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801787" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:52.849000Z" ID="IMG_THUMBS_10801788">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801788" LOCTYPE="URL"/>
+                            </mets:file>
+                        </mets:fileGrp>
+                        <mets:fileGrp USE="MIN">
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:40.357000Z" ID="IMG_MIN_10801780">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801780" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:41.841000Z" ID="IMG_MIN_10801781">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801781" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:43.297000Z" ID="IMG_MIN_10801782">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801782" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:44.673000Z" ID="IMG_MIN_10801783">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801783" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:46.189000Z" ID="IMG_MIN_10801784">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801784" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:47.705000Z" ID="IMG_MIN_10801785">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801785" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:49.129000Z" ID="IMG_MIN_10801786">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801786" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:50.481000Z" ID="IMG_MIN_10801787">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801787" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:52.849000Z" ID="IMG_MIN_10801788">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801788" LOCTYPE="URL"/>
+                            </mets:file>
+                        </mets:fileGrp>
+                        <mets:fileGrp USE="MAX">
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:40.357000Z" ID="IMG_MAX_10801780">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801780" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:41.841000Z" ID="IMG_MAX_10801781">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801781" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:43.297000Z" ID="IMG_MAX_10801782">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801782" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:44.673000Z" ID="IMG_MAX_10801783">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801783" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:46.189000Z" ID="IMG_MAX_10801784">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801784" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:47.705000Z" ID="IMG_MAX_10801785">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801785" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:49.129000Z" ID="IMG_MAX_10801786">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801786" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:50.481000Z" ID="IMG_MAX_10801787">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801787" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:09:52.849000Z" ID="IMG_MAX_10801788">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801788" LOCTYPE="URL"/>
+                            </mets:file>
+                        </mets:fileGrp>
+                        <mets:fileGrp USE="FULLTEXT">
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:23:35.411700Z" ID="ALTO10801780">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801780" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:23:46.217500Z" ID="ALTO10801781">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801781" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:23:41.931700Z" ID="ALTO10801782">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801782" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:23:53.863500Z" ID="ALTO10801783">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801783" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:23:55.947700Z" ID="ALTO10801784">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801784" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:23:59.139500Z" ID="ALTO10801785">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801785" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:24:03.584200Z" ID="ALTO10801786">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801786" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:24:17.584700Z" ID="ALTO10801787">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801787" LOCTYPE="URL"/>
+                            </mets:file>
+                            <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:24:04.722600Z" ID="ALTO10801788">
+                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801788" LOCTYPE="URL"/>
+                            </mets:file>
+                        </mets:fileGrp>
+                    </mets:fileSec>
+                    <mets:structMap TYPE="PHYSICAL">
+                        <mets:div TYPE="physSequence" ID="physroot">
+                            <mets:div ID="phys10801780" TYPE="page" LABEL="Seite 108" ORDER="1" ORDERLABEL="108">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801780"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801780"/>
+                                <mets:fptr FILEID="IMG_MIN_10801780"/>
+                                <mets:fptr FILEID="IMG_MAX_10801780"/>
+                                <mets:fptr FILEID="ALTO10801780"/>
+                            </mets:div>
+                            <mets:div ID="phys10801781" TYPE="page" LABEL="Seite 109" ORDER="2" ORDERLABEL="109">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801781"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801781"/>
+                                <mets:fptr FILEID="IMG_MIN_10801781"/>
+                                <mets:fptr FILEID="IMG_MAX_10801781"/>
+                                <mets:fptr FILEID="ALTO10801781"/>
+                            </mets:div>
+                            <mets:div ID="phys10801782" TYPE="page" LABEL="Seite 110" ORDER="3" ORDERLABEL="110">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801782"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801782"/>
+                                <mets:fptr FILEID="IMG_MIN_10801782"/>
+                                <mets:fptr FILEID="IMG_MAX_10801782"/>
+                                <mets:fptr FILEID="ALTO10801782"/>
+                            </mets:div>
+                            <mets:div ID="phys10801783" TYPE="page" LABEL="Seite 111" ORDER="4" ORDERLABEL="111">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801783"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801783"/>
+                                <mets:fptr FILEID="IMG_MIN_10801783"/>
+                                <mets:fptr FILEID="IMG_MAX_10801783"/>
+                                <mets:fptr FILEID="ALTO10801783"/>
+                            </mets:div>
+                            <mets:div ID="phys10801784" TYPE="page" LABEL="Seite 112" ORDER="5" ORDERLABEL="112">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801784"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801784"/>
+                                <mets:fptr FILEID="IMG_MIN_10801784"/>
+                                <mets:fptr FILEID="IMG_MAX_10801784"/>
+                                <mets:fptr FILEID="ALTO10801784"/>
+                            </mets:div>
+                            <mets:div ID="phys10801785" TYPE="page" LABEL="Seite 113" ORDER="6" ORDERLABEL="113">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801785"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801785"/>
+                                <mets:fptr FILEID="IMG_MIN_10801785"/>
+                                <mets:fptr FILEID="IMG_MAX_10801785"/>
+                                <mets:fptr FILEID="ALTO10801785"/>
+                            </mets:div>
+                            <mets:div ID="phys10801786" TYPE="page" LABEL="Seite 114" ORDER="7" ORDERLABEL="114">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801786"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801786"/>
+                                <mets:fptr FILEID="IMG_MIN_10801786"/>
+                                <mets:fptr FILEID="IMG_MAX_10801786"/>
+                                <mets:fptr FILEID="ALTO10801786"/>
+                            </mets:div>
+                            <mets:div ID="phys10801787" TYPE="page" LABEL="Seite 115" ORDER="8" ORDERLABEL="115">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801787"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801787"/>
+                                <mets:fptr FILEID="IMG_MIN_10801787"/>
+                                <mets:fptr FILEID="IMG_MAX_10801787"/>
+                                <mets:fptr FILEID="ALTO10801787"/>
+                            </mets:div>
+                            <mets:div ID="phys10801788" TYPE="page" LABEL="Seite 116" ORDER="9" ORDERLABEL="116">
+                                <mets:fptr FILEID="IMG_DEFAULT_10801788"/>
+                                <mets:fptr FILEID="IMG_THUMBS_10801788"/>
+                                <mets:fptr FILEID="IMG_MIN_10801788"/>
+                                <mets:fptr FILEID="IMG_MAX_10801788"/>
+                                <mets:fptr FILEID="ALTO10801788"/>
+                            </mets:div>
+                        </mets:div>
+                    </mets:structMap>
+                    <mets:structMap TYPE="LOGICAL">
+                        <mets:div ID="log10916017" DMDID="md10916017" ADMID="amd10916017" TYPE="section" LABEL="Decheniana" ORDER="1">
+                            <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10916017"/>
+                            <mets:fptr FILEID="IMG_FRONTIMAGE_10801661"/>
+                            <mets:div ID="log10801960" DMDID="md10801960" ADMID="amd10801960" TYPE="section" LABEL="101 AB (1942)" ORDER="1">
+                                <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10801960"/>
+                                <mets:fptr FILEID="IMG_FRONTIMAGE_10801661"/>
+                                <mets:div ID="log10802368" DMDID="md10802368" ADMID="amd10802368" TYPE="section" LABEL="1. Lieferung (1942)" ORDER="1">
+                                    <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10802368"/>
+                                    <mets:fptr FILEID="IMG_FRONTIMAGE_10801661"/>
+                                    <mets:div ID="log10903392" DMDID="md10903392" ADMID="amd10903392" TYPE="section" LABEL="Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk" ORDER="1" CONTENTIDS="urn:nbn:de:hebis:30:4-198506">
+                                        <mets:fptr FILEID="PDF_10903392"/>
+                                        <mets:fptr FILEID="IMG_FRONTIMAGE_10801780"/>
+                                    </mets:div>
+                                </mets:div>
+                            </mets:div>
+                        </mets:div>
+                    </mets:structMap>
+                    <mets:structLink>
+                        <mets:smLink xlink:from="log10903392" xlink:to="physroot"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801780"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801781"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801782"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801783"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801784"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801785"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801786"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801787"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801788"/>
+                        <mets:smLink xlink:from="log10903392" xlink:to="phys10801827"/>
+                    </mets:structLink>
+                </mets:mets>
+            </metadata>
+        </record>
+    </GetRecord>
+</OAI-PMH>

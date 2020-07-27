@@ -1,11 +1,35 @@
-<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="{{ article.submission_date|to_iso_date }}"
-         stage="production">
+<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         date_submitted="{{ article.submission_date|to_iso_date }}"
+         stage="production" status="5" submission_progress="0">
     <id type="internal" advice="ignore">{{ article.id }}</id>
-    {% if article.doi %}
-        <id type="doi" advice="update">{{ article.doi }}</id>
-    {% endif %}
+
+    {% for submission in article.submission_files %}
+        {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
+            <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="final" id="{{ submission_id }}"
+                             xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+              <revision number="{{ revision_number }}" genre="{{ article_text_genre_label }}"
+                        filename="{{ submission.name }}" viewable="false" date_uploaded="{{ submission.date_uploaded|to_iso_date }}"
+                        date_modified="{{ submission.date_modified|to_iso_date }}" filesize="{{ submission.size }}"
+                        filetype="{{ submission.mime_type }}" uploader="{{ file_uploading_ojs_user }}">
+                  {% for language in languages %}
+                    <name locale="{{ language }}">{{ submission.name|get_value_for_language(language) }}</name>
+                  {% endfor %}
+                <embed encoding="base64">{{ submission.get_data_in_base64_encoding() }}</embed>
+              </revision>
+            </submission_file>
+        {% endwith %}
+    {% endfor %}
+
     {% for language in languages %}
+    <publication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="{{ language }}" version="1"
+                 status="5" seq="0" section_ref="{{ article_reference_label }}"
+                 access_status="0" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+        {% if article.doi %}
+            <id type="doi" advice="update">{{ article.doi }}</id>
+        {% endif %}
+
         <title locale="{{ language }}">{{ article.title|get_value_for_language(language) }}</title>
+
         {% with prefix = article.prefix|get_value_for_language(language),
                 abstract = article.abstract|get_value_for_language(language) %}
             {% if prefix %}
@@ -15,7 +39,9 @@
                 <abstract locale="{{ language }}">{{ abstract }}</abstract>
             {% endif %}
         {% endwith %}
+
         <type locale="{{ language }}">text</type>
+
         {% if article.keywords %}
             <keywords locale="{{ language }}">
                 {% for keyword in article.keywords %}
@@ -23,43 +49,30 @@
                 {% endfor %}
             </keywords>
         {% endif %}
-    {% endfor %}
 
-    <authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+        <authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
         {% for author in article.authors %}
-            <author include_in_browse="true" user_group_ref="{{ user_group_reference_label }}">
-                {% for language in languages %}
-                    <givenname locale="{{ language }}">{{ author.given_name }}</givenname>
-                    <familyname locale="{{ language }}">{{ author.family_name }}</familyname>
-                {% endfor %}
+            <author include_in_browse="true" user_group_ref="{{ user_group_reference_label }}" seq="{{ loop.index0 }}"
+                    id="{{ author.id }}">
+                <givenname locale="{{ language }}">{{ author.given_name }}</givenname>
+                <familyname locale="{{ language }}">{{ author.family_name }}</familyname>
+                <email>{{ dummy_mail_address }}</email>
             </author>
         {% endfor %}
-    </authors>
+        </authors>
 
-    {% for submission in article.submission_files %}
-        {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
-            <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="{{ submission_id }}"
-                             xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-              <revision number="{{ revision_number }}" genre="{{ article_text_genre_label }}"
-                        filename="{{ submission.name }}" viewable="false" date_uploaded="{{ submission.date_uploaded|to_iso_date }}"
-                        date_modified="{{ submission.date_modified|to_iso_date }}" filesize="{{ submission.size }}"
-                        filetype="{{ submission.mime_type }}" uploader="{{ file_uploading_ojs_user }}">
-                  {% for language in languages %}
-                    <name locale="{{ language }}">{{ submission.name|get_value_for_language(language) }}</name>
-                  {% endfor %}
-                <embed encoding="base64">{{ submission.get_data_in_base64_encoding }}</embed>
-              </revision>
-            </submission_file>
-            <article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false"
-                            xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-                {% for language in languages %}
+        {% for submission in article.submission_files %}
+            {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
+                <article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false"
+                                    xsi:schemaLocation="http://pkp.sfu.ca native.xsd" locale="{{ language }}">
                     <name locale="{{ language }}">{{ submission.mime_type|get_name_for_mime_type }}</name>
-                {% endfor %}
-                <seq>{{ loop.index }}</seq>
-                <submission_file_ref id="{{ submission_id }}" revision="{{ revision_number }}"/>
-            </article_galley>
-        {% endwith %}
-    {% endfor %}
+                    <seq>{{ loop.index0 }}</seq>
+                    <submission_file_ref id="{{ submission_id }}" revision="{{ revision_number }}"/>
+                </article_galley>
+            {% endwith %}
+        {% endfor %}
 
-    <pages>{{ article.page_range.start }}-{{ article.page_range.end }}</pages>
+        <pages>{{ article.page_range.start }}-{{ article.page_range.end }}</pages>
+    </publication>
+    {% endfor %}
 </article>

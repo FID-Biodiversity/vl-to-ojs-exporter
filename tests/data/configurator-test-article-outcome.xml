@@ -9,21 +9,14 @@
 		</revision>
 	</submission_file>
 	<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<id advice="update" type="doi">https://doi.org/10.1234/test.123</id>
 		<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="de_DE">Die</prefix>
-		<abstract locale="de_DE">Das ist eine Zusammenfassung des Textes.</abstract>
 		<type locale="de_DE">text</type>
-		<keywords locale="de_DE">
-			<keyword>test</keyword>
-			<keyword>some strange keyword</keyword>
-			<keyword>another-keyword</keyword>
-		</keywords>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor/in">
 				<givenname locale="de_DE">Werner</givenname>
 				<familyname locale="de_DE">Paeckelmann</familyname>
-				<email>dummy@mactest.com</email>
+				<email>dummy@mail.com</email>
 			</author>
 		</authors>
 		<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
@@ -34,21 +27,14 @@
 		<pages>108-116</pages>
 	</publication>
 	<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<id advice="update" type="doi">https://doi.org/10.1234/test.123</id>
 		<title locale="en_US">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="en_US">Die</prefix>
-		<abstract locale="en_US">Das ist eine Zusammenfassung des Textes.</abstract>
 		<type locale="en_US">text</type>
-		<keywords locale="en_US">
-			<keyword>test</keyword>
-			<keyword>some strange keyword</keyword>
-			<keyword>another-keyword</keyword>
-		</keywords>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor/in">
 				<givenname locale="en_US">Werner</givenname>
 				<familyname locale="en_US">Paeckelmann</familyname>
-				<email>dummy@mactest.com</email>
+				<email>dummy@mail.com</email>
 			</author>
 		</authors>
 		<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">

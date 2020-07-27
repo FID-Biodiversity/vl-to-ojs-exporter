@@ -1,5 +1,7 @@
 import xml.dom.minidom
 import re
+from collections import namedtuple, defaultdict
+import os
 
 import pathlib
 from VisualLibrary import Journal, Volume, Issue, Article, VisualLibraryExportElement
@@ -9,7 +11,8 @@ from jinja2 import Environment, FileSystemLoader
 
 from templates.template_functions import register_custom_filters_to_environment
 
-ROOT_DIRECTORY_PATH = pathlib.Path('..')
+this_files_directory = os.path.dirname(os.path.realpath(__file__))
+ROOT_DIRECTORY_PATH = pathlib.Path(this_files_directory).parents[0]
 
 
 def remove_letters_from_alphanumeric_string(string):
@@ -94,7 +97,7 @@ class OjsArticle(XmlGenerator):
         assert isinstance(vl_article, Article)
 
         self.abstract = None
-        self.authors = vl_article.authors
+        self._authors = vl_article.authors
         self.doi = vl_article.doi
         self.id = vl_article.id
         self.keywords = []
@@ -108,8 +111,17 @@ class OjsArticle(XmlGenerator):
 
         self._submission_ids = {}
         self._submission_counter = 0
+        self._author_ids = defaultdict(int)
+        self._author_id_counter = 0
 
         self.add_variable_to_template_configuration(self.ARTICLES_STRING, self)
+
+    @property
+    def authors(self) -> list:
+        OjsAuthor = namedtuple('OjsAuthor', ['given_name', 'family_name', 'id'])
+        return [OjsAuthor(author.given_name, author.family_name, self._get_author_pseudo_id(author))
+                for author in self._authors
+                ]
 
     @property
     def template_file_name(self) -> str:
@@ -157,6 +169,15 @@ class OjsArticle(XmlGenerator):
             return first_word_in_title
         else:
             return None
+
+    def _get_author_pseudo_id(self, author) -> int:
+        author_id = self._author_ids[author]
+        if author_id == 0:
+            self._author_id_counter += 1
+            author_id = self._author_id_counter
+            self._author_ids[author] = author_id
+
+        return author_id
 
 
 class OjsIssue(XmlGenerator):

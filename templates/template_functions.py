@@ -8,6 +8,8 @@ MIME_TYPE_DISPLAY_NAMES = {
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'DOCX',
 }
 
+UNIQUE_INTEGER_COUNTER = 0
+
 
 def extract_isodate_from_datetime(date):
     """ Remove time part from datetime object.
@@ -52,6 +54,11 @@ def get_name_for_mime_type(mime_type):
     """
 
     return MIME_TYPE_DISPLAY_NAMES.get(mime_type)
+
+
+def get_unique_integer():
+    UNIQUE_INTEGER_COUNTER += 1
+    return UNIQUE_INTEGER_COUNTER
 
 
 def register_custom_filters_to_environment(environment):
