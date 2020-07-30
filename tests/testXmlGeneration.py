@@ -96,12 +96,32 @@ class TestXmlGeneration:
 
         validate_ojs_native_xsd_consistency(result_xml_string)
 
+    def test_multi_author_article(self):
+        article_id = '10902111'
+        expected_outcome_file = '{base_dir}/multi-author-article-outcome.xml'.format(base_dir=TEST_DATA_DIRECTORY)
+
+        configurator = MockConfigurator()
+        vl = VisualLibrary()
+        vl_article = vl.get_element_for_id(article_id)
+
+        ojs_xml_generator = OjsXmlGenerator(configurator)
+        ojs_article = ojs_xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+
+        generated_article_xml_string = ojs_article.generate_xml()
+        expected_xml_string = self.get_expectation_xml_string(expected_outcome_file)
+
+        assert generated_article_xml_string == expected_xml_string
+
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
         output_file_path = input_file_path.parent / '{file_name}-outcome.xml'.format(file_name=input_file_path.stem)
 
-        with open(str(output_file_path), 'r') as outcome_file:
-            expected_outcome_string = outcome_file.read()
+        try:
+            with open(str(output_file_path), 'r') as outcome_file:
+                expected_outcome_string = outcome_file.read()
+        except FileNotFoundError:
+            with open(str(test_file_path), 'r') as outcome_file:
+                expected_outcome_string = outcome_file.read()
 
         return expected_outcome_string
 

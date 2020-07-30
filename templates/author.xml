@@ -1,0 +1,6 @@
+<author include_in_browse="true" user_group_ref="{{ user_group_reference_label }}" seq="{{ seq }}"
+        id="{{ author.id }}">
+    <givenname locale="{{ language }}">{{ author.given_name }}</givenname>
+    <familyname locale="{{ language }}">{{ author.family_name }}</familyname>
+    <email>{{ dummy_mail_address }}</email>
+</author>

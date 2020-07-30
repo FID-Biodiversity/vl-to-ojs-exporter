@@ -191,6 +191,8 @@ class OjsIssue(XmlGenerator):
     VOLUME_STRING = Volume.VOLUME_STRING
 
     def __init__(self, vl_issue: Issue, template_configuration):
+        logger.debug('Using object ID {id} for generating a OjsIssue'.format(id=vl_issue.id))
+
         super().__init__(template_configuration)
 
         # This is a shortcut! Resolving a parent would take longer!

@@ -1,6 +1,6 @@
 import pathlib
 from datetime import datetime
-
+from collections import namedtuple
 
 MIME_TYPE_DISPLAY_NAMES = {
     'application/pdf': 'PDF',
@@ -24,6 +24,13 @@ def extract_isodate_from_datetime(date):
         return date.date().isoformat()
     else:
         return date
+
+
+def generate_dummy_author():
+    # This has to be equal with
+    Author = namedtuple('Author', ['given_name', 'family_name', 'id'])
+
+    return Author(given_name='', family_name='', id='12345678')
 
 
 def get_value_for_language(variable, language):
@@ -68,3 +75,7 @@ def register_custom_filters_to_environment(environment):
     environment.filters['get_value_for_language'] = get_value_for_language
     environment.filters['get_name_for_mime_type'] = get_name_for_mime_type
     environment.filters['to_iso_date'] = extract_isodate_from_datetime
+
+    environment.globals.update({
+        'generate_dummy_author': generate_dummy_author
+    })
