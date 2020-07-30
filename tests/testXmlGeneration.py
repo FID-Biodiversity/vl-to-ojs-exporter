@@ -107,6 +107,8 @@ class TestXmlGeneration:
         ojs_xml_generator = OjsXmlGenerator(configurator)
         ojs_article = ojs_xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
 
+        add_dummy_submission_file_data(ojs_article.submission_files)
+
         generated_article_xml_string = ojs_article.generate_xml()
         expected_xml_string = self.get_expectation_xml_string(expected_outcome_file)
 
