@@ -1,10 +1,12 @@
-import xml.dom.minidom
-import re
-from collections import namedtuple, defaultdict
 import os
+import xml.dom.minidom
+from collections import namedtuple, defaultdict
 
+import logging
 import pathlib
-from VisualLibrary import Journal, Volume, Issue, Article, VisualLibraryExportElement
+import sys
+from VisualLibrary import Journal, Volume, Issue, Article, VisualLibraryExportElement, \
+    remove_letters_from_alphanumeric_string
 from abc import ABC, abstractmethod
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
@@ -14,25 +16,15 @@ from templates.template_functions import register_custom_filters_to_environment
 this_files_directory = os.path.dirname(os.path.realpath(__file__))
 ROOT_DIRECTORY_PATH = pathlib.Path(this_files_directory).parents[0]
 
+log_format = logging.Formatter('[%(asctime)s] [%(levelname)s] - %(message)s')
+logger = logging.getLogger('XmlGenerator')
+logger.setLevel(logging.DEBUG)
 
-def remove_letters_from_alphanumeric_string(string):
-    """ This functions removes letters from the beginning and the end of a given string.
-        :param string: A string containing both letters and numbers.
-        :type string: str
-        :returns: The string without any letters.
-        :rtype: int
-        :except: A ValueException is thrown if the returned value is not numeric (i.e. also if it is empty!).
-
-        This function helps to normalize e.g. issue labels like '101 AB', which is not accepted by OJS Import XML.
-    """
-
-    cleanded_string = re.sub(r'\D*', '', string, re.MULTILINE)
-
-    if not cleanded_string.isnumeric():
-        raise ValueError('After processing the given value {input} is not numeric! Result: {output}'.format(
-            input=string, output=cleanded_string))
-
-    return cleanded_string
+# writing to stdout
+handler = logging.StreamHandler(sys.stdout)
+handler.setLevel(logging.DEBUG)
+handler.setFormatter(log_format)
+logger.addHandler(handler)
 
 
 class XmlGenerator(ABC):
@@ -66,13 +58,19 @@ class XmlGenerator(ABC):
             the XML is generated.
         """
 
-        self.template_configuration[variable_name] = variable_value
+        if isinstance(variable_value, list) and self.template_configuration.get(variable_name) is not None:
+            self.template_configuration[variable_name].extend(variable_value)
+        else:
+            self.template_configuration[variable_name] = variable_value
 
     def generate_xml(self):
         """ This method returns the XML string of the inheriting child class.
             :returns: An XML string of the object.
             :rtype: str
         """
+
+        logger.info('Start creating XML')
+        logger.debug('Using configuration: {config}'.format(config=self.template_configuration))
 
         template = self.template_environment.get_template(self.template_file_name)
         xml_string = template.render(self.template_configuration)
@@ -195,8 +193,6 @@ class OjsIssue(XmlGenerator):
     def __init__(self, vl_issue: Issue, template_configuration):
         super().__init__(template_configuration)
 
-        assert isinstance(vl_issue, Issue)
-
         # This is a shortcut! Resolving a parent would take longer!
         volume_number = self._get_volume_number(vl_issue)
 
@@ -207,8 +203,9 @@ class OjsIssue(XmlGenerator):
         self.publication_year = vl_issue.publication_date
         self.is_current_issue = False
         self.id = vl_issue.id
-        self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
-        self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')
+        if vl_issue.publication_date is not None:
+            self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
+            self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')
 
         self.add_variable_to_template_configuration(self.ISSUES_STRING, [self])
 
@@ -231,26 +228,20 @@ class OjsVolume(XmlGenerator):
     """ A representation of a Volume in OJS. """
 
     def __init__(self, vl_volume: Volume, template_configuration):
-        super().__init__(template_configuration)
+        super(OjsVolume, self).__init__(template_configuration)
 
         assert isinstance(vl_volume, Volume)
+
+        self.volume_number = remove_letters_from_alphanumeric_string(vl_volume.number)
 
         self.issues = [OjsIssue(issue, template_configuration) for issue in vl_volume.issues]
         self.articles = [OjsArticle(article, template_configuration) for article in vl_volume.articles]
 
-        if self.issues:
-            self.add_variable_to_template_configuration(OjsIssue.ISSUES_STRING, self.issues)
-        elif self.articles:
-            self.add_variable_to_template_configuration(OjsArticle.ARTICLES_STRING, self.articles)
+        self.add_variable_to_template_configuration(OjsIssue.ISSUES_STRING, self.issues)
 
     @property
     def template_file_name(self):
-        if self.issues:
-            return OjsIssue.ISSUES_TEMPLATE_FILE_NAME
-        elif self.articles:
-            return OjsArticle.ARTICLES_TEMPLATE_FILE_NAME
-        else:
-            raise ValueError('Neither Issues nor Articles are given for Volume object!')
+        return OjsIssue.ISSUES_TEMPLATE_FILE_NAME
 
 
 class OjsXmlGenerator:

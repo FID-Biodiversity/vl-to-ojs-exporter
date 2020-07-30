@@ -48,8 +48,6 @@ class Configurator:
 
         self._configuration.read(str(config_file_path))
 
-        test = self._configuration.sections()
-
         item_list_string = self._configuration[self.SECTION_PROCESS].get(self.KEYWORD_ITEMS, None)
         if item_list_string is None:
             try:

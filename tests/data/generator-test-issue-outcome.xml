@@ -4,11 +4,11 @@
 		<id advice="ignore" type="internal">10802368</id>
 		<issue_identification>
 			<volume>101</volume>
+			<number>1</number>
 			<year>1942</year>
 		</issue_identification>
 		<date_published>1942-01-01</date_published>
 		<last_modified>1942-01-01</last_modified>
-		<issue_galleys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"/>
 		<articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903380</id>
