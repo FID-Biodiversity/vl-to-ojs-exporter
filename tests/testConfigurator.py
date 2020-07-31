@@ -31,6 +31,8 @@ class TestConfigurator:
         assert template_confguration['file_uploading_ojs_user'] == 'ojs_admin'
         assert template_confguration['article_reference_label'] == 'ART'
         assert template_confguration['languages'] == languages
+        assert template_confguration['a_boolean_value'] is True
+        assert template_confguration['another_boolean_value'] is False
 
     def test_inserting_of_configuration_in_templates(self):
         test_config_file_path = '{base_dir}/test-configuration.ini'.format(base_dir=TEST_DATA_DIRECTORY)

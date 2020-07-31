@@ -14,16 +14,21 @@ TEST_DATA_DIRECTORY = '{base_dir}/data'.format(base_dir=this_files_directory)
 class MockConfigurator(Configurator):
     def __init__(self):
         super().__init__()
-
-    def get_template_configuration(self):
-        return {
+        self.configuration = {
             'languages': ['de_DE', 'en_US'],
             'user_group_reference_label': 'Autor*in',
             'article_text_genre_label': 'Artikeltext',
             'file_uploading_ojs_user': 'ojs_admin',
             'article_reference_label': 'ART',
-            'dummy_mail_address': 'dummy@mactest.com'
+            'dummy_mail_address': 'dummy@mactest.com',
+            'use_pre_3_2_schema': False,
         }
+
+    def get_template_configuration(self):
+        return self.configuration
+
+    def change_configuration_value(self, key, value):
+        self.configuration[key] = value
 
 
 class TestXmlGeneration:
@@ -74,7 +79,7 @@ class TestXmlGeneration:
         assert ojs_article.prefix == 'Die'
         assert ojs_article.title == 'Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk'
         assert ojs_article.subtitle == 'mit 2 Abbildungen und 1 Tafel'
-        assert ojs_article.language == 'ger'
+        assert ojs_article.language == 'de_DE'
         assert ojs_article.submission_date.date().isoformat() == '2020-06-05'
         assert len(ojs_article.submission_files) == 1
 
@@ -114,6 +119,29 @@ class TestXmlGeneration:
 
         assert generated_article_xml_string == expected_xml_string
 
+        validate_ojs_native_xsd_consistency(generated_article_xml_string)
+
+    def test_pre_ojs_3_2_schema(self):
+        article_id = '10902111'
+        expected_outcome_file = '{base_dir}/pre_ojs_3_2_schema-outcome.xml'.format(base_dir=TEST_DATA_DIRECTORY)
+        configurator = MockConfigurator()
+        configurator.change_configuration_value('use_pre_3_2_schema', True)
+
+        vl = VisualLibrary()
+        vl_article = vl.get_element_for_id(article_id)
+
+        ojs_xml_generator = OjsXmlGenerator(configurator)
+        ojs_article = ojs_xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+
+        add_dummy_submission_file_data(ojs_article.submission_files)
+
+        generated_article_xml_string = ojs_article.generate_xml()
+        expected_xml_string = self.get_expectation_xml_string(expected_outcome_file)
+
+        assert generated_article_xml_string == expected_xml_string
+
+        validate_ojs_native_xsd_consistency(generated_article_xml_string, pre_ojs32_schema=True)
+
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
         output_file_path = input_file_path.parent / '{file_name}-outcome.xml'.format(file_name=input_file_path.stem)
@@ -128,8 +156,12 @@ class TestXmlGeneration:
         return expected_outcome_string
 
 
-def validate_ojs_native_xsd_consistency(xml_string):
+def validate_ojs_native_xsd_consistency(xml_string, pre_ojs32_schema=False):
     xsd_files_path = '{base_dir}/xsd'.format(base_dir=TEST_DATA_DIRECTORY)
+
+    if pre_ojs32_schema:
+        xsd_files_path = '{xsd_files_path}/3.1.2-1'.format(xsd_files_path=xsd_files_path)
+
     ojs_native_xsd_file_path = '{xsd_path}/ojs-native.xsd'.format(xsd_path=xsd_files_path)
 
     current_dir = os.curdir

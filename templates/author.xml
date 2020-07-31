@@ -1,5 +1,8 @@
-<author include_in_browse="true" user_group_ref="{{ user_group_reference_label }}" seq="{{ seq }}"
-        id="{{ author.id }}">
+<author include_in_browse="true" user_group_ref="{{ user_group_reference_label }}"
+        {% if not use_pre_3_2_schema %}
+            seq="{{ seq }}"
+            id="{{ author.id }}"
+        {% endif %}>
     <givenname locale="{{ language }}">{{ author.given_name }}</givenname>
     <familyname locale="{{ language }}">{{ author.family_name }}</familyname>
     <email>{{ dummy_mail_address }}</email>

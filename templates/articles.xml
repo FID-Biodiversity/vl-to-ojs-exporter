@@ -1,7 +1,13 @@
 <articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+    {% if use_pre_3_2_schema %}
+        {% set article_template = 'article_pre_ojs_3_2.xml' %}
+    {% else %}
+        {% set article_template = 'article.xml' %}
+    {% endif %}
+
     {% for article in articles %}
         {% with article_loop = loop %}
-            {% include 'article.xml' %}
+            {% include article_template %}
         {% endwith %}
     {% endfor %}
 </articles>

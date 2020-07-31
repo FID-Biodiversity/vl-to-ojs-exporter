@@ -5,6 +5,7 @@ from collections import namedtuple, defaultdict
 import logging
 import pathlib
 import sys
+from configuration.Configurator import Configurator
 from VisualLibrary import Journal, Volume, Issue, Article, VisualLibraryExportElement, \
     remove_letters_from_alphanumeric_string
 from abc import ABC, abstractmethod
@@ -27,17 +28,40 @@ handler.setFormatter(log_format)
 logger.addHandler(handler)
 
 
+ISO_LANGUAGES = {
+    'ger': 'de_DE',
+    'eng': 'en_US'
+}
+
+
+def normalize_to_iso_language(language_string):
+    """ Translates a given language string into an ISO-639 language string.
+        :param language_string: A language abbreviation to translate.
+        :type language_string: str
+        :returns: An ISO-639 language string
+        :rtype: str
+    """
+    return ISO_LANGUAGES.get(language_string, language_string)
+
+
 class XmlGenerator(ABC):
     """ An abstract base class that provides functions and the template environment to generate OJS XML. """
 
     OJS_XML_TEMPLATE_FOLDER = 'templates'
 
-    def __init__(self, template_configuration):
+    def __init__(self, template_configuration: dict):
         template_file_loader = FileSystemLoader(str(ROOT_DIRECTORY_PATH.absolute() / self.OJS_XML_TEMPLATE_FOLDER))
         self.template_environment = Environment(loader=template_file_loader, autoescape=True)
         register_custom_filters_to_environment(self.template_environment)
 
         self.template_configuration = template_configuration
+        self.use_pre_3_2_schema = False
+
+        use_old_xml_schema = template_configuration.get(Configurator.KEYWORD_PRE_SCHEMA)
+        if use_old_xml_schema is not None:
+            self.use_pre_3_2_schema = use_old_xml_schema
+
+
 
     @property
     @abstractmethod
@@ -87,6 +111,7 @@ class OjsArticle(XmlGenerator):
     PREFIX_WORDS_DE = {'der', 'die', 'das', 'ein', 'eine', 'eines'}
     PREFIX_WORDS = PREFIX_WORDS_DE
     ARTICLES_TEMPLATE_FILE_NAME = 'article.xml'
+    PRE_OJS_3_2_ARTICLE_TEMPLATE_FILE_NAME = 'article_pre_ojs_3_2.xml'
     ARTICLES_STRING = 'article'
 
     def __init__(self, vl_article: Article, template_configuration):
@@ -104,7 +129,9 @@ class OjsArticle(XmlGenerator):
         self.submission_files = vl_article.files
         self.title = vl_article.title
         self.subtitle = vl_article.subtitle
-        self.language = self._get_primary_language(vl_article.languages)
+        self.language = normalize_to_iso_language(
+            self._get_primary_language(vl_article.languages)
+        )
         self.submission_date = self._get_submission_date_from_files(vl_article.files)
 
         self._submission_ids = {}
@@ -123,7 +150,10 @@ class OjsArticle(XmlGenerator):
 
     @property
     def template_file_name(self) -> str:
-        return self.ARTICLES_TEMPLATE_FILE_NAME
+        if self.use_pre_3_2_schema:
+            return self.PRE_OJS_3_2_ARTICLE_TEMPLATE_FILE_NAME
+        else:
+            return self.ARTICLES_TEMPLATE_FILE_NAME
 
     def get_submission_id_for_file(self, file):
         """ Generates a unique submission ID for any given submission of this article.

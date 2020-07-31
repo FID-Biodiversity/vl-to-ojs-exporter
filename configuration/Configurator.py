@@ -8,6 +8,7 @@ class Configurator:
     KEYWORD_ITEM_FILE = 'itemFile'
     KEYWORD_ITEMS = 'items'
     KEYWORD_LANGUAGES = 'languages'
+    KEYWORD_PRE_SCHEMA = 'use_pre_3_2_schema'
 
     SECTION_DEFAULT = 'DEFAULT'
     SECTION_GENERAL = 'General'
@@ -32,7 +33,16 @@ class Configurator:
         return configuration
 
     def get_template_configuration(self):
-        template_configuration = {variable_name: value
+        def convert_to_elemental(value):
+            if value.lower() in ['true', 'false']:
+                return value.lower() == 'true'
+            else:
+                try:
+                    return json.loads(value)
+                except ValueError:
+                    return value
+
+        template_configuration = {variable_name: convert_to_elemental(value)
                                   for variable_name, value in self._configuration[self.SECTION_TEMPLATES].items()}
 
         template_configuration[self.KEYWORD_LANGUAGES] = self.languages
