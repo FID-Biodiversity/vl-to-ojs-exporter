@@ -61,8 +61,6 @@ class XmlGenerator(ABC):
         if use_old_xml_schema is not None:
             self.use_pre_3_2_schema = use_old_xml_schema
 
-
-
     @property
     @abstractmethod
     def template_file_name(self):
@@ -265,11 +263,13 @@ class OjsVolume(XmlGenerator):
         assert isinstance(vl_volume, Volume)
 
         self.volume_number = remove_letters_from_alphanumeric_string(vl_volume.number)
+        self.publication_year = vl_volume.publication_date
 
         self.issues = [OjsIssue(issue, template_configuration) for issue in vl_volume.issues]
         self.articles = [OjsArticle(article, template_configuration) for article in vl_volume.articles]
 
-        self.add_variable_to_template_configuration(OjsIssue.ISSUES_STRING, self.issues)
+        issue_value = self.issues if self.issues else [self]
+        self.add_variable_to_template_configuration(OjsIssue.ISSUES_STRING, issue_value)
 
     @property
     def template_file_name(self):

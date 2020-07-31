@@ -15,6 +15,21 @@
         {% endif %}
     </issue_identification>
 
+    {% if use_pre_3_2_schema %}
+        <sections>
+            <section ref="{{ article_reference_label }}" seq="1" editor_restricted="0" meta_indexed="1"
+                     meta_reviewed="1" abstracts_not_required="1" hide_title="0" hide_author="0" abstract_word_count="0">
+                <id type="internal" advice="ignore">1</id>
+                {% for language in languages %}
+                    <abbrev locale="{{ language }}">{{ article_reference_label }}</abbrev>
+                {% endfor %}
+                {% for language in languages %}
+                    <title locale="{{ language }}">{{ article_text_genre_label }}</title>
+                {% endfor %}
+            </section>
+        </sections>
+    {% endif %}
+
     {% if issue.date_published %}
         <date_published>{{ issue.date_published|to_iso_date }}</date_published>
     {% endif %}

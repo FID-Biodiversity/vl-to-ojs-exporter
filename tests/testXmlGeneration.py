@@ -121,9 +121,9 @@ class TestXmlGeneration:
 
         validate_ojs_native_xsd_consistency(generated_article_xml_string)
 
-    def test_pre_ojs_3_2_schema(self):
+    def test_pre_ojs_3_2_schema_article(self):
         article_id = '10902111'
-        expected_outcome_file = '{base_dir}/pre_ojs_3_2_schema-outcome.xml'.format(base_dir=TEST_DATA_DIRECTORY)
+        expected_outcome_file = '{base_dir}/pre_ojs_3_2_schema-article-outcome.xml'.format(base_dir=TEST_DATA_DIRECTORY)
         configurator = MockConfigurator()
         configurator.change_configuration_value('use_pre_3_2_schema', True)
 
@@ -141,6 +141,29 @@ class TestXmlGeneration:
         assert generated_article_xml_string == expected_xml_string
 
         validate_ojs_native_xsd_consistency(generated_article_xml_string, pre_ojs32_schema=True)
+
+    def test_pre_ojs_3_2_schema_issue(self):
+        issue_id = '10801067'
+        expected_outcome_file = '{base_dir}/pre_ojs_3_2_schema-issue-outcome.xml'.format(base_dir=TEST_DATA_DIRECTORY)
+        configurator = MockConfigurator()
+        configurator.change_configuration_value('use_pre_3_2_schema', True)
+
+        vl = VisualLibrary()
+        vl_issue = vl.get_element_for_id(issue_id)
+
+        ojs_xml_generator = OjsXmlGenerator(configurator)
+        ojs_issue = ojs_xml_generator.convert_vl_objecto_to_ojs_object(vl_issue)
+
+        for article in ojs_issue.articles:
+            add_dummy_submission_file_data(article.submission_files)
+
+        generated_article_xml_string = ojs_issue.generate_xml()
+        expected_xml_string = self.get_expectation_xml_string(expected_outcome_file)
+
+        assert generated_article_xml_string == expected_xml_string
+
+        validate_ojs_native_xsd_consistency(generated_article_xml_string, pre_ojs32_schema=True)
+
 
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
