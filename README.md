@@ -51,6 +51,9 @@ file_uploading_ojs_user = ojs_admin
 article_reference_label = ART
 dummy_mail_address = dummy@mail.com
 
+# This allows to switch between the old XML schema (pre OJS 3.2) and the new XML schema
+use_pre_3_2_schema = False
+
 [Process]
 # Please double quote the given IDs!
 items = [
