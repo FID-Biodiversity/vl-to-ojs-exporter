@@ -15,6 +15,13 @@
         {% endif %}
     </issue_identification>
 
+    {% if issue.date_published %}
+        <date_published>{{ issue.date_published|to_iso_date }}</date_published>
+    {% endif %}
+    {% if issue.date_modified %}
+        <last_modified>{{ issue.date_modified|to_iso_date }}</last_modified>
+    {% endif %}
+
     {% if use_pre_3_2_schema %}
         <sections>
             <section ref="{{ article_reference_label }}" seq="1" editor_restricted="0" meta_indexed="1"
@@ -30,12 +37,6 @@
         </sections>
     {% endif %}
 
-    {% if issue.date_published %}
-        <date_published>{{ issue.date_published|to_iso_date }}</date_published>
-    {% endif %}
-    {% if issue.date_modified %}
-        <last_modified>{{ issue.date_modified|to_iso_date }}</last_modified>
-    {% endif %}
     {% with articles = issue.articles %}
         {% include 'articles.xml' %}
     {% endwith %}

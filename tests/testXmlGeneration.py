@@ -1,5 +1,6 @@
 import os
 import pathlib
+import datetime
 
 from configuration.Configurator import Configurator
 from VisualLibrary import VisualLibrary
@@ -156,6 +157,9 @@ class TestXmlGeneration:
 
         for article in ojs_issue.articles:
             add_dummy_submission_file_data(article.submission_files)
+
+        publication_date = datetime.date(1938, 4, 13)
+        ojs_issue.date_published = publication_date
 
         generated_article_xml_string = ojs_issue.generate_xml()
         expected_xml_string = self.get_expectation_xml_string(expected_outcome_file)
