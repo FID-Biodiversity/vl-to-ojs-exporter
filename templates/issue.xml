@@ -1,4 +1,4 @@
-<issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" published="1" access_status="1">
+<issue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" published="0" access_status="1">
     <id type="internal" advice="ignore">{{ issue.id }}</id>
     <issue_identification>
         {% if issue.volume_number %}

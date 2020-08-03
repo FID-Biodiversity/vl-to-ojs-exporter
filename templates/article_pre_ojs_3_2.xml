@@ -1,5 +1,6 @@
 <article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         locale="{{ article.language }}" section_ref="1" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" stage="production">
+         locale="{{ article.language }}" section_ref="{{ article_reference_label }}" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"
+         stage="production" date_submitted="{{ article.submission_date|to_iso_date }}">
     <id type="internal" advice="ignore">{{ article.id }}</id>
 
     {% if article.doi %}
