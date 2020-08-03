@@ -17,7 +17,7 @@ requests==2.24.0
 six==1.15.0
 soupsieve==2.0.1
 urllib3==1.25.9
--e git+https://dev.git.ub.uni-frankfurt.de/apachzelt/visual-library.git@4610404fc17e84968d0491e7e6dc3f104ad4ebb8#egg=VisualLibrary
--e git+https://dev.git.ub.uni-frankfurt.de/apachzelt/vl-to-ojs-exporter.git@6355b374feaa2920f40e42dc979fad1c9c374b93#egg=VlToOjsExporter
+-e git+https://dev.git.ub.uni-frankfurt.de/apachzelt/visual-library.git@8020d45db2f50d7a1e487115f43dd69c19b3bd06#egg=VisualLibrary
+-e git+https://dev.git.ub.uni-frankfurt.de/apachzelt/vl-to-ojs-exporter.git@e957319b7c2e67d91abb39738c3c062c92d6b56b#egg=VlToOjsExporter
 wcwidth==0.2.5
 zipp==3.1.0
