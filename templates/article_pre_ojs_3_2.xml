@@ -1,6 +1,12 @@
 <article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          locale="{{ article.language }}" section_ref="{{ article_reference_label }}" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"
-         stage="production" date_submitted="{{ article.submission_date|to_iso_date }}">
+         stage="production"
+         {% if issue.date_published %}
+            date_published="{{ issue.date_published|to_iso_date }}"
+         {% elif article.submission_date %}
+            date_published="{{ article.submission_date|to_iso_date }}"
+         {% endif %}
+        >
     <id type="internal" advice="ignore">{{ article.id }}</id>
 
     {% if article.doi %}
@@ -51,8 +57,8 @@
         {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
             <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="final" id="{{ submission_id }}"
                              xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-              <revision number="{{ revision_number }}" genre="{{ article_text_genre_label }}"
-                        filename="{{ submission.name }}" viewable="false" date_uploaded="{{ submission.date_uploaded|to_iso_date }}"
+              <revision number="{{ revision_number }}" filename="{{ submission.name }}" viewable="false"
+                        date_uploaded="{{ submission.date_uploaded|to_iso_date }}"
                         date_modified="{{ submission.date_modified|to_iso_date }}" filesize="{{ submission.size }}"
                         filetype="{{ submission.mime_type }}" uploader="{{ file_uploading_ojs_user }}">
                   {% for language in languages %}

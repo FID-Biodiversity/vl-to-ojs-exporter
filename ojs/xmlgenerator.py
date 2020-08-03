@@ -106,7 +106,7 @@ class XmlGenerator(ABC):
 class OjsArticle(XmlGenerator):
     """ A representation of an OJS article. """
 
-    PREFIX_WORDS_DE = {'der', 'die', 'das', 'ein', 'eine', 'eines'}
+    PREFIX_WORDS_DE = {'der', 'die', 'das', 'ein', 'eine', 'eines', 'zu', 'zur', 'zum'}
     PREFIX_WORDS = PREFIX_WORDS_DE
     ARTICLES_TEMPLATE_FILE_NAME = 'article.xml'
     PRE_OJS_3_2_ARTICLE_TEMPLATE_FILE_NAME = 'article_pre_ojs_3_2.xml'
@@ -164,8 +164,9 @@ class OjsArticle(XmlGenerator):
 
         if file not in self._submission_ids:
             self._submission_counter += 1
-            self._submission_ids[file] = self._submission_counter
-            return self._submission_counter
+            submission_id = '{base}{counter}'.format(base=self.id, counter=self._submission_counter)
+            self._submission_ids[file] = submission_id
+            return submission_id
         else:
             return self._submission_ids[file]
 
