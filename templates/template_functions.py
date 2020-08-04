@@ -30,7 +30,7 @@ def generate_dummy_author():
     # This has to be equal with
     Author = namedtuple('Author', ['given_name', 'family_name', 'id'])
 
-    return Author(given_name='', family_name='', id='12345678')
+    return Author(given_name='N.', family_name='N.', id='12345678')
 
 
 def get_value_for_language(variable, language):
