@@ -1,6 +1,16 @@
 <?xml version="1.0" ?>
-<issues xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+{% if root_every_issue_in_issues_tag %}
+    <root>
     {% for issue in issues %}
-        {% include 'issue.xml' %}
+        <issues xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+            {% include 'issue.xml' %}
+        </issues>
     {% endfor %}
-</issues>
+    </root>
+{% else %}
+    <issues xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+        {% for issue in issues %}
+            {% include 'issue.xml' %}
+        {% endfor %}
+    </issues>
+{% endif %}

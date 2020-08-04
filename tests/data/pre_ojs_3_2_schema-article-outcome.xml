@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+<article date_published="2020-06-05" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 	<id advice="ignore" type="internal">10902111</id>
 	<title locale="de_DE">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
 	<title locale="en_US">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
@@ -25,7 +25,7 @@
 			<email>dummy@mactest.com</email>
 		</author>
 	</authors>
-	<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<submission_file id="109021111" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10902111" filesize="12625027" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 			<name locale="de_DE">pdf_10902111</name>
 			<name locale="en_US">pdf_10902111</name>
@@ -35,12 +35,12 @@
 	<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<name locale="de_DE">PDF</name>
 		<seq>0</seq>
-		<submission_file_ref id="1" revision="1"/>
+		<submission_file_ref id="109021111" revision="1"/>
 	</article_galley>
 	<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<name locale="en_US">PDF</name>
 		<seq>0</seq>
-		<submission_file_ref id="1" revision="1"/>
+		<submission_file_ref id="109021111" revision="1"/>
 	</article_galley>
 	<pages>149-211</pages>
 </article>

@@ -54,6 +54,9 @@ dummy_mail_address = dummy@mail.com
 # This allows to switch between the old XML schema (pre OJS 3.2) and the new XML schema
 use_pre_3_2_schema = False
 
+# If you need to split the file (e.g. due to size), you can configure for every issue to have it's own <issues> tag.
+root_every_issue_in_issues_tag = False
+
 [Process]
 # Please double quote the given IDs!
 items = [
@@ -63,6 +66,8 @@ items = [
 ```
 
 Currently you cannot iterate a journal, because a journal may contain Volumes and volumes can contain Issues. This is a nesting concept not supported by OJS. However, there are Volumes containing articles. Hence, if a Volume does not contain articles, it will throw an error.
+
+The generated issues are set to be NOT published by default to enable metadata corrections in OJS without versioning. If you would like to do so, you have to set `published="1"` in the XML for each issue that should be published.
 
 ## Installation
 To install the package call:
@@ -80,3 +85,28 @@ The tests will run and also make a check against the OJS native.xsd format (with
 To run the tests, install the requirements and simply call:
 
 `pytest tests/*py`
+
+## Import to OJS
+### Post-processing Data
+It may occur that the produced file is too large for OJS to import it. Hence, there is the possibility to set the parameter `root_every_issue_in_issues_tag` true. Subsequently, you can split the file with `xml_split` like so:
+
+```shell script
+xml_split -c issues your-file.xml
+```
+
+This splits the given file in multiple smaller files, separated at every `issues` node.
+
+### Import Process
+#### Command-line
+When importing the data into OJS, go into the directory of the journal of choice and call:
+
+```shell script
+php tools/importExport.php import path/to/your/file.xml journal-short-name ojs_admin
+```
+
+The `journal-short-name` is mostly given in the journal URL. E.g. in `https://ojs.ub.uni-frankfurt.de/decheniana/index.php/beihefte` it would be `beihefte`. The `ojs_admin` is the user uploading the file. I would make sure that the given user exists, but I don't know what happens, if not.
+
+Additionally, you may have to check if the given file size is accepted by PHP. If not, you may have to edit the `memory_limit` parameter in the `/etc/php7/cli/php.ini`. 
+
+#### Web-GUI
+Of course, you can also upload the file via the OJS backend. Here also the `memory_limit` of PHP may stand in your way. However, in this case you need to edit `/etc/php7/apache2/php.ini`.

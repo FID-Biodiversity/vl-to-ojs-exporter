@@ -234,6 +234,8 @@ class OjsIssue(XmlGenerator):
         self.publication_year = vl_issue.publication_date
         self.is_current_issue = False
         self.id = vl_issue.id
+        self.date_published = None
+        self.date_modified = None
         if vl_issue.publication_date is not None:
             self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
             self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')

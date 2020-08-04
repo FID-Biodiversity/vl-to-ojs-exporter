@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id advice="ignore" type="internal">10902111</id>
-	<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<submission_file id="109021111" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10902111" filesize="12625027" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 			<name locale="de_DE">pdf_10902111</name>
 			<name locale="en_US">pdf_10902111</name>
 			<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 		</revision>
 	</submission_file>
-	<publication access_status="0" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<publication access_status="0" date_published="2020-06-05" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<title locale="de_DE">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
 		<type locale="de_DE">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
@@ -26,11 +26,11 @@
 		<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<name locale="de_DE">PDF</name>
 			<seq>0</seq>
-			<submission_file_ref id="1" revision="1"/>
+			<submission_file_ref id="109021111" revision="1"/>
 		</article_galley>
 		<pages>149-211</pages>
 	</publication>
-	<publication access_status="0" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<publication access_status="0" date_published="2020-06-05" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<title locale="en_US">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
 		<type locale="en_US">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
@@ -48,7 +48,7 @@
 		<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<name locale="en_US">PDF</name>
 			<seq>0</seq>
-			<submission_file_ref id="1" revision="1"/>
+			<submission_file_ref id="109021111" revision="1"/>
 		</article_galley>
 		<pages>149-211</pages>
 	</publication>

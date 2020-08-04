@@ -168,6 +168,29 @@ class TestXmlGeneration:
 
         validate_ojs_native_xsd_consistency(generated_article_xml_string, pre_ojs32_schema=True)
 
+    def test_rooting_of_every_issue_in_issues_tags(self):
+        volume_id = '10801960'
+        expected_outcome_file = '{base_dir}/pre_ojs_3_2_schema-issue-in-issues-outcome.xml'.format(
+            base_dir=TEST_DATA_DIRECTORY)
+        configurator = MockConfigurator()
+        configurator.change_configuration_value('use_pre_3_2_schema', True)
+        configurator.change_configuration_value('root_every_issue_in_issues_tag', True)
+
+        vl = VisualLibrary()
+        vl_volume = vl.get_element_for_id(volume_id)
+
+        ojs_xml_generator = OjsXmlGenerator(configurator)
+        ojs_volume = ojs_xml_generator.convert_vl_objecto_to_ojs_object(vl_volume)
+
+        for issue in ojs_volume.issues:
+            for article in issue.articles:
+                add_dummy_submission_file_data(article.submission_files)
+
+        generated_volume_xml_string = ojs_volume.generate_xml()
+        expected_xml_string = self.get_expectation_xml_string(expected_outcome_file)
+        assert generated_volume_xml_string == expected_xml_string
+
+        # No validation, because the schema is no proper OJS!
 
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)

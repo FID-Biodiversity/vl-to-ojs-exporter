@@ -27,12 +27,12 @@ class TestConfigurator:
 
         template_confguration = parameters_in_python_format[Configurator.SECTION_TEMPLATES]
         assert template_confguration['user_group_reference_label'] == 'Autor/in'
-        assert template_confguration['article_text_genre_label'] == 'Artikeltext'
         assert template_confguration['file_uploading_ojs_user'] == 'ojs_admin'
         assert template_confguration['article_reference_label'] == 'ART'
         assert template_confguration['languages'] == languages
         assert template_confguration['a_boolean_value'] is True
         assert template_confguration['another_boolean_value'] is False
+        assert template_confguration['root_every_issue_in_issues_tag'] is False
 
     def test_inserting_of_configuration_in_templates(self):
         test_config_file_path = '{base_dir}/test-configuration.ini'.format(base_dir=TEST_DATA_DIRECTORY)

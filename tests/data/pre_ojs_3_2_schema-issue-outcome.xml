@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <issues xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-	<issue access_status="1" published="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<issue access_status="1" published="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<id advice="ignore" type="internal"/>
 		<issue_identification>
 			<volume>97</volume>
@@ -17,7 +17,7 @@
 			</section>
 		</sections>
 		<articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874694</id>
 				<title locale="de_DE">Die Tenebrioniden des Rheinlandes</title>
 				<title locale="en_US">Die Tenebrioniden des Rheinlandes</title>
@@ -33,7 +33,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108746941" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874694" filesize="3082481" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874694</name>
 						<name locale="en_US">pdf_10874694</name>
@@ -43,16 +43,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108746941" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108746941" revision="1"/>
 				</article_galley>
 				<pages>1-18</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874695</id>
 				<title locale="de_DE">Rhinolophus ferrum-equinum (Schreber) im Rheinland</title>
 				<title locale="en_US">Rhinolophus ferrum-equinum (Schreber) im Rheinland</title>
@@ -68,7 +68,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108746951" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874695" filesize="481024" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874695</name>
 						<name locale="en_US">pdf_10874695</name>
@@ -78,16 +78,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108746951" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108746951" revision="1"/>
 				</article_galley>
 				<pages>19-20</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874697</id>
 				<title locale="de_DE">Die deutschen Carabus-Arten</title>
 				<title locale="en_US">Die deutschen Carabus-Arten</title>
@@ -103,7 +103,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108746971" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874697" filesize="7804609" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874697</name>
 						<name locale="en_US">pdf_10874697</name>
@@ -113,16 +113,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108746971" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108746971" revision="1"/>
 				</article_galley>
 				<pages>21-61</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874701</id>
 				<title locale="de_DE">Das Verschwinden der Sümpfe und Moore am Niederrhein</title>
 				<title locale="en_US">Das Verschwinden der Sümpfe und Moore am Niederrhein</title>
@@ -138,7 +138,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747011" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874701" filesize="5348182" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874701</name>
 						<name locale="en_US">pdf_10874701</name>
@@ -148,16 +148,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747011" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747011" revision="1"/>
 				</article_galley>
 				<pages>63-84</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874708</id>
 				<title locale="de_DE">Ueber die Verteilung der Geschlechter in den Blütenständen der Carex arenaria</title>
 				<title locale="en_US">Ueber die Verteilung der Geschlechter in den Blütenständen der Carex arenaria</title>
@@ -173,7 +173,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747081" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874708" filesize="966203" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874708</name>
 						<name locale="en_US">pdf_10874708</name>
@@ -183,16 +183,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747081" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747081" revision="1"/>
 				</article_galley>
 				<pages>85-89</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874714</id>
 				<title locale="de_DE">Beitrag zur Kenntnis der Wanzenfauna der Rheinprovinz</title>
 				<title locale="en_US">Beitrag zur Kenntnis der Wanzenfauna der Rheinprovinz</title>
@@ -208,7 +208,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747141" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874714" filesize="1145347" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874714</name>
 						<name locale="en_US">pdf_10874714</name>
@@ -218,16 +218,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747141" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747141" revision="1"/>
 				</article_galley>
 				<pages>91-96</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874716</id>
 				<title locale="de_DE">Paussiden-Studien</title>
 				<title locale="en_US">Paussiden-Studien</title>
@@ -243,7 +243,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747161" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874716" filesize="6441111" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874716</name>
 						<name locale="en_US">pdf_10874716</name>
@@ -253,16 +253,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747161" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747161" revision="1"/>
 				</article_galley>
 				<pages>97-131</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874717</id>
 				<title locale="de_DE">Über die Enteiweißung von Organextrakten und Preßsäften für Harnsäure- und Purinbestimmungen</title>
 				<title locale="en_US">Über die Enteiweißung von Organextrakten und Preßsäften für Harnsäure- und Purinbestimmungen</title>
@@ -278,7 +278,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747171" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874717" filesize="1359907" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874717</name>
 						<name locale="en_US">pdf_10874717</name>
@@ -288,16 +288,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747171" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747171" revision="1"/>
 				</article_galley>
 				<pages>133-139</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874718</id>
 				<title locale="de_DE">Die Wirtsvögel des Kuckucks in der Rheinprovinz</title>
 				<title locale="en_US">Die Wirtsvögel des Kuckucks in der Rheinprovinz</title>
@@ -313,7 +313,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747181" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874718" filesize="1272601" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874718</name>
 						<name locale="en_US">pdf_10874718</name>
@@ -323,16 +323,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747181" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747181" revision="1"/>
 				</article_galley>
 				<pages>141-146</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874720</id>
 				<title locale="de_DE">Beitrag zur Kenntnis der Ephemeropterenfauna Westdeutschlands</title>
 				<title locale="en_US">Beitrag zur Kenntnis der Ephemeropterenfauna Westdeutschlands</title>
@@ -348,7 +348,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747201" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874720" filesize="3823740" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874720</name>
 						<name locale="en_US">pdf_10874720</name>
@@ -358,16 +358,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747201" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747201" revision="1"/>
 				</article_galley>
 				<pages>147-167</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874721</id>
 				<title locale="de_DE">Pollenanalytische Untersuchung eines Sauerländischen Moores bei Lützel</title>
 				<title locale="en_US">Pollenanalytische Untersuchung eines Sauerländischen Moores bei Lützel</title>
@@ -383,7 +383,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747211" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874721" filesize="4203508" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874721</name>
 						<name locale="en_US">pdf_10874721</name>
@@ -393,16 +393,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747211" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747211" revision="1"/>
 				</article_galley>
 				<pages>169-188</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874725</id>
 				<title locale="de_DE">Floristisch-soziologische Streifzüge durch die Umgebung von Bonn</title>
 				<title locale="en_US">Floristisch-soziologische Streifzüge durch die Umgebung von Bonn</title>
@@ -418,7 +418,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747251" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874725" filesize="5579942" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874725</name>
 						<name locale="en_US">pdf_10874725</name>
@@ -428,16 +428,16 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747251" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747251" revision="1"/>
 				</article_galley>
 				<pages>189-218</pages>
 			</article>
-			<article locale="de_DE" section_ref="1" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874727</id>
 				<title locale="de_DE">Die Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
 				<title locale="en_US">Die Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
@@ -453,7 +453,7 @@
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
-				<submission_file id="1" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="108747271" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10874727" filesize="5002888" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10874727</name>
 						<name locale="en_US">pdf_10874727</name>
@@ -463,12 +463,12 @@
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="de_DE">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747271" revision="1"/>
 				</article_galley>
 				<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<name locale="en_US">PDF</name>
 					<seq>0</seq>
-					<submission_file_ref id="1" revision="1"/>
+					<submission_file_ref id="108747271" revision="1"/>
 				</article_galley>
 				<pages>219-248</pages>
 			</article>

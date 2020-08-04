@@ -7,10 +7,11 @@
         {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
             <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="final" id="{{ submission_id }}"
                              xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-              <revision number="{{ revision_number }}" genre="{{ article_text_genre_label }}"
-                        filename="{{ submission.name }}" viewable="false" date_uploaded="{{ submission.date_uploaded|to_iso_date }}"
+              <revision number="{{ revision_number }}" filename="{{ submission.name }}" viewable="false"
+                        date_uploaded="{{ submission.date_uploaded|to_iso_date }}"
                         date_modified="{{ submission.date_modified|to_iso_date }}" filesize="{{ submission.size }}"
-                        filetype="{{ submission.mime_type }}" uploader="{{ file_uploading_ojs_user }}">
+                        filetype="{{ submission.mime_type }}" uploader="{{ file_uploading_ojs_user }}"
+                        genre="{{ article_text_genre_label }}">
                   {% for language in languages %}
                     <name locale="{{ language }}">{{ submission.name|get_value_for_language(language) }}</name>
                   {% endfor %}
@@ -23,7 +24,12 @@
     {% for language in languages %}
     <publication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="{{ language }}" version="1"
                  status="5" seq="0" section_ref="{{ article_reference_label }}"
-                 access_status="0" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+                 access_status="0" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"
+                    {% if issue and issue.date_published %}
+                        date_published="{{ issue.date_published|to_iso_date }}"
+                    {% elif article.submission_date %}
+                        date_published="{{ article.submission_date|to_iso_date }}"
+                    {% endif %}>
         {% if article.doi %}
             <id type="doi" advice="update">{{ article.doi }}</id>
         {% endif %}
