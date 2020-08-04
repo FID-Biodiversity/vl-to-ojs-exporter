@@ -55,6 +55,7 @@ class XmlGenerator(ABC):
         register_custom_filters_to_environment(self.template_environment)
 
         self.template_configuration = template_configuration
+        self._temporary_configurations = {}
         self.use_pre_3_2_schema = False
 
         use_old_xml_schema = template_configuration.get(Configurator.KEYWORD_PRE_SCHEMA)
@@ -81,9 +82,12 @@ class XmlGenerator(ABC):
         """
 
         if isinstance(variable_value, list) and self.template_configuration.get(variable_name) is not None:
-            self.template_configuration[variable_name].extend(variable_value)
+            self._temporary_configurations[variable_name].extend(variable_value)
         else:
-            self.template_configuration[variable_name] = variable_value
+            self._temporary_configurations[variable_name] = variable_value
+
+    def clear_template_configuration_from_this_object(self):
+        self._temporary_configurations.clear()
 
     def generate_xml(self):
         """ This method returns the XML string of the inheriting child class.
@@ -95,7 +99,13 @@ class XmlGenerator(ABC):
         logger.debug('Using configuration: {config}'.format(config=self.template_configuration))
 
         template = self.template_environment.get_template(self.template_file_name)
-        xml_string = template.render(self.template_configuration)
+
+        configuration = self.template_configuration.copy()
+        configuration.update(self._temporary_configurations)
+        xml_string = template.render(configuration)
+
+        self.clear_template_configuration_from_this_object()
+
         prettified_xml_string = xml.dom.minidom.parseString(xml_string).toprettyxml()
         return self._remove_empty_lines_from_xml(prettified_xml_string)
 
