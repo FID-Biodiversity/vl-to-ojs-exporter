@@ -192,6 +192,19 @@ class TestXmlGeneration:
 
         # No validation, because the schema is no proper OJS!
 
+    def test_article_without_author(self):
+        # TODO: Add test
+        article_id = '10903128'
+
+    def test_type_recognition_with_all_participants_as_authors(self):
+        # TODO: Add test
+        journal_id = '10771487'
+
+    def test_author_with_empty_name_string(self):
+        # TODO: Add test
+        # Set author.given_name = ''
+        assert 1 == 1
+
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
         output_file_path = input_file_path.parent / '{file_name}-outcome.xml'.format(file_name=input_file_path.stem)

@@ -46,7 +46,10 @@ languages = ["de_DE", "en_US"]
 [Templates]
 # Here are some OJS default labels. You may change them as needed. Please note, that you do not need quotations for strings, only for strings in lists! 
 user_group_reference_label = Autor/in
+
+# If this label is not correctly set, the given article galleys are not displayed in OJS.
 article_text_genre_label = Artikeltext
+
 file_uploading_ojs_user = ojs_admin
 article_reference_label = ART
 dummy_mail_address = dummy@mail.com
@@ -79,6 +82,20 @@ cd vl-to-ojs-exporter
 pip3 install -r requierements.txt
 ```
 
+## Running
+You can code your own script using the example given above or from the [tests](/vl-to-ojs-exporter/src/branch/master/tests/testXmlGeneration.py).
+
+The other possibility is, if you have Docker installed, to run everything in a container, using the Dockerfile in the repo.
+
+```shell script
+docker build .
+
+# This folder will be mounted to the container and the results will be stored in. 
+mkdir xml
+
+docker run -v `pwd`/xml:/code/xml [docker-image-id]
+```
+
 ## Tests
 The tests will run and also make a check against the OJS native.xsd format (with local files as of 2020-07-23 in `OJS 3.2.1.4`) to guarantee perfect OJS compatibility.
 
@@ -108,5 +125,37 @@ The `journal-short-name` is mostly given in the journal URL. E.g. in `https://oj
 
 Additionally, you may have to check if the given file size is accepted by PHP. If not, you may have to edit the `memory_limit` parameter in the `/etc/php7/cli/php.ini`. 
 
+It is also recommended to run a large number of files in a for-loop. A tiny script may help:
+
+```shell script
+#!/bin/bash
+
+FILES=/path/to/files/*xml
+JOURNAL_NAME=journal-short-name
+USER=ojs_admin
+
+for file in $FILES
+do
+        echo Processing $file
+        php tools/importExport.php NativeImportExportPlugin import $file $JOURNAL_NAME $USER
+done
+```
+
 #### Web-GUI
 Of course, you can also upload the file via the OJS backend. Here also the `memory_limit` of PHP may stand in your way. However, in this case you need to edit `/etc/php7/apache2/php.ini`.
+
+#### Debugging
+In case error occur and it is stated something like '1. submission': This is NOT the first submission, but the first where a problem occurred! 
+
+There may come the warning:
+
+```shell script
+Es sind Warnungen ausgegeben worden:
+1.Ausgabe
+- Die existierende Ausgabe mit der ID 25 passt zur angegebenen Kennung "<issue_identification>
+			<volume>102</volume>
+			<year>1943</year>
+		</issue_identification>". Diese Ausgabe wird nicht verändert, aber Artikel werden hinzugefügt werden.
+```
+
+If this appears, you have to check in the OJS backend for the given issue, if this appending of articles was correct. If not (e.g. now there are duplicates), remove them.

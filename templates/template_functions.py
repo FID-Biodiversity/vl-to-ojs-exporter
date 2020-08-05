@@ -68,6 +68,15 @@ def get_unique_integer():
     return UNIQUE_INTEGER_COUNTER
 
 
+def normalize_user_name(author):
+    """ This function makes sure that the names of an author are set. """
+
+    if author.given_name:
+        return author
+    else:
+        return generate_dummy_author()
+
+
 def register_custom_filters_to_environment(environment):
     """ Registers the created methods to the Jinja environment. """
 
@@ -77,5 +86,6 @@ def register_custom_filters_to_environment(environment):
     environment.filters['to_iso_date'] = extract_isodate_from_datetime
 
     environment.globals.update({
-        'generate_dummy_author': generate_dummy_author
+        'generate_dummy_author': generate_dummy_author,
+        'normalize_user': normalize_user_name,
     })
