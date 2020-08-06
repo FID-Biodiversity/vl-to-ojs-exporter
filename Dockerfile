@@ -11,9 +11,9 @@ WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 
-RUN mkdir /application
+COPY example/* ./
 
-WORKDIR /application
+RUN mkdir xml
 
 # Run the application:
 CMD ["python", "vl-to-ojs-xml-exporter.py"]
