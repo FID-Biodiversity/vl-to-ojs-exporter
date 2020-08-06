@@ -3,8 +3,8 @@ import pathlib
 import datetime
 
 from configuration.Configurator import Configurator
-from VisualLibrary import VisualLibrary
-from ojs.xmlgenerator import OjsXmlGenerator, OjsIssue, OjsArticle
+from VisualLibrary import VisualLibrary, Journal
+from ojs.xmlgenerator import OjsXmlGenerator, OjsIssue, OjsArticle, OjsVolume
 
 from lxml import etree
 
@@ -205,6 +205,18 @@ class TestXmlGeneration:
         # Set author.given_name = ''
         assert 1 == 1
 
+    def test_article_is_monography(self):
+        article_id = '10750063'
+        vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
+        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+
+        add_dummy_submission_file_data(ojs_article.submission_files)
+
+        ojs_article.is_standalone = True
+        generated_xml_string = ojs_article.generate_xml()
+
+        validate_ojs_native_xsd_consistency(generated_xml_string, pre_ojs32_schema=True)
+
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
         output_file_path = input_file_path.parent / '{file_name}-outcome.xml'.format(file_name=input_file_path.stem)
@@ -217,6 +229,23 @@ class TestXmlGeneration:
                 expected_outcome_string = outcome_file.read()
 
         return expected_outcome_string
+
+
+def create_vl_object_and_xml_generator(vl_id, pre_3_2_schema=False):
+    configurator = MockConfigurator()
+    configurator.change_configuration_value('use_pre_3_2_schema', pre_3_2_schema)
+
+    vl = VisualLibrary()
+    vl_object = vl.get_element_for_id(vl_id)
+
+    ojs_xml_generator = OjsXmlGenerator(configurator)
+
+    return vl_object, ojs_xml_generator
+
+
+def add_dummy_data_to_all_articles(articles):
+    for article in articles:
+        add_dummy_submission_file_data(article.submission_files)
 
 
 def validate_ojs_native_xsd_consistency(xml_string, pre_ojs32_schema=False):

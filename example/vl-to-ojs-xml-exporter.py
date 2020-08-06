@@ -16,6 +16,9 @@ def main():
         if isinstance(vl_obj, Journal):
             for volume in vl_obj.volumes:
                 generate_xml(volume, ojs_xml_generator)
+            for article in vl_obj.articles:
+                article.is_standalone = True
+                generate_xml(article, ojs_xml_generator)
         else:
             generate_xml(vl_obj, ojs_xml_generator)
 

@@ -37,6 +37,26 @@
         </sections>
     {% endif %}
 
+    {% if issue.files %}
+        <issue_galleys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+            {% for galley in issue.files %}
+                    <issue_galley>
+                        <label>{{ galley.mime_type|get_name_for_mime_type }}</label>
+                        <issue_file>
+                            <file_name>{{ galley.name }}</file_name>
+                            <file_type>{{ galley.mime_type }}</file_type>
+                            <file_size>{{ galley.size }}</file_size>
+                            <content_type>1</content_type>
+                            <original_file_name>{{ galley.name }}</original_file_name>
+                            <date_uploaded>{{ galley.date_uploaded|to_iso_date }}</date_uploaded>
+                            <date_modified>{{ galley.date_modified|to_iso_date }}</date_modified>
+                            <embed encoding="base64">{{ galley.get_data_in_base64_encoding() }}</embed>
+                        </issue_file>
+                    </issue_galley>
+            {% endfor %}
+        </issue_galleys>
+    {% endif %}
+
     {% with articles = issue.articles %}
         {% include 'articles.xml' %}
     {% endwith %}

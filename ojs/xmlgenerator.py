@@ -55,7 +55,7 @@ class XmlGenerator(ABC):
         self.template_environment = Environment(loader=template_file_loader, autoescape=True)
         register_custom_filters_to_environment(self.template_environment)
 
-        self.template_configuration = template_configuration
+        self.template_configuration = template_configuration if template_configuration is not None else {}
         self._temporary_configurations = {}
         self.use_pre_3_2_schema = False
 
@@ -90,6 +90,12 @@ class XmlGenerator(ABC):
     def clear_template_configuration_from_this_object(self):
         self._temporary_configurations.clear()
 
+    def _prepare_xml_generation_and_get_template(self):
+        configuration = self.template_configuration.copy()
+        configuration.update(self._temporary_configurations)
+
+        return self.template_environment.get_template(self.template_file_name), configuration
+
     def generate_xml(self):
         """ This method returns the XML string of the inheriting child class.
             :returns: An XML string of the object.
@@ -99,10 +105,7 @@ class XmlGenerator(ABC):
         logger.info('Start creating XML')
         logger.debug('Using configuration: {config}'.format(config=self.template_configuration))
 
-        template = self.template_environment.get_template(self.template_file_name)
-
-        configuration = self.template_configuration.copy()
-        configuration.update(self._temporary_configurations)
+        template, configuration = self._prepare_xml_generation_and_get_template()
         xml_string = template.render(configuration)
 
         self.clear_template_configuration_from_this_object()
@@ -142,6 +145,7 @@ class OjsArticle(XmlGenerator):
             self._get_primary_language(vl_article.languages)
         )
         self.submission_date = self._get_submission_date_from_files(vl_article.files)
+        self.is_standalone = False
 
         self._submission_ids = {}
         self._submission_counter = 0
@@ -163,6 +167,20 @@ class OjsArticle(XmlGenerator):
             return self.PRE_OJS_3_2_ARTICLE_TEMPLATE_FILE_NAME
         else:
             return self.ARTICLES_TEMPLATE_FILE_NAME
+
+    def generate_xml(self):
+        if not self.is_standalone:
+            return super().generate_xml()
+        else:
+            ojs_issue = OjsIssue(template_configuration=self.template_configuration)
+            ojs_issue.id = self.id
+            ojs_issue.volume_number = self.id
+            ojs_issue.issue_number = self.id
+            ojs_issue.files = self.submission_files
+            ojs_issue.title = self.title
+            ojs_issue.publication_year = '2020'
+
+            return ojs_issue.generate_xml()
 
     def get_submission_id_for_file(self, file):
         """ Generates a unique submission ID for any given submission of this article.
@@ -230,28 +248,43 @@ class OjsIssue(XmlGenerator):
     TYPE_STRING = VisualLibraryExportElement.TYPE_STRING
     VOLUME_STRING = Volume.VOLUME_STRING
 
-    def __init__(self, vl_issue: Issue, template_configuration):
-        logger.debug('Using object ID {id} for generating a OjsIssue'.format(id=vl_issue.id))
+    def __init__(self, vl_issue: Issue=None, template_configuration=None):
+        if vl_issue is not None:
+            logger.debug('Using object ID {id} for generating a OjsIssue'.format(id=vl_issue.id))
+        else:
+            logger.debug('Creating empty Issue object!')
 
         super().__init__(template_configuration)
 
-        # This is a shortcut! Resolving a parent would take longer!
-        volume_number = self._get_volume_number(vl_issue)
-
-        self.articles = [OjsArticle(article, template_configuration) for article in vl_issue.articles]
-        volume_number = volume_number if volume_number is not None else vl_issue.parent.number
-        self.volume_number = remove_letters_from_alphanumeric_string(volume_number)
-        self.issue_number = remove_letters_from_alphanumeric_string(vl_issue.number)
-        self.publication_year = vl_issue.publication_date
+        self.articles = []
+        self.volume_number = None
+        self.issue_number = None
+        self.publication_year = None
         self.is_current_issue = False
-        self.id = vl_issue.id
+        self.id = None
         self.date_published = None
         self.date_modified = None
-        if vl_issue.publication_date is not None:
-            self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
-            self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')
+        self.files = None
+        self.title = None
 
         self.add_variable_to_template_configuration(self.ISSUES_STRING, [self])
+
+        if vl_issue is not None:
+            # This is a shortcut! Resolving a parent would take longer!
+            volume_number = self._get_volume_number(vl_issue)
+
+            self.articles = [OjsArticle(article, template_configuration) for article in vl_issue.articles]
+            volume_number = volume_number if volume_number is not None else vl_issue.parent.number
+            self.volume_number = remove_letters_from_alphanumeric_string(volume_number)
+            self.issue_number = remove_letters_from_alphanumeric_string(vl_issue.number)
+            self.publication_year = vl_issue.publication_date
+            self.is_current_issue = False
+            self.id = vl_issue.id
+            self.date_published = None
+            self.date_modified = None
+            if vl_issue.publication_date is not None:
+                self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
+                self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')
 
     @property
     def template_file_name(self) -> str:
