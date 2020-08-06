@@ -145,7 +145,7 @@ class OjsArticle(XmlGenerator):
             self._get_primary_language(vl_article.languages)
         )
         self.submission_date = self._get_submission_date_from_files(vl_article.files)
-        self.is_standalone = False
+        self.is_standalone = vl_article.is_standalone
 
         self._submission_ids = {}
         self._submission_counter = 0

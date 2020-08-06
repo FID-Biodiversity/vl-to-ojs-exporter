@@ -208,12 +208,13 @@ class TestXmlGeneration:
     def test_article_is_monography(self):
         article_id = '10750063'
         vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
+        vl_article.is_standalone = True
         ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
 
         add_dummy_submission_file_data(ojs_article.submission_files)
-
-        ojs_article.is_standalone = True
         generated_xml_string = ojs_article.generate_xml()
+
+        assert 'issue_galley' in generated_xml_string
 
         validate_ojs_native_xsd_consistency(generated_xml_string, pre_ojs32_schema=True)
 
