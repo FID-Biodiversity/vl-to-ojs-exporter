@@ -30,7 +30,8 @@ logger.addHandler(handler)
 
 ISO_LANGUAGES = {
     'ger': 'de_DE',
-    'eng': 'en_US'
+    'eng': 'en_US',
+    'fre': 'fr_FR',
 }
 
 
