@@ -172,6 +172,7 @@ class OjsArticle(XmlGenerator):
         if not self.is_standalone:
             return super().generate_xml()
         else:
+            logger.debug('Transfering article data to issue!')
             ojs_issue = OjsIssue(template_configuration=self.template_configuration)
             ojs_issue.id = self.id
             ojs_issue.volume_number = self.id

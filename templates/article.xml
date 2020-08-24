@@ -35,6 +35,7 @@
         {% endif %}
 
         <title locale="{{ language }}">{{ article.title|get_value_for_language(language) }}</title>
+        <subtitle locale="{{ language }}">{{ article.subtitle|get_value_for_language(language) }}</subtitle>
 
         {% with prefix = article.prefix|get_value_for_language(language),
                 abstract = article.abstract|get_value_for_language(language) %}
