@@ -43,15 +43,13 @@
             {% if prefix %}
                 <prefix locale="{{ language }}">{{ prefix }}</prefix>
             {% endif %}
-            {% if article.subtitle %}
+            {% if article.subtitle|get_value_for_language(language) %}
                 <subtitle locale="{{ language }}">{{ article.subtitle|get_value_for_language(language) }}</subtitle>
             {% endif %}
             {% if abstract %}
                 <abstract locale="{{ language }}">{{ abstract }}</abstract>
             {% endif %}
         {% endwith %}
-
-
 
         <type locale="{{ language }}">text</type>
 

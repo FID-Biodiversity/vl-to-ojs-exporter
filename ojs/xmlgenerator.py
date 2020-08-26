@@ -45,6 +45,13 @@ def normalize_to_iso_language(language_string):
     return ISO_LANGUAGES.get(language_string, language_string)
 
 
+def normalize_language_keys_in_dictionary(dictionary_with_language_keys):
+    if not isinstance(dictionary_with_language_keys, dict):
+        return dictionary_with_language_keys
+    else:
+        return {normalize_to_iso_language(key): value for key, value in dictionary_with_language_keys.items()}
+
+
 class XmlGenerator(ABC):
     """ An abstract base class that provides functions and the template environment to generate OJS XML. """
 
@@ -125,6 +132,7 @@ class OjsArticle(XmlGenerator):
     ARTICLES_TEMPLATE_FILE_NAME = 'article.xml'
     PRE_OJS_3_2_ARTICLE_TEMPLATE_FILE_NAME = 'article_pre_ojs_3_2.xml'
     ARTICLES_STRING = 'article'
+    LANGUAGE_ARRAY_NAME_IN_CONFIGURATION = 'languages'
 
     def __init__(self, vl_article: Article, template_configuration):
         super().__init__(template_configuration)
@@ -137,14 +145,18 @@ class OjsArticle(XmlGenerator):
         self.id = vl_article.id
         self.keywords = []
         self.page_range = vl_article.page_range
-        self.prefix = self._get_title_prefix(vl_article.title)
         self.publication_year = vl_article.publication_date
         self.submission_files = vl_article.files
-        self.title = vl_article.title
-        self.subtitle = vl_article.subtitle
+        self.title = normalize_language_keys_in_dictionary(vl_article.title)
+        self.subtitle = normalize_language_keys_in_dictionary(vl_article.subtitle)
         self.language = normalize_to_iso_language(
             self._get_primary_language(vl_article.languages)
         )
+        if isinstance(self.title, dict):
+            prefix = self._get_title_prefix(self.title[self.language])
+        else:
+            prefix = self._get_title_prefix(self.title)
+        self.prefix = prefix
         self.submission_date = self._get_submission_date_from_files(vl_article.files)
         self.is_standalone = vl_article.is_standalone
 
@@ -154,6 +166,11 @@ class OjsArticle(XmlGenerator):
         self._author_id_counter = 0
 
         self.add_variable_to_template_configuration(self.ARTICLES_STRING, self)
+
+        if self.language not in self.template_configuration[self.LANGUAGE_ARRAY_NAME_IN_CONFIGURATION]:
+            # This makes sure that if the article has a non-configured language, the specific local data are still
+            # given, because otherwise OJS will complain at import!
+            self.template_configuration[self.LANGUAGE_ARRAY_NAME_IN_CONFIGURATION].append(self.language)
 
     @property
     def authors(self) -> list:

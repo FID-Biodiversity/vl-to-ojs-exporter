@@ -8,9 +8,10 @@
 			<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 		</revision>
 	</submission_file>
-	<publication access_status="0" date_published="2020-06-05" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<publication access_status="0" date_published="1942-01-01" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="de_DE">Die</prefix>
+		<subtitle locale="de_DE">mit 2 Abbildungen und 1 Tafel</subtitle>
 		<type locale="de_DE">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor/in">
@@ -26,9 +27,10 @@
 		</article_galley>
 		<pages>108-116</pages>
 	</publication>
-	<publication access_status="0" date_published="2020-06-05" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<publication access_status="0" date_published="1942-01-01" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<title locale="en_US">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="en_US">Die</prefix>
+		<subtitle locale="en_US">mit 2 Abbildungen und 1 Tafel</subtitle>
 		<type locale="en_US">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor/in">

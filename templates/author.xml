@@ -3,7 +3,7 @@
             seq="{{ seq }}"
             id="{{ author.id }}"
         {% endif %}>
-    <givenname locale="{{ language }}">{{ author.given_name }} {{ author.title }}</givenname>
+    <givenname locale="{{ language }}">{{ author.given_name }}{% if author.title %} {{ author.title }}{% endif %}</givenname>
     {% if author.family_name %}
         <familyname locale="{{ language }}">{{ author.family_name }}</familyname>
     {% endif %}

@@ -231,22 +231,74 @@ class TestXmlGeneration:
         validate_ojs_native_xsd_consistency(generated_xml_string, pre_ojs32_schema=True)
 
     def test_author_with_title(self):
+        def validate_ojs_article(ojs_article):
+            ojs_author = ojs_article.authors[0]
+            assert ojs_author.given_name == 'Klaus'
+            assert ojs_author.family_name == 'Weyer'
+            assert ojs_author.title == 'van de'
+
+            add_dummy_submission_file_data(ojs_article.submission_files)
+            generated_article_xml = ojs_article.generate_xml()
+
+            xml_soup = Soup(generated_article_xml, 'lxml')
+            author = xml_soup.find('author')
+            assert author.givenname.text == 'Klaus van de'
+            assert author.familyname.text == 'Weyer'
+
         article_id = '10856951'
         vl_article, xml_generator = create_vl_object_and_xml_generator(article_id)
         ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
 
-        ojs_author = ojs_article.authors[0]
-        assert ojs_author.given_name == 'Klaus'
-        assert ojs_author.family_name == 'Weyer'
-        assert ojs_author.title == 'van de'
+        validate_ojs_article(ojs_article)
+
+        vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
+        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+
+        validate_ojs_article(ojs_article)
+
+    def test_article_in_non_configured_language(self):
+        article_id = '10799758'
+
+        configurator = MockConfigurator()
+        configurator.change_configuration_value('languages', ['de_DE'])
+
+        vl = VisualLibrary()
+        vl_article = vl.get_element_for_id(article_id)
+
+        xml_generator = OjsXmlGenerator(configurator)
+        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
 
         add_dummy_submission_file_data(ojs_article.submission_files)
-        generated_article_xml = ojs_article.generate_xml()
+        article_xml_string = ojs_article.generate_xml()
+        xml_soup = Soup(article_xml_string, 'lxml')
+        english_publication = xml_soup.find('publication', attrs={'locale': 'en_US'})
+        assert english_publication is not None
+        assert english_publication.find('title').text == 'On the composition of species of the Asian Clams Corbicula ' \
+                                                         'in the Lower Rhine Mollusca: Bivalvia: Corbiculidae'
 
-        xml_soup = Soup(generated_article_xml, 'lxml')
-        author = xml_soup.find('author')
-        assert author.givenname.text == 'Klaus van de'
-        assert author.familyname.text == 'Weyer'
+        german_publication = xml_soup.find('publication', attrs={'locale': 'de_DE'})
+        assert german_publication is not None
+        assert german_publication.find('title').text == 'Artzusammensetzung von Körbchenmuscheln Corbicula ' \
+                                                        'im Niederrhein'
+
+        vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
+        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+
+        add_dummy_submission_file_data(ojs_article.submission_files)
+        article_xml_string = ojs_article.generate_xml()
+        xml_soup = Soup(article_xml_string, 'lxml')
+        assert xml_soup.article['locale'] == 'en_US'
+
+        authors = xml_soup.find_all('author')
+        assert len(authors) == 2
+
+        number_of_english_authors = 0
+        for author in authors:
+            assert author.givenname.text == 'Andreas'
+            assert author.familyname.text == 'Leistikow'
+            if author.givenname['locale'] == 'en_US':
+                number_of_english_authors += 1
+        assert number_of_english_authors == 1
 
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
