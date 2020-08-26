@@ -157,8 +157,8 @@ class OjsArticle(XmlGenerator):
 
     @property
     def authors(self) -> list:
-        OjsAuthor = namedtuple('OjsAuthor', ['given_name', 'family_name', 'id'])
-        return [OjsAuthor(author.given_name, author.family_name, self._get_author_pseudo_id(author))
+        OjsAuthor = namedtuple('OjsAuthor', ['given_name', 'family_name', 'title', 'id'])
+        return [OjsAuthor(author.given_name, author.family_name, author.title, self._get_author_pseudo_id(author))
                 for author in self._authors
                 ]
 

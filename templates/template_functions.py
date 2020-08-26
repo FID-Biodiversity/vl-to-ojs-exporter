@@ -34,9 +34,9 @@ def extract_isodate_from_datetime(date):
 
 def generate_dummy_author():
     # This has to be equal with
-    Author = namedtuple('Author', ['given_name', 'family_name', 'id'])
+    Author = namedtuple('Author', ['given_name', 'family_name', 'title', 'id'])
 
-    return Author(given_name='N.', family_name='N.', id='12345678')
+    return Author(given_name='N.', family_name='N.', title='', id='12345678')
 
 
 def get_value_for_language(variable, language):

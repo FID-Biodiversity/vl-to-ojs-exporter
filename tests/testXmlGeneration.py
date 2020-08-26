@@ -1,10 +1,11 @@
 import os
 import pathlib
 import datetime
+from bs4 import BeautifulSoup as Soup
 
 from configuration.Configurator import Configurator
 from VisualLibrary import VisualLibrary, Journal
-from ojs.xmlgenerator import OjsXmlGenerator, OjsIssue, OjsArticle, OjsVolume
+from ojs.xmlgenerator import OjsXmlGenerator, OjsIssue, OjsArticle
 
 from lxml import etree
 
@@ -228,6 +229,24 @@ class TestXmlGeneration:
         assert 'issue_galley' in generated_xml_string
 
         validate_ojs_native_xsd_consistency(generated_xml_string, pre_ojs32_schema=True)
+
+    def test_author_with_title(self):
+        article_id = '10856951'
+        vl_article, xml_generator = create_vl_object_and_xml_generator(article_id)
+        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+
+        ojs_author = ojs_article.authors[0]
+        assert ojs_author.given_name == 'Klaus'
+        assert ojs_author.family_name == 'Weyer'
+        assert ojs_author.title == 'van de'
+
+        add_dummy_submission_file_data(ojs_article.submission_files)
+        generated_article_xml = ojs_article.generate_xml()
+
+        xml_soup = Soup(generated_article_xml, 'lxml')
+        author = xml_soup.find('author')
+        assert author.givenname.text == 'Klaus van de'
+        assert author.familyname.text == 'Weyer'
 
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
