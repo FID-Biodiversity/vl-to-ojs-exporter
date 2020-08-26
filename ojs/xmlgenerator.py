@@ -128,7 +128,8 @@ class OjsArticle(XmlGenerator):
     """ A representation of an OJS article. """
 
     PREFIX_WORDS_DE = {'der', 'die', 'das', 'ein', 'eine', 'eines', 'zu', 'zur', 'zum'}
-    PREFIX_WORDS = PREFIX_WORDS_DE
+    PREFIX_WORDS_EN = {'a', 'an', 'the', 'on'}
+    PREFIX_WORDS = PREFIX_WORDS_DE.union(PREFIX_WORDS_EN)
     ARTICLES_TEMPLATE_FILE_NAME = 'article.xml'
     PRE_OJS_3_2_ARTICLE_TEMPLATE_FILE_NAME = 'article_pre_ojs_3_2.xml'
     ARTICLES_STRING = 'article'
@@ -153,7 +154,7 @@ class OjsArticle(XmlGenerator):
             self._get_primary_language(vl_article.languages)
         )
         if isinstance(self.title, dict):
-            prefix = self._get_title_prefix(self.title[self.language])
+            prefix = self._get_title_prefix(self.title)
         else:
             prefix = self._get_title_prefix(self.title)
         self.prefix = prefix
@@ -218,6 +219,19 @@ class OjsArticle(XmlGenerator):
         else:
             return self._submission_ids[file]
 
+    def _get_prefix_from_title(self, title: str) -> (str, None):
+        prefix_words = []
+        for word in title.split(' '):
+            if word.lower() in self.PREFIX_WORDS:
+                prefix_words.append(word)
+            else:
+                break
+
+        if prefix_words:
+            return ' '.join(prefix_words)
+        else:
+            return None
+
     def _get_primary_language(self, languages) -> (str, None):
         """ Returns the first language given. """
 
@@ -236,14 +250,13 @@ class OjsArticle(XmlGenerator):
 
         return datetime.today()
 
-    def _get_title_prefix(self, article_title: str) -> (str, None):
+    def _get_title_prefix(self, article_title: (str, dict)) -> (str, dict, None):
         """ Estimates the prefix of the article's title. """
 
-        first_word_in_title = article_title.split(' ')[0]
-        if first_word_in_title.lower() in self.PREFIX_WORDS:
-            return first_word_in_title
+        if isinstance(article_title, dict):
+            return {key: self._get_title_prefix(value) for key, value in article_title.items()}
         else:
-            return None
+            return self._get_prefix_from_title(article_title)
 
     def _get_author_pseudo_id(self, author) -> int:
         author_id = self._author_ids[author]

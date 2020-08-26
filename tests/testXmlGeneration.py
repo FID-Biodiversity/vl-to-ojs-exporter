@@ -275,11 +275,13 @@ class TestXmlGeneration:
         assert english_publication is not None
         assert english_publication.find('title').text == 'On the composition of species of the Asian Clams Corbicula ' \
                                                          'in the Lower Rhine Mollusca: Bivalvia: Corbiculidae'
+        assert english_publication.find('prefix').text == 'On the'
 
         german_publication = xml_soup.find('publication', attrs={'locale': 'de_DE'})
         assert german_publication is not None
         assert german_publication.find('title').text == 'Artzusammensetzung von Körbchenmuscheln Corbicula ' \
                                                         'im Niederrhein'
+        assert german_publication.find('prefix') is None
 
         vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
         ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
