@@ -138,6 +138,7 @@ class OjsArticle(XmlGenerator):
         self.keywords = []
         self.page_range = vl_article.page_range
         self.prefix = self._get_title_prefix(vl_article.title)
+        self.publication_year = vl_article.publication_date
         self.submission_files = vl_article.files
         self.title = vl_article.title
         self.subtitle = vl_article.subtitle

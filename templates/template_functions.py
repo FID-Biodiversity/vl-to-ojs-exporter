@@ -1,6 +1,7 @@
 import pathlib
 from datetime import datetime
 from collections import namedtuple
+import re
 
 MIME_TYPE_DISPLAY_NAMES = {
     'application/pdf': 'PDF',
@@ -22,6 +23,11 @@ def extract_isodate_from_datetime(date):
 
     if isinstance(date, datetime):
         return date.date().isoformat()
+    elif isinstance(date, str):
+        if re.match(r'^[0-9]{4}$', date):
+            return datetime.strptime(date, '%Y').date().isoformat()
+        elif re.match(r'[0-9]{4}-[0-9]{2}-[0-9]{2}', date):
+            return datetime.strptime(date, '%Y-%m-%d').date().isoformat()
     else:
         return date
 

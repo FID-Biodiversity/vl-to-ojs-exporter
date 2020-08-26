@@ -1,8 +1,10 @@
 <?xml version="1.0" ?>
-<article date_published="2020-06-05" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+<article date_published="1991-01-01" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 	<id advice="ignore" type="internal">10902111</id>
 	<title locale="de_DE">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
 	<title locale="en_US">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
+	<subtitle locale="de_DE">Seite 149-211, 2 Abbildungen, 3 Tabellen und 4 Tafeln</subtitle>
+	<subtitle locale="en_US">Seite 149-211, 2 Abbildungen, 3 Tabellen und 4 Tafeln</subtitle>
 	<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<author include_in_browse="true" user_group_ref="Autor*in">
 			<givenname locale="de_DE">Arnold</givenname>

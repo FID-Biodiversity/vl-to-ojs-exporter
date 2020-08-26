@@ -24,6 +24,8 @@
 					<id advice="ignore" type="internal">10903380</id>
 					<title locale="de_DE">Geologie des Rodderberges südlich von Bonn</title>
 					<title locale="en_US">Geologie des Rodderberges südlich von Bonn</title>
+					<subtitle locale="de_DE">Erläuterungen zur Exkursionskarte : dem Andenken an R. Brauns : mit Karte und 11 Abbildungen</subtitle>
+					<subtitle locale="en_US">Erläuterungen zur Exkursionskarte : dem Andenken an R. Brauns : mit Karte und 11 Abbildungen</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Max</givenname>
@@ -59,6 +61,8 @@
 					<id advice="ignore" type="internal">10903381</id>
 					<title locale="de_DE">Einige neue Krinoiden aus dem Mittel-Devon der Eifel</title>
 					<title locale="en_US">Einige neue Krinoiden aus dem Mittel-Devon der Eifel</title>
+					<subtitle locale="de_DE">mit 1 Tafel und 4 Abbildungen im Text</subtitle>
+					<subtitle locale="en_US">mit 1 Tafel und 4 Abbildungen im Text</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">J.</givenname>
@@ -94,6 +98,8 @@
 					<id advice="ignore" type="internal">10903382</id>
 					<title locale="de_DE">Ueber die Realstruktur der Kristalle</title>
 					<title locale="en_US">Ueber die Realstruktur der Kristalle</title>
+					<subtitle locale="de_DE">Mitteilung Nr. 132 aus dem Mineralogisch-Petrologischen Institut der Universität Bonn; Druckauftrag erteilt am 28.1.41 : mit 2 Abbildungen im Text</subtitle>
+					<subtitle locale="en_US">Mitteilung Nr. 132 aus dem Mineralogisch-Petrologischen Institut der Universität Bonn; Druckauftrag erteilt am 28.1.41 : mit 2 Abbildungen im Text</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Will</givenname>
@@ -129,6 +135,8 @@
 					<id advice="ignore" type="internal">10903383</id>
 					<title locale="de_DE">Nach Goniatiten gegliederte Profile im sauerländischen Kulm</title>
 					<title locale="en_US">Nach Goniatiten gegliederte Profile im sauerländischen Kulm</title>
+					<subtitle locale="de_DE">mit 9 Abbildungen</subtitle>
+					<subtitle locale="en_US">mit 9 Abbildungen</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Hermann</givenname>
@@ -164,6 +172,8 @@
 					<id advice="ignore" type="internal">10903385</id>
 					<title locale="de_DE">Ungedruckte Briefe von Adolf Overweg</title>
 					<title locale="en_US">Ungedruckte Briefe von Adolf Overweg</title>
+					<subtitle locale="de_DE">aus der Zeit der klassischen deutschen Sahara-Sudanforschung : mit einer Tafel</subtitle>
+					<subtitle locale="en_US">aus der Zeit der klassischen deutschen Sahara-Sudanforschung : mit einer Tafel</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Heinrich</givenname>
@@ -199,6 +209,8 @@
 					<id advice="ignore" type="internal">10903387</id>
 					<title locale="de_DE">Individualität und Ganzheit in der Biologie</title>
 					<title locale="en_US">Individualität und Ganzheit in der Biologie</title>
+					<subtitle locale="de_DE">Vortrag, gehalten auf der vom N.S.D. Dozentenbund veranstalteten Dozentenvollversammlung der Universität Bonn</subtitle>
+					<subtitle locale="en_US">Vortrag, gehalten auf der vom N.S.D. Dozentenbund veranstalteten Dozentenvollversammlung der Universität Bonn</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Hermann</givenname>
@@ -234,6 +246,8 @@
 					<id advice="ignore" type="internal">10903390</id>
 					<title locale="de_DE">Revision der südamerikanischen Lycoriiden aus der Sammlung des Naturkundemuseums Stettin</title>
 					<title locale="en_US">Revision der südamerikanischen Lycoriiden aus der Sammlung des Naturkundemuseums Stettin</title>
+					<subtitle locale="de_DE">mit 1 Abbildung</subtitle>
+					<subtitle locale="en_US">mit 1 Abbildung</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Franz</givenname>
@@ -269,6 +283,8 @@
 					<id advice="ignore" type="internal">10903391</id>
 					<title locale="de_DE">Beobachtungen über den Rosenkelch</title>
 					<title locale="en_US">Beobachtungen über den Rosenkelch</title>
+					<subtitle locale="de_DE">mit 5 Abbildungen</subtitle>
+					<subtitle locale="en_US">mit 5 Abbildungen</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Friedrich</givenname>
@@ -304,6 +320,10 @@
 					<id advice="ignore" type="internal">10903392</id>
 					<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 					<title locale="en_US">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+					<prefix locale="de_DE">Die</prefix>
+					<prefix locale="en_US">Die</prefix>
+					<subtitle locale="de_DE">mit 2 Abbildungen und 1 Tafel</subtitle>
+					<subtitle locale="en_US">mit 2 Abbildungen und 1 Tafel</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Werner</givenname>
@@ -339,6 +359,8 @@
 					<id advice="ignore" type="internal">10903393</id>
 					<title locale="de_DE">Beitrag zur Flechtenflora des Vereinsgebietes</title>
 					<title locale="en_US">Beitrag zur Flechtenflora des Vereinsgebietes</title>
+					<subtitle locale="de_DE">mit 7 Tafeln</subtitle>
+					<subtitle locale="en_US">mit 7 Tafeln</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Ludwig</givenname>
@@ -432,6 +454,10 @@
 					<id advice="ignore" type="internal">10903421</id>
 					<title locale="de_DE">Die Algenflora Westfalens und der angrenzenden Gebiete</title>
 					<title locale="en_US">Die Algenflora Westfalens und der angrenzenden Gebiete</title>
+					<prefix locale="de_DE">Die</prefix>
+					<prefix locale="en_US">Die</prefix>
+					<subtitle locale="de_DE">eine erste zusammenfassende Darstellung über den augenblicklichen Stand : Mitteilung  Nr. 154 aus dem Ruhrland-Museum der Stadt Essen : 2 Abbildungen und 1 Tabelle</subtitle>
+					<subtitle locale="en_US">eine erste zusammenfassende Darstellung über den augenblicklichen Stand : Mitteilung  Nr. 154 aus dem Ruhrland-Museum der Stadt Essen : 2 Abbildungen und 1 Tabelle</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
 							<givenname locale="de_DE">Hermann</givenname>

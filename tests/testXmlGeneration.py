@@ -205,6 +205,17 @@ class TestXmlGeneration:
         # Set author.given_name = ''
         assert 1 == 1
 
+    def test_publication_year(self):
+        article_id = '10735412'
+        vl_article, xml_generator = create_vl_object_and_xml_generator(article_id)
+
+        assert vl_article.title == 'Ludwig Laven'
+        assert vl_article.subtitle == '* 31.Oktober 1881 in Trier, † 11.März 1968 in Köln . mit 1 Tafel'
+        assert vl_article.publication_date == '1970'
+
+        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+        assert ojs_article.publication_year == '1970'
+
     def test_article_is_monography(self):
         article_id = '10750063'
         vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)

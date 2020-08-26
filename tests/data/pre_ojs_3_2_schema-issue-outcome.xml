@@ -21,6 +21,8 @@
 				<id advice="ignore" type="internal">10874694</id>
 				<title locale="de_DE">Die Tenebrioniden des Rheinlandes</title>
 				<title locale="en_US">Die Tenebrioniden des Rheinlandes</title>
+				<prefix locale="de_DE">Die</prefix>
+				<prefix locale="en_US">Die</prefix>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">F.</givenname>
@@ -91,6 +93,10 @@
 				<id advice="ignore" type="internal">10874697</id>
 				<title locale="de_DE">Die deutschen Carabus-Arten</title>
 				<title locale="en_US">Die deutschen Carabus-Arten</title>
+				<prefix locale="de_DE">Die</prefix>
+				<prefix locale="en_US">Die</prefix>
+				<subtitle locale="de_DE">mit 1 Abbildung und 1 Tafel</subtitle>
+				<subtitle locale="en_US">mit 1 Abbildung und 1 Tafel</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">Carl</givenname>
@@ -126,6 +132,10 @@
 				<id advice="ignore" type="internal">10874701</id>
 				<title locale="de_DE">Das Verschwinden der Sümpfe und Moore am Niederrhein</title>
 				<title locale="en_US">Das Verschwinden der Sümpfe und Moore am Niederrhein</title>
+				<prefix locale="de_DE">Das</prefix>
+				<prefix locale="en_US">Das</prefix>
+				<subtitle locale="de_DE">mit 15 Karten auf 11 Tafeln</subtitle>
+				<subtitle locale="en_US">mit 15 Karten auf 11 Tafeln</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">Käthe</givenname>
@@ -231,6 +241,8 @@
 				<id advice="ignore" type="internal">10874716</id>
 				<title locale="de_DE">Paussiden-Studien</title>
 				<title locale="en_US">Paussiden-Studien</title>
+				<subtitle locale="de_DE">Herrn Geheimrat Korschelt zum 80. Geburtstage gewidmet : mit 16 Abbildungen und 1 Tafel</subtitle>
+				<subtitle locale="en_US">Herrn Geheimrat Korschelt zum 80. Geburtstage gewidmet : mit 16 Abbildungen und 1 Tafel</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">August</givenname>
@@ -266,6 +278,8 @@
 				<id advice="ignore" type="internal">10874717</id>
 				<title locale="de_DE">Über die Enteiweißung von Organextrakten und Preßsäften für Harnsäure- und Purinbestimmungen</title>
 				<title locale="en_US">Über die Enteiweißung von Organextrakten und Preßsäften für Harnsäure- und Purinbestimmungen</title>
+				<subtitle locale="de_DE">mit Unterstützung der Deutschen Forschungsgemeinschaft </subtitle>
+				<subtitle locale="en_US">mit Unterstützung der Deutschen Forschungsgemeinschaft </subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">C.</givenname>
@@ -301,6 +315,8 @@
 				<id advice="ignore" type="internal">10874718</id>
 				<title locale="de_DE">Die Wirtsvögel des Kuckucks in der Rheinprovinz</title>
 				<title locale="en_US">Die Wirtsvögel des Kuckucks in der Rheinprovinz</title>
+				<prefix locale="de_DE">Die</prefix>
+				<prefix locale="en_US">Die</prefix>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">Heinz</givenname>
@@ -336,6 +352,8 @@
 				<id advice="ignore" type="internal">10874720</id>
 				<title locale="de_DE">Beitrag zur Kenntnis der Ephemeropterenfauna Westdeutschlands</title>
 				<title locale="en_US">Beitrag zur Kenntnis der Ephemeropterenfauna Westdeutschlands</title>
+				<subtitle locale="de_DE">mit 2 Tafeln</subtitle>
+				<subtitle locale="en_US">mit 2 Tafeln</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">E.</givenname>
@@ -371,6 +389,8 @@
 				<id advice="ignore" type="internal">10874721</id>
 				<title locale="de_DE">Pollenanalytische Untersuchung eines Sauerländischen Moores bei Lützel</title>
 				<title locale="en_US">Pollenanalytische Untersuchung eines Sauerländischen Moores bei Lützel</title>
+				<subtitle locale="de_DE">vierter Beitrag zur Waldgeschichte des Sauerlandes : Mitteilung Nr. 68 aus dem Ruhrland-Museum der Stadt Essen : mit 5 Abbildungen und 1 Tabelle</subtitle>
+				<subtitle locale="en_US">vierter Beitrag zur Waldgeschichte des Sauerlandes : Mitteilung Nr. 68 aus dem Ruhrland-Museum der Stadt Essen : mit 5 Abbildungen und 1 Tabelle</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">Hermann</givenname>
@@ -406,6 +426,8 @@
 				<id advice="ignore" type="internal">10874725</id>
 				<title locale="de_DE">Floristisch-soziologische Streifzüge durch die Umgebung von Bonn</title>
 				<title locale="en_US">Floristisch-soziologische Streifzüge durch die Umgebung von Bonn</title>
+				<subtitle locale="de_DE">I. Über die Pflanzenwelt vulkanischer Böden : mit 5 Abbildungen und 2 Tabellen</subtitle>
+				<subtitle locale="en_US">I. Über die Pflanzenwelt vulkanischer Böden : mit 5 Abbildungen und 2 Tabellen</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">Käthe</givenname>
@@ -441,6 +463,10 @@
 				<id advice="ignore" type="internal">10874727</id>
 				<title locale="de_DE">Die Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
 				<title locale="en_US">Die Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
+				<prefix locale="de_DE">Die</prefix>
+				<prefix locale="en_US">Die</prefix>
+				<subtitle locale="de_DE">ein Verzeichnis mit kritischen Anmerkungen und Fundortsangaben : zweiter Nachtrag</subtitle>
+				<subtitle locale="en_US">ein Verzeichnis mit kritischen Anmerkungen und Fundortsangaben : zweiter Nachtrag</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
 						<givenname locale="de_DE">Josef</givenname>

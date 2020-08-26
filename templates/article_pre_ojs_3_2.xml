@@ -3,6 +3,8 @@
          stage="production"
          {% if issue and issue.date_published %}
             date_published="{{ issue.date_published|to_iso_date }}"
+         {% elif article.publication_year %}
+            date_published="{{ article.publication_year|to_iso_date }}"
          {% elif article.submission_date %}
             date_published="{{ article.submission_date|to_iso_date }}"
          {% endif %}
@@ -15,12 +17,17 @@
 
     {% for language in languages %}
         <title locale="{{ language }}">{{ article.title|get_value_for_language(language) }}</title>
-        <subtitle locale="{{ language }}">{{ article.subtitle|get_value_for_language(language) }}</subtitle>
     {% endfor %}
 
-    {% if prefix %}
+    {% if article.prefix %}
         {% for language in languages %}
             <prefix locale="{{ language }}">{{ article.prefix|get_value_for_language(language) }}</prefix>
+        {% endfor %}
+    {% endif %}
+
+    {% if article.subtitle %}
+       {% for language in languages %}
+            <subtitle locale="{{ language }}">{{ article.subtitle|get_value_for_language(language) }}</subtitle>
         {% endfor %}
     {% endif %}
 
