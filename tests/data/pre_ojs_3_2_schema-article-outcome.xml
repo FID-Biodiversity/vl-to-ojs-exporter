@@ -7,23 +7,13 @@
 	<subtitle locale="en_US">Seite 149-211, 2 Abbildungen, 3 Tabellen und 4 Tafeln</subtitle>
 	<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<author include_in_browse="true" user_group_ref="Autor*in">
-			<givenname locale="de_DE">Arnold</givenname>
-			<familyname locale="de_DE">Müller</familyname>
+			<givenname>Arnold</givenname>
+			<familyname>Müller</familyname>
 			<email>dummy@mactest.com</email>
 		</author>
 		<author include_in_browse="true" user_group_ref="Autor*in">
-			<givenname locale="de_DE">Jochen</givenname>
-			<familyname locale="de_DE">Weile</familyname>
-			<email>dummy@mactest.com</email>
-		</author>
-		<author include_in_browse="true" user_group_ref="Autor*in">
-			<givenname locale="en_US">Arnold</givenname>
-			<familyname locale="en_US">Müller</familyname>
-			<email>dummy@mactest.com</email>
-		</author>
-		<author include_in_browse="true" user_group_ref="Autor*in">
-			<givenname locale="en_US">Jochen</givenname>
-			<familyname locale="en_US">Weile</familyname>
+			<givenname>Jochen</givenname>
+			<familyname>Weile</familyname>
 			<email>dummy@mactest.com</email>
 		</author>
 	</authors>

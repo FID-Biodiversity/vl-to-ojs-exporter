@@ -14,13 +14,13 @@
 		<type locale="de_DE">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-				<givenname locale="de_DE">Arnold</givenname>
-				<familyname locale="de_DE">Müller</familyname>
+				<givenname>Arnold</givenname>
+				<familyname>Müller</familyname>
 				<email>dummy@mactest.com</email>
 			</author>
 			<author id="2" include_in_browse="true" seq="1" user_group_ref="Autor*in">
-				<givenname locale="de_DE">Jochen</givenname>
-				<familyname locale="de_DE">Weile</familyname>
+				<givenname>Jochen</givenname>
+				<familyname>Weile</familyname>
 				<email>dummy@mactest.com</email>
 			</author>
 		</authors>
@@ -37,13 +37,13 @@
 		<type locale="en_US">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-				<givenname locale="en_US">Arnold</givenname>
-				<familyname locale="en_US">Müller</familyname>
+				<givenname>Arnold</givenname>
+				<familyname>Müller</familyname>
 				<email>dummy@mactest.com</email>
 			</author>
 			<author id="2" include_in_browse="true" seq="1" user_group_ref="Autor*in">
-				<givenname locale="en_US">Jochen</givenname>
-				<familyname locale="en_US">Weile</familyname>
+				<givenname>Jochen</givenname>
+				<familyname>Weile</familyname>
 				<email>dummy@mactest.com</email>
 			</author>
 		</authors>

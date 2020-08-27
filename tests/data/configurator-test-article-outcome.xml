@@ -15,8 +15,8 @@
 		<type locale="de_DE">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor/in">
-				<givenname locale="de_DE">Werner</givenname>
-				<familyname locale="de_DE">Paeckelmann</familyname>
+				<givenname>Werner</givenname>
+				<familyname>Paeckelmann</familyname>
 				<email>dummy@mail.com</email>
 			</author>
 		</authors>
@@ -34,8 +34,8 @@
 		<type locale="en_US">text</type>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor/in">
-				<givenname locale="en_US">Werner</givenname>
-				<familyname locale="en_US">Paeckelmann</familyname>
+				<givenname>Werner</givenname>
+				<familyname>Paeckelmann</familyname>
 				<email>dummy@mail.com</email>
 			</author>
 		</authors>

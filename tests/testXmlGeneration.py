@@ -289,18 +289,13 @@ class TestXmlGeneration:
         add_dummy_submission_file_data(ojs_article.submission_files)
         article_xml_string = ojs_article.generate_xml()
         xml_soup = Soup(article_xml_string, 'lxml')
-        assert xml_soup.article['locale'] == 'en_US'
 
         authors = xml_soup.find_all('author')
-        assert len(authors) == 2
+        assert len(authors) == 1
 
-        number_of_english_authors = 0
         for author in authors:
             assert author.givenname.text == 'Andreas'
             assert author.familyname.text == 'Leistikow'
-            if author.givenname['locale'] == 'en_US':
-                number_of_english_authors += 1
-        assert number_of_english_authors == 1
 
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)

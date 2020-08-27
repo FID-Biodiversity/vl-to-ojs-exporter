@@ -3,9 +3,9 @@
             seq="{{ seq }}"
             id="{{ author.id }}"
         {% endif %}>
-    <givenname locale="{{ language }}">{{ author.given_name }}{% if author.title %} {{ author.title }}{% endif %}</givenname>
+    <givenname>{{ author.given_name }}{% if author.title %} {{ author.title }}{% endif %}</givenname>
     {% if author.family_name %}
-        <familyname locale="{{ language }}">{{ author.family_name }}</familyname>
+        <familyname>{{ author.family_name }}</familyname>
     {% endif %}
     <email>{{ dummy_mail_address }}</email>
 </author>

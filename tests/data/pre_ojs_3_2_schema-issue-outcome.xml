@@ -25,13 +25,8 @@
 				<prefix locale="en_US">Die</prefix>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">F.</givenname>
-						<familyname locale="de_DE">Riechen</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">F.</givenname>
-						<familyname locale="en_US">Riechen</familyname>
+						<givenname>F.</givenname>
+						<familyname>Riechen</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -60,13 +55,8 @@
 				<title locale="en_US">Rhinolophus ferrum-equinum (Schreber) im Rheinland</title>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">W.</givenname>
-						<familyname locale="de_DE">Issel</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">W.</givenname>
-						<familyname locale="en_US">Issel</familyname>
+						<givenname>W.</givenname>
+						<familyname>Issel</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -99,13 +89,8 @@
 				<subtitle locale="en_US">mit 1 Abbildung und 1 Tafel</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Carl</givenname>
-						<familyname locale="de_DE">Henseler</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">Carl</givenname>
-						<familyname locale="en_US">Henseler</familyname>
+						<givenname>Carl</givenname>
+						<familyname>Henseler</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -138,13 +123,8 @@
 				<subtitle locale="en_US">mit 15 Karten auf 11 Tafeln</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Käthe</givenname>
-						<familyname locale="de_DE">Kümmel</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">Käthe</givenname>
-						<familyname locale="en_US">Kümmel</familyname>
+						<givenname>Käthe</givenname>
+						<familyname>Kümmel</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -173,13 +153,8 @@
 				<title locale="en_US">Ueber die Verteilung der Geschlechter in den Blütenständen der Carex arenaria</title>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Felix</givenname>
-						<familyname locale="de_DE">Fettweis</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">Felix</givenname>
-						<familyname locale="en_US">Fettweis</familyname>
+						<givenname>Felix</givenname>
+						<familyname>Fettweis</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -208,13 +183,8 @@
 				<title locale="en_US">Beitrag zur Kenntnis der Wanzenfauna der Rheinprovinz</title>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">August</givenname>
-						<familyname locale="de_DE">Reclaire</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">August</givenname>
-						<familyname locale="en_US">Reclaire</familyname>
+						<givenname>August</givenname>
+						<familyname>Reclaire</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -245,13 +215,8 @@
 				<subtitle locale="en_US">Herrn Geheimrat Korschelt zum 80. Geburtstage gewidmet : mit 16 Abbildungen und 1 Tafel</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">August</givenname>
-						<familyname locale="de_DE">Reichensperger</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">August</givenname>
-						<familyname locale="en_US">Reichensperger</familyname>
+						<givenname>August</givenname>
+						<familyname>Reichensperger</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -282,13 +247,8 @@
 				<subtitle locale="en_US">mit Unterstützung der Deutschen Forschungsgemeinschaft </subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">C.</givenname>
-						<familyname locale="de_DE">Heidermanns</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">C.</givenname>
-						<familyname locale="en_US">Heidermanns</familyname>
+						<givenname>C.</givenname>
+						<familyname>Heidermanns</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -319,13 +279,8 @@
 				<prefix locale="en_US">Die</prefix>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Heinz</givenname>
-						<familyname locale="de_DE">Mildenberger</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">Heinz</givenname>
-						<familyname locale="en_US">Mildenberger</familyname>
+						<givenname>Heinz</givenname>
+						<familyname>Mildenberger</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -356,13 +311,8 @@
 				<subtitle locale="en_US">mit 2 Tafeln</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">E.</givenname>
-						<familyname locale="de_DE">Cremer</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">E.</givenname>
-						<familyname locale="en_US">Cremer</familyname>
+						<givenname>E.</givenname>
+						<familyname>Cremer</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -393,13 +343,8 @@
 				<subtitle locale="en_US">vierter Beitrag zur Waldgeschichte des Sauerlandes : Mitteilung Nr. 68 aus dem Ruhrland-Museum der Stadt Essen : mit 5 Abbildungen und 1 Tabelle</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Hermann</givenname>
-						<familyname locale="de_DE">Budde</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">Hermann</givenname>
-						<familyname locale="en_US">Budde</familyname>
+						<givenname>Hermann</givenname>
+						<familyname>Budde</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -430,13 +375,8 @@
 				<subtitle locale="en_US">I. Über die Pflanzenwelt vulkanischer Böden : mit 5 Abbildungen und 2 Tabellen</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Käthe</givenname>
-						<familyname locale="de_DE">Kümmel</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">Käthe</givenname>
-						<familyname locale="en_US">Kümmel</familyname>
+						<givenname>Käthe</givenname>
+						<familyname>Kümmel</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>
@@ -469,13 +409,8 @@
 				<subtitle locale="en_US">ein Verzeichnis mit kritischen Anmerkungen und Fundortsangaben : zweiter Nachtrag</subtitle>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="de_DE">Josef</givenname>
-						<familyname locale="de_DE">Niessen</familyname>
-						<email>dummy@mactest.com</email>
-					</author>
-					<author include_in_browse="true" user_group_ref="Autor*in">
-						<givenname locale="en_US">Josef</givenname>
-						<familyname locale="en_US">Niessen</familyname>
+						<givenname>Josef</givenname>
+						<familyname>Niessen</familyname>
 						<email>dummy@mactest.com</email>
 					</author>
 				</authors>

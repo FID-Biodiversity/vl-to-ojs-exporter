@@ -25,8 +25,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Max</givenname>
-							<familyname locale="de_DE">Richter</familyname>
+							<givenname>Max</givenname>
+							<familyname>Richter</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -43,8 +43,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Max</givenname>
-							<familyname locale="en_US">Richter</familyname>
+							<givenname>Max</givenname>
+							<familyname>Richter</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -71,8 +71,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">J.</givenname>
-							<familyname locale="de_DE">Wanner</familyname>
+							<givenname>J.</givenname>
+							<familyname>Wanner</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -89,8 +89,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">J.</givenname>
-							<familyname locale="en_US">Wanner</familyname>
+							<givenname>J.</givenname>
+							<familyname>Wanner</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -117,8 +117,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Will</givenname>
-							<familyname locale="de_DE">Kleber</familyname>
+							<givenname>Will</givenname>
+							<familyname>Kleber</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -135,8 +135,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Will</givenname>
-							<familyname locale="en_US">Kleber</familyname>
+							<givenname>Will</givenname>
+							<familyname>Kleber</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -163,8 +163,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Hermann</givenname>
-							<familyname locale="de_DE">Schmidt</familyname>
+							<givenname>Hermann</givenname>
+							<familyname>Schmidt</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -181,8 +181,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Hermann</givenname>
-							<familyname locale="en_US">Schmidt</familyname>
+							<givenname>Hermann</givenname>
+							<familyname>Schmidt</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -209,8 +209,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Heinrich</givenname>
-							<familyname locale="de_DE">Schiffers</familyname>
+							<givenname>Heinrich</givenname>
+							<familyname>Schiffers</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -227,8 +227,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Heinrich</givenname>
-							<familyname locale="en_US">Schiffers</familyname>
+							<givenname>Heinrich</givenname>
+							<familyname>Schiffers</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -255,8 +255,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Hermann</givenname>
-							<familyname locale="de_DE">Wurmbach</familyname>
+							<givenname>Hermann</givenname>
+							<familyname>Wurmbach</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -273,8 +273,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Hermann</givenname>
-							<familyname locale="en_US">Wurmbach</familyname>
+							<givenname>Hermann</givenname>
+							<familyname>Wurmbach</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -301,8 +301,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Franz</givenname>
-							<familyname locale="de_DE">Lengersdorf</familyname>
+							<givenname>Franz</givenname>
+							<familyname>Lengersdorf</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -319,8 +319,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Franz</givenname>
-							<familyname locale="en_US">Lengersdorf</familyname>
+							<givenname>Franz</givenname>
+							<familyname>Lengersdorf</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -347,8 +347,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Friedrich</givenname>
-							<familyname locale="de_DE">Markgraf</familyname>
+							<givenname>Friedrich</givenname>
+							<familyname>Markgraf</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -365,8 +365,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Friedrich</givenname>
-							<familyname locale="en_US">Markgraf</familyname>
+							<givenname>Friedrich</givenname>
+							<familyname>Markgraf</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -394,8 +394,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Werner</givenname>
-							<familyname locale="de_DE">Paeckelmann</familyname>
+							<givenname>Werner</givenname>
+							<familyname>Paeckelmann</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -413,8 +413,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Werner</givenname>
-							<familyname locale="en_US">Paeckelmann</familyname>
+							<givenname>Werner</givenname>
+							<familyname>Paeckelmann</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -441,8 +441,8 @@
 					<type locale="de_DE">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Ludwig</givenname>
-							<familyname locale="de_DE">Laven</familyname>
+							<givenname>Ludwig</givenname>
+							<familyname>Laven</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -459,8 +459,8 @@
 					<type locale="en_US">text</type>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
-							<givenname locale="en_US">Ludwig</givenname>
-							<familyname locale="en_US">Laven</familyname>
+							<givenname>Ludwig</givenname>
+							<familyname>Laven</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>

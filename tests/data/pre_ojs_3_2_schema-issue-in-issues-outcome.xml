@@ -28,13 +28,8 @@
 					<subtitle locale="en_US">Erläuterungen zur Exkursionskarte : dem Andenken an R. Brauns : mit Karte und 11 Abbildungen</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Max</givenname>
-							<familyname locale="de_DE">Richter</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Max</givenname>
-							<familyname locale="en_US">Richter</familyname>
+							<givenname>Max</givenname>
+							<familyname>Richter</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -65,13 +60,8 @@
 					<subtitle locale="en_US">mit 1 Tafel und 4 Abbildungen im Text</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">J.</givenname>
-							<familyname locale="de_DE">Wanner</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">J.</givenname>
-							<familyname locale="en_US">Wanner</familyname>
+							<givenname>J.</givenname>
+							<familyname>Wanner</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -102,13 +92,8 @@
 					<subtitle locale="en_US">Mitteilung Nr. 132 aus dem Mineralogisch-Petrologischen Institut der Universität Bonn; Druckauftrag erteilt am 28.1.41 : mit 2 Abbildungen im Text</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Will</givenname>
-							<familyname locale="de_DE">Kleber</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Will</givenname>
-							<familyname locale="en_US">Kleber</familyname>
+							<givenname>Will</givenname>
+							<familyname>Kleber</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -139,13 +124,8 @@
 					<subtitle locale="en_US">mit 9 Abbildungen</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Hermann</givenname>
-							<familyname locale="de_DE">Schmidt</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Hermann</givenname>
-							<familyname locale="en_US">Schmidt</familyname>
+							<givenname>Hermann</givenname>
+							<familyname>Schmidt</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -176,13 +156,8 @@
 					<subtitle locale="en_US">aus der Zeit der klassischen deutschen Sahara-Sudanforschung : mit einer Tafel</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Heinrich</givenname>
-							<familyname locale="de_DE">Schiffers</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Heinrich</givenname>
-							<familyname locale="en_US">Schiffers</familyname>
+							<givenname>Heinrich</givenname>
+							<familyname>Schiffers</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -213,13 +188,8 @@
 					<subtitle locale="en_US">Vortrag, gehalten auf der vom N.S.D. Dozentenbund veranstalteten Dozentenvollversammlung der Universität Bonn</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Hermann</givenname>
-							<familyname locale="de_DE">Wurmbach</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Hermann</givenname>
-							<familyname locale="en_US">Wurmbach</familyname>
+							<givenname>Hermann</givenname>
+							<familyname>Wurmbach</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -250,13 +220,8 @@
 					<subtitle locale="en_US">mit 1 Abbildung</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Franz</givenname>
-							<familyname locale="de_DE">Lengersdorf</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Franz</givenname>
-							<familyname locale="en_US">Lengersdorf</familyname>
+							<givenname>Franz</givenname>
+							<familyname>Lengersdorf</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -287,13 +252,8 @@
 					<subtitle locale="en_US">mit 5 Abbildungen</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Friedrich</givenname>
-							<familyname locale="de_DE">Markgraf</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Friedrich</givenname>
-							<familyname locale="en_US">Markgraf</familyname>
+							<givenname>Friedrich</givenname>
+							<familyname>Markgraf</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -326,13 +286,8 @@
 					<subtitle locale="en_US">mit 2 Abbildungen und 1 Tafel</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Werner</givenname>
-							<familyname locale="de_DE">Paeckelmann</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Werner</givenname>
-							<familyname locale="en_US">Paeckelmann</familyname>
+							<givenname>Werner</givenname>
+							<familyname>Paeckelmann</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -363,13 +318,8 @@
 					<subtitle locale="en_US">mit 7 Tafeln</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Ludwig</givenname>
-							<familyname locale="de_DE">Laven</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Ludwig</givenname>
-							<familyname locale="en_US">Laven</familyname>
+							<givenname>Ludwig</givenname>
+							<familyname>Laven</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -421,13 +371,8 @@
 					<title locale="en_US">Bericht über die Zeit vom 1.4.1942 bis 30.11.1943</title>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">August</givenname>
-							<familyname locale="de_DE">Hahne</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">August</givenname>
-							<familyname locale="en_US">Hahne</familyname>
+							<givenname>August</givenname>
+							<familyname>Hahne</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>
@@ -460,13 +405,8 @@
 					<subtitle locale="en_US">eine erste zusammenfassende Darstellung über den augenblicklichen Stand : Mitteilung  Nr. 154 aus dem Ruhrland-Museum der Stadt Essen : 2 Abbildungen und 1 Tabelle</subtitle>
 					<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="de_DE">Hermann</givenname>
-							<familyname locale="de_DE">Budde</familyname>
-							<email>dummy@mactest.com</email>
-						</author>
-						<author include_in_browse="true" user_group_ref="Autor*in">
-							<givenname locale="en_US">Hermann</givenname>
-							<familyname locale="en_US">Budde</familyname>
+							<givenname>Hermann</givenname>
+							<familyname>Budde</familyname>
 							<email>dummy@mactest.com</email>
 						</author>
 					</authors>

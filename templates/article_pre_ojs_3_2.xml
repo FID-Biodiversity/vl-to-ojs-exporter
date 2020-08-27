@@ -48,16 +48,14 @@
     {% endif %}
 
     <authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-        {% for language in languages %}
-            {% for author in article.authors %}
-                {% with seq = loop.index0, author = normalize_user(author) %}
-                    {% include 'author.xml' %}
-                {% endwith %}
-            {% else %}
-                {% with author = generate_dummy_author(), seq = 0 %}
-                   {% include 'author.xml' %}
-                {% endwith %}
-            {% endfor %}
+        {% for author in article.authors %}
+            {% with seq = loop.index0, author = normalize_user(author) %}
+                {% include 'author.xml' %}
+            {% endwith %}
+        {% else %}
+            {% with author = generate_dummy_author(), seq = 0 %}
+               {% include 'author.xml' %}
+            {% endwith %}
         {% endfor %}
     </authors>
 
