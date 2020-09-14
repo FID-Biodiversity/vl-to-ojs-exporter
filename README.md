@@ -118,7 +118,7 @@ This splits the given file in multiple smaller files, separated at every `issues
 When importing the data into OJS, go into the directory of the journal of choice and call:
 
 ```shell script
-php tools/importExport.php import path/to/your/file.xml journal-short-name ojs_admin
+php tools/importExport.php NativeImportExportPlugin import path/to/your/file.xml journal-short-name ojs_admin
 ```
 
 The `journal-short-name` is mostly given in the journal URL. E.g. in `https://ojs.ub.uni-frankfurt.de/decheniana/index.php/beihefte` it would be `beihefte`. The `ojs_admin` is the user uploading the file. I would make sure that the given user exists, but I don't know what happens, if not.
