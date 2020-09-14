@@ -218,6 +218,9 @@ class TestXmlGeneration:
         assert ojs_article.publication_year == '1970'
 
     def test_article_is_monography(self):
+        # Articles that are like a monography should be presented as single article issue
+        # (https://redmine.ub.uni-frankfurt.de/issues/179)
+
         article_id = '10750063'
         vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
         vl_article.is_standalone = True
@@ -226,7 +229,23 @@ class TestXmlGeneration:
         add_dummy_submission_file_data(ojs_article.submission_files)
         generated_xml_string = ojs_article.generate_xml()
 
-        assert 'issue_galley' in generated_xml_string
+        xml_soup = Soup(generated_xml_string, 'lxml')
+        assert xml_soup.find('issue_galley') is None
+        assert xml_soup.find('issues') is not None
+
+        issues = xml_soup.find_all('issue')
+        assert len(issues) == 1
+        issue = issues[0]
+        assert issue.issue_identification.title.text == 'Die Wälder des Mittelterrassengebietes östlich von Köln'
+
+        articles = issue.find_all('article')
+        assert len(articles) == 1
+
+        single_article = articles[0]
+        authors = single_article.find_all('author')
+        assert len(authors) == 1
+        assert authors[0].givenname.text == 'Erhard'
+        assert authors[0].familyname.text == 'Sauer'
 
         validate_ojs_native_xsd_consistency(generated_xml_string, pre_ojs32_schema=True)
 

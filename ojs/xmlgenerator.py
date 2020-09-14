@@ -189,15 +189,7 @@ class OjsArticle(XmlGenerator):
         if not self.is_standalone:
             return super().generate_xml()
         else:
-            logger.debug('Transfering article data to issue!')
-            ojs_issue = OjsIssue(template_configuration=self.template_configuration)
-            ojs_issue.id = self.id
-            ojs_issue.volume_number = self.id
-            ojs_issue.issue_number = self.id
-            ojs_issue.files = self.submission_files
-            ojs_issue.title = self.title
-            ojs_issue.publication_year = '2020'
-
+            ojs_issue = self._convert_to_issue()
             return ojs_issue.generate_xml()
 
     def get_submission_id_for_file(self, file):
@@ -216,6 +208,18 @@ class OjsArticle(XmlGenerator):
             return submission_id
         else:
             return self._submission_ids[file]
+
+    def _convert_to_issue(self):
+        logger.debug('Transfering article data to issue!')
+        ojs_issue = OjsIssue(template_configuration=self.template_configuration)
+        ojs_issue.id = self.id
+        ojs_issue.volume_number = self.id
+        ojs_issue.issue_number = self.id
+        ojs_issue.title = '{prefix} {title}'.format(prefix=self.prefix, title=self.title)
+        ojs_issue.publication_year = self.publication_year
+        ojs_issue.articles.append(self)
+
+        return ojs_issue
 
     def _get_prefix_from_title(self, title: str) -> (str, None):
         prefix_words = []
