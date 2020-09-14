@@ -79,7 +79,7 @@ class TestXmlGeneration:
         assert ojs_article.page_range.end == '116'
         assert ojs_article.id == '10903392'
         assert ojs_article.prefix == 'Die'
-        assert ojs_article.title == 'Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk'
+        assert ojs_article.title == 'Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk'
         assert ojs_article.subtitle == 'mit 2 Abbildungen und 1 Tafel'
         assert ojs_article.language == 'de_DE'
         assert ojs_article.submission_date.date().isoformat() == '2020-06-05'
@@ -273,7 +273,7 @@ class TestXmlGeneration:
         xml_soup = Soup(article_xml_string, 'lxml')
         english_publication = xml_soup.find('publication', attrs={'locale': 'en_US'})
         assert english_publication is not None
-        assert english_publication.find('title').text == 'On the composition of species of the Asian Clams Corbicula ' \
+        assert english_publication.find('title').text == 'composition of species of the Asian Clams Corbicula ' \
                                                          'in the Lower Rhine Mollusca: Bivalvia: Corbiculidae'
         assert english_publication.find('prefix').text == 'On the'
 

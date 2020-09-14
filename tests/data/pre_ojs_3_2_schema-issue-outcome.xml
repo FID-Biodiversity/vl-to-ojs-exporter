@@ -19,8 +19,8 @@
 		<articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874694</id>
-				<title locale="de_DE">Die Tenebrioniden des Rheinlandes</title>
-				<title locale="en_US">Die Tenebrioniden des Rheinlandes</title>
+				<title locale="de_DE">Tenebrioniden des Rheinlandes</title>
+				<title locale="en_US">Tenebrioniden des Rheinlandes</title>
 				<prefix locale="de_DE">Die</prefix>
 				<prefix locale="en_US">Die</prefix>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
@@ -71,8 +71,8 @@
 			</article>
 			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874697</id>
-				<title locale="de_DE">Die deutschen Carabus-Arten</title>
-				<title locale="en_US">Die deutschen Carabus-Arten</title>
+				<title locale="de_DE">deutschen Carabus-Arten</title>
+				<title locale="en_US">deutschen Carabus-Arten</title>
 				<prefix locale="de_DE">Die</prefix>
 				<prefix locale="en_US">Die</prefix>
 				<subtitle locale="de_DE">mit 1 Abbildung und 1 Tafel</subtitle>
@@ -100,8 +100,8 @@
 			</article>
 			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874701</id>
-				<title locale="de_DE">Das Verschwinden der Sümpfe und Moore am Niederrhein</title>
-				<title locale="en_US">Das Verschwinden der Sümpfe und Moore am Niederrhein</title>
+				<title locale="de_DE">Verschwinden der Sümpfe und Moore am Niederrhein</title>
+				<title locale="en_US">Verschwinden der Sümpfe und Moore am Niederrhein</title>
 				<prefix locale="de_DE">Das</prefix>
 				<prefix locale="en_US">Das</prefix>
 				<subtitle locale="de_DE">mit 15 Karten auf 11 Tafeln</subtitle>
@@ -233,8 +233,8 @@
 			</article>
 			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874718</id>
-				<title locale="de_DE">Die Wirtsvögel des Kuckucks in der Rheinprovinz</title>
-				<title locale="en_US">Die Wirtsvögel des Kuckucks in der Rheinprovinz</title>
+				<title locale="de_DE">Wirtsvögel des Kuckucks in der Rheinprovinz</title>
+				<title locale="en_US">Wirtsvögel des Kuckucks in der Rheinprovinz</title>
 				<prefix locale="de_DE">Die</prefix>
 				<prefix locale="en_US">Die</prefix>
 				<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
@@ -341,8 +341,8 @@
 			</article>
 			<article date_published="1938-04-13" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 				<id advice="ignore" type="internal">10874727</id>
-				<title locale="de_DE">Die Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
-				<title locale="en_US">Die Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
+				<title locale="de_DE">Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
+				<title locale="en_US">Pflanzengallen (Phyto- und Zoocecidien) des Rheinlandes</title>
 				<prefix locale="de_DE">Die</prefix>
 				<prefix locale="en_US">Die</prefix>
 				<subtitle locale="de_DE">ein Verzeichnis mit kritischen Anmerkungen und Fundortsangaben : zweiter Nachtrag</subtitle>

@@ -9,7 +9,7 @@
 		</revision>
 	</submission_file>
 	<publication access_status="0" date_published="1942-01-01" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+		<title locale="de_DE">Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="de_DE">Die</prefix>
 		<subtitle locale="de_DE">mit 2 Abbildungen und 1 Tafel</subtitle>
 		<type locale="de_DE">text</type>
@@ -28,7 +28,7 @@
 		<pages>108-116</pages>
 	</publication>
 	<publication access_status="0" date_published="1942-01-01" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<title locale="en_US">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+		<title locale="en_US">Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="en_US">Die</prefix>
 		<subtitle locale="en_US">mit 2 Abbildungen und 1 Tafel</subtitle>
 		<type locale="en_US">text</type>

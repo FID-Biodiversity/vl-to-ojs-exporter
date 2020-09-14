@@ -238,8 +238,8 @@
 				</article>
 				<article date_published="1942-01-01" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<id advice="ignore" type="internal">10903392</id>
-					<title locale="de_DE">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
-					<title locale="en_US">Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+					<title locale="de_DE">Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
+					<title locale="en_US">Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 					<prefix locale="de_DE">Die</prefix>
 					<prefix locale="en_US">Die</prefix>
 					<subtitle locale="de_DE">mit 2 Abbildungen und 1 Tafel</subtitle>
@@ -342,8 +342,8 @@
 				</article>
 				<article date_published="1942-01-01" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<id advice="ignore" type="internal">10903421</id>
-					<title locale="de_DE">Die Algenflora Westfalens und der angrenzenden Gebiete</title>
-					<title locale="en_US">Die Algenflora Westfalens und der angrenzenden Gebiete</title>
+					<title locale="de_DE">Algenflora Westfalens und der angrenzenden Gebiete</title>
+					<title locale="en_US">Algenflora Westfalens und der angrenzenden Gebiete</title>
 					<prefix locale="de_DE">Die</prefix>
 					<prefix locale="en_US">Die</prefix>
 					<subtitle locale="de_DE">eine erste zusammenfassende Darstellung über den augenblicklichen Stand : Mitteilung  Nr. 154 aus dem Ruhrland-Museum der Stadt Essen : 2 Abbildungen und 1 Tabelle</subtitle>

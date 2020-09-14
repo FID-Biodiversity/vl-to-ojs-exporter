@@ -153,13 +153,11 @@ class OjsArticle(XmlGenerator):
         self.language = normalize_to_iso_language(
             self._get_primary_language(vl_article.languages)
         )
-        if isinstance(self.title, dict):
-            prefix = self._get_title_prefix(self.title)
-        else:
-            prefix = self._get_title_prefix(self.title)
-        self.prefix = prefix
+        self.prefix = self._get_title_prefix(self.title)
         self.submission_date = self._get_submission_date_from_files(vl_article.files)
         self.is_standalone = vl_article.is_standalone
+
+        self.title = self._update_title_with_prefix(self.title, self.prefix)
 
         self._submission_ids = {}
         self._submission_counter = 0
@@ -254,7 +252,7 @@ class OjsArticle(XmlGenerator):
         """ Estimates the prefix of the article's title. """
 
         if isinstance(article_title, dict):
-            return {key: self._get_title_prefix(value) for key, value in article_title.items()}
+            return {language: self._get_title_prefix(title_string) for language, title_string in article_title.items()}
         else:
             return self._get_prefix_from_title(article_title)
 
@@ -266,6 +264,25 @@ class OjsArticle(XmlGenerator):
             self._author_ids[author] = author_id
 
         return author_id
+
+    def _update_title_with_prefix(self, title, prefix):
+        if not prefix or prefix is None:
+            return title
+
+        def get_title_shortened_by_prefix_length(title, prefix):
+            return title[len(prefix) + 1:]
+
+        if isinstance(title, dict):
+            updated_dict = {}
+            for language, title_string in title.items():
+                if prefix[language] is not None and title_string.startswith(prefix[language]):
+                    updated_dict[language] = get_title_shortened_by_prefix_length(title_string, prefix[language])
+                else:
+                    updated_dict[language] = title_string
+
+            return updated_dict
+        else:
+            return get_title_shortened_by_prefix_length(title, prefix) if title.startswith(prefix) else title
 
 
 class OjsIssue(XmlGenerator):
