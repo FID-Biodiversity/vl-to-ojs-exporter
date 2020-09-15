@@ -32,6 +32,7 @@ ISO_LANGUAGES = {
     'ger': 'de_DE',
     'eng': 'en_US',
     'fre': 'fr_FR',
+    'und': None,
 }
 
 
@@ -169,7 +170,9 @@ class OjsArticle(XmlGenerator):
         if self.language not in self.template_configuration[self.LANGUAGE_ARRAY_NAME_IN_CONFIGURATION]:
             # This makes sure that if the article has a non-configured language, the specific local data are still
             # given, because otherwise OJS will complain at import!
-            self.template_configuration[self.LANGUAGE_ARRAY_NAME_IN_CONFIGURATION].append(self.language)
+            if self.language is not None:
+                logger.debug('Adding language: {}'.format(self.language))
+                self.template_configuration[self.LANGUAGE_ARRAY_NAME_IN_CONFIGURATION].append(self.language)
 
     @property
     def authors(self) -> list:
@@ -222,7 +225,8 @@ class OjsArticle(XmlGenerator):
                 prefix = self.prefix[language] if self.prefix[language] is not None else ''
                 issue_title[language] = '{prefix} {title}'.format(prefix=prefix, title=title)
         else:
-            issue_title = '{prefix} {title}'.format(prefix=self.prefix, title=self.title)
+            prefix = self.prefix if self.prefix is not None else ''
+            issue_title = '{prefix} {title}'.format(prefix=prefix, title=self.title)
         ojs_issue.title = issue_title
 
         ojs_issue.publication_year = self.publication_year
