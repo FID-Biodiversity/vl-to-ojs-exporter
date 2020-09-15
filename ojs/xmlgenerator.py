@@ -350,6 +350,10 @@ class OjsIssue(XmlGenerator):
             self.id = vl_issue.id
             self.date_published = None
             self.date_modified = None
+
+            title = vl_issue.title
+            subtitle = vl_issue.subtitle if vl_issue.subtitle is not None else ''
+            self.title = '{title}: {subtitle}'.format(title=title, subtitle=subtitle)
             if vl_issue.publication_date is not None:
                 self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
                 self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')
@@ -382,6 +386,11 @@ class OjsVolume(XmlGenerator):
 
         self.issues = [OjsIssue(issue, template_configuration) for issue in vl_volume.issues]
         self.articles = [OjsArticle(article, template_configuration) for article in vl_volume.articles]
+
+        if vl_volume.title is not None:
+            title = vl_volume.title
+            subtitle = vl_volume.subtitle if vl_volume.subtitle is not None else ''
+            self.title = '{title} : {subtitle}'.format(title=title, subtitle=subtitle)
 
         issue_value = self.issues if self.issues else [self]
         self.add_variable_to_template_configuration(OjsIssue.ISSUES_STRING, issue_value)

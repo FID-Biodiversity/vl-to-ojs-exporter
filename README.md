@@ -60,6 +60,9 @@ use_pre_3_2_schema = False
 # If you need to split the file (e.g. due to size), you can configure for every issue to have it's own <issues> tag.
 root_every_issue_in_issues_tag = False
 
+# There may come the case, where you want the title of Volumes and Issues to be shown in OJS. To do so, set this value True. If this value is unset, False is the default.
+add_title_to_issue = False
+
 [Process]
 # Please double quote the given IDs!
 items = [

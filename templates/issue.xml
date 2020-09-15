@@ -8,7 +8,7 @@
             <number>{{ issue.issue_number }}</number>
         {% endif %}
         <year>{{ issue.publication_year }}</year>
-        {% if issue.title %}
+        {% if add_title_to_issue and issue.title %}
             {% for language in languages %}
                 <title locale="{{ language }}">{{ issue.title|get_value_for_language(language) }}</title>
             {% endfor %}

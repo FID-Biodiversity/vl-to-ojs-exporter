@@ -223,6 +223,7 @@ class TestXmlGeneration:
 
         article_id = '10750063'
         vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
+        xml_generator.xml_configuration.change_configuration_value('add_title_to_issue', True)
         vl_article.is_standalone = True
         ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
 
@@ -315,6 +316,27 @@ class TestXmlGeneration:
         for author in authors:
             assert author.givenname.text == 'Andreas'
             assert author.familyname.text == 'Leistikow'
+
+    def test_set_issue_title(self):
+        issue_id = '10821674'
+        configurator = MockConfigurator()
+        configurator.change_configuration_value('add_title_to_issue', True)
+        configurator.change_configuration_value('use_pre_3_2_schema', True)
+
+        vl = VisualLibrary()
+        vl_issue = vl.get_element_for_id(issue_id)
+
+        xml_generator = OjsXmlGenerator(configurator)
+        ojs_issue = xml_generator.convert_vl_objecto_to_ojs_object(vl_issue)
+
+        issue_xml_string = ojs_issue.generate_xml()
+        xml_soup = Soup(issue_xml_string, 'lxml')
+
+        assert xml_soup.issue_identification is not None
+        assert xml_soup.issue_identification.title is not None
+        assert xml_soup.issue_identification.title.text == 'Siebengebirge und Rodderberg : Beiträge zur Biologie ' \
+                                                           'eines rheinischen Naturschutzgebietes, Teil I ; Mit ' \
+                                                           'Arbeiten von Ferdinand Pax ...'
 
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
