@@ -215,7 +215,16 @@ class OjsArticle(XmlGenerator):
         ojs_issue.id = self.id
         ojs_issue.volume_number = self.id
         ojs_issue.issue_number = self.id
-        ojs_issue.title = '{prefix} {title}'.format(prefix=self.prefix, title=self.title)
+
+        if isinstance(self.title, dict):
+            issue_title = {}
+            for language, title in self.title.items():
+                prefix = self.prefix[language] if self.prefix[language] is not None else ''
+                issue_title[language] = '{prefix} {title}'.format(prefix=prefix, title=title)
+        else:
+            issue_title = '{prefix} {title}'.format(prefix=self.prefix, title=self.title)
+        ojs_issue.title = issue_title
+
         ojs_issue.publication_year = self.publication_year
         ojs_issue.articles.append(self)
 
