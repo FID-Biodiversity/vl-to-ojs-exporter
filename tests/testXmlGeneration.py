@@ -193,6 +193,20 @@ class TestXmlGeneration:
 
         # No validation, because the schema is no proper OJS!
 
+    def test_article_without_language_specification(self):
+        article_id = '10821674'
+        vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
+        vl_article.is_standalone = True
+        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
+
+        add_dummy_submission_file_data(ojs_article.submission_files)
+        generated_xml_string = ojs_article.generate_xml()
+
+        xml_soup = Soup(generated_xml_string, 'lxml')
+        article = xml_soup.find('article')
+        assert article.has_attr('locale') is False
+        assert article.article_galley.find('name').has_attr('locale') is False
+
     def test_article_without_author(self):
         # TODO: Add test
         article_id = '10903128'

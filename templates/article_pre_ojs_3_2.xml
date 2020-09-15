@@ -1,5 +1,8 @@
 <article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         locale="{{ article.language }}" section_ref="{{ article_reference_label }}" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"
+         {% if article.language %}
+            locale="{{ article.language }}"
+         {% endif %}
+         section_ref="{{ article_reference_label }}" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"
          stage="production"
          {% if issue and issue.date_published %}
             date_published="{{ issue.date_published|to_iso_date }}"
@@ -77,7 +80,9 @@
 
             <article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false"
                                 xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-                <name locale="{{ article.language }}">{{ submission.mime_type|get_name_for_mime_type }}</name>
+                <name {% if article.language %}locale="{{ article.language }}"{% endif%}>
+                    {{ submission.mime_type|get_name_for_mime_type }}
+                </name>
                 <seq>{{ loop.index0 }}</seq>
                 <submission_file_ref id="{{ submission_id }}" revision="{{ revision_number }}"/>
             </article_galley>
