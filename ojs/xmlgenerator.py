@@ -223,7 +223,9 @@ class OjsArticle(XmlGenerator):
             issue_title = {}
             for language, title in self.title.items():
                 prefix = self.prefix[language] if self.prefix[language] is not None else ''
-                issue_title[language] = '{prefix} {title}'.format(prefix=prefix, title=title)
+                subtitle = ': {}'.format(self.subtitle[language]) if self.subtitle[language] is not None else ''
+                issue_title[language] = '{prefix} {title}{subtitle}'.format(prefix=prefix, title=title,
+                                                                            subtitle=subtitle)
         else:
             prefix = self.prefix if self.prefix is not None else ''
             issue_title = '{prefix} {title}'.format(prefix=prefix, title=self.title)

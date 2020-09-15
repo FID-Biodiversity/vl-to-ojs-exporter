@@ -80,9 +80,7 @@
 
             <article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false"
                                 xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-                <name {% if article.language %}locale="{{ article.language }}"{% endif%}>
-                    {{ submission.mime_type|get_name_for_mime_type }}
-                </name>
+                <name {% if article.language %}locale="{{ article.language }}"{% endif%}>{{ submission.mime_type|get_name_for_mime_type }}</name>
                 <seq>{{ loop.index0 }}</seq>
                 <submission_file_ref id="{{ submission_id }}" revision="{{ revision_number }}"/>
             </article_galley>
