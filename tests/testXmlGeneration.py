@@ -338,6 +338,45 @@ class TestXmlGeneration:
                                                            'eines rheinischen Naturschutzgebietes, Teil I ; Mit ' \
                                                            'Arbeiten von Ferdinand Pax ...'
 
+    def test_multilanguage_titles(self):
+        issue_id = '10804777'
+        vl_issue, xml_generator = create_vl_object_and_xml_generator(issue_id, pre_3_2_schema=True)
+        xml_generator.xml_configuration.change_configuration_value('add_title_to_issue', True)
+        vl_issue.is_standalone = True
+        ojs_issue = xml_generator.convert_vl_objecto_to_ojs_object(vl_issue)
+
+        for article in ojs_issue.articles:
+            add_dummy_submission_file_data(article.submission_files)
+
+        issue_xml = ojs_issue.generate_xml()
+        xml_soup = Soup(issue_xml, 'lxml')
+
+        issue_details = xml_soup.issue_identification
+        german_issue_title = issue_details.find('title', {'locale': 'de_DE'})
+        assert german_issue_title is not None
+        assert german_issue_title.text == 'Geologie und Paläontologie im Devon und Tertiär der ICE-Trasse im Siebengebirge : ' \
+                                    'Ergebnisse der baubegleitenden Untersuchungen in zwei Tunnelbauwerken der ' \
+                                    'ICE-Neubaustrecke Köln-Rhein/Main'
+        english_issue_title = issue_details.find('title', {'locale': 'en_US'})
+        assert english_issue_title is not None
+        assert english_issue_title.text == 'Geology and paleontology of the Devonian and Tertiary at the ICE line in the ' \
+                                     'Siebengebirge (Bonn, FRG)'
+
+        articles = xml_soup.find_all('article')
+        assert len(articles) == 4
+
+        multi_language_article = articles[2]
+        assert multi_language_article.find('title', {'locale': 'de_DE'}).text == \
+               'Braunkohlen-Tertiär der südöstlichen Niederrheinischen Bucht an der ICE-Neubaustrecke ' \
+               'Köln-Rhein/Main'
+        assert multi_language_article.find('subtitle', {'locale': 'de_DE'}) is None
+        assert multi_language_article.find('prefix', {'locale': 'de_DE'}).text == 'Das'
+        assert multi_language_article.find('title', {'locale': 'en_US'}).text == \
+               'lignite-bearing Tertiary of the southeastern Lower Rhine Embayment at the ICE Sieg tunnel ' \
+               'construction'
+        assert multi_language_article.find('subtitle', {'locale': 'en_US'}) is None
+        assert multi_language_article.find('prefix', {'locale': 'en_US'}).text == 'The'
+
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
         output_file_path = input_file_path.parent / '{file_name}-outcome.xml'.format(file_name=input_file_path.stem)

@@ -36,6 +36,19 @@ ISO_LANGUAGES = {
 }
 
 
+def merge_multilanguage_title(titles, subtitles):
+    def merge_title_and_subtitle(title, subtitle):
+        subtitle = ' : {}'.format(subtitle) if subtitle is not None else ''
+        return '{title}{subtitle}'.format(title=title, subtitle=subtitle)
+
+    if isinstance(titles, dict):
+        return {language: merge_title_and_subtitle(title, subtitles[language])
+                for language, title in titles.items()
+                }
+    else:
+        return merge_title_and_subtitle(titles, subtitles)
+
+
 def normalize_to_iso_language(language_string):
     """ Translates a given language string into an ISO-639 language string.
         :param language_string: A language abbreviation to translate.
@@ -351,9 +364,9 @@ class OjsIssue(XmlGenerator):
             self.date_published = None
             self.date_modified = None
 
-            title = vl_issue.title
-            subtitle = vl_issue.subtitle if vl_issue.subtitle is not None else ''
-            self.title = '{title}: {subtitle}'.format(title=title, subtitle=subtitle)
+            self.title = normalize_language_keys_in_dictionary(
+                merge_multilanguage_title(vl_issue.title, vl_issue.subtitle)
+            )
             if vl_issue.publication_date is not None:
                 self.date_published = datetime.strptime(vl_issue.publication_date, '%Y')
                 self.date_modified = datetime.strptime(vl_issue.publication_date, '%Y')
@@ -388,9 +401,9 @@ class OjsVolume(XmlGenerator):
         self.articles = [OjsArticle(article, template_configuration) for article in vl_volume.articles]
 
         if vl_volume.title is not None:
-            title = vl_volume.title
-            subtitle = vl_volume.subtitle if vl_volume.subtitle is not None else ''
-            self.title = '{title} : {subtitle}'.format(title=title, subtitle=subtitle)
+            self.title = normalize_language_keys_in_dictionary(
+                merge_multilanguage_title(vl_volume.title, vl_volume.subtitle)
+            )
 
         issue_value = self.issues if self.issues else [self]
         self.add_variable_to_template_configuration(OjsIssue.ISSUES_STRING, issue_value)

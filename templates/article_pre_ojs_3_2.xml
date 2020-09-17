@@ -24,13 +24,21 @@
 
     {% if article.prefix %}
         {% for language in languages %}
-            <prefix locale="{{ language }}">{{ article.prefix|get_value_for_language(language) }}</prefix>
+            {% with prefix = article.prefix|get_value_for_language(language) %}
+                {% if prefix %}
+                    <prefix locale="{{ language }}">{{ prefix }}</prefix>
+                {% endif %}
+            {% endwith %}
         {% endfor %}
     {% endif %}
 
     {% if article.subtitle %}
        {% for language in languages %}
-            <subtitle locale="{{ language }}">{{ article.subtitle|get_value_for_language(language) }}</subtitle>
+            {% with subtitle = article.subtitle|get_value_for_language(language) %}
+                {% if subtitle %}
+                    <subtitle locale="{{ language }}">{{ subtitle }}</subtitle>
+                {% endif %}
+            {% endwith %}
         {% endfor %}
     {% endif %}
 

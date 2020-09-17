@@ -39,12 +39,13 @@
         <title locale="{{ language }}">{{ article.title|get_value_for_language(language) }}</title>
 
         {% with prefix = article.prefix|get_value_for_language(language),
-                abstract = article.abstract|get_value_for_language(language) %}
+                abstract = article.abstract|get_value_for_language(language),
+                subtitle = article.subtitle|get_value_for_language(language) %}
             {% if prefix %}
                 <prefix locale="{{ language }}">{{ prefix }}</prefix>
             {% endif %}
-            {% if article.subtitle|get_value_for_language(language) %}
-                <subtitle locale="{{ language }}">{{ article.subtitle|get_value_for_language(language) }}</subtitle>
+            {% if subtitle %}
+                <subtitle locale="{{ language }}">{{ subtitle }}</subtitle>
             {% endif %}
             {% if abstract %}
                 <abstract locale="{{ language }}">{{ abstract }}</abstract>
