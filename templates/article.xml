@@ -5,7 +5,7 @@
 
     {% for submission in article.submission_files %}
         {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
-            <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="final" id="{{ submission_id }}"
+            <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="{{ submission_id }}"
                              xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
               <revision number="{{ revision_number }}" filename="{{ submission.name }}" viewable="false"
                         date_uploaded="{{ submission.date_uploaded|to_iso_date }}"

@@ -12,7 +12,7 @@
 		<articles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903380</id>
-				<submission_file id="109033801" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033801" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903380" filesize="4335648" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903380</name>
 						<name locale="en_US">pdf_10903380</name>
@@ -58,7 +58,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903381</id>
-				<submission_file id="109033811" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033811" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903381" filesize="2479171" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903381</name>
 						<name locale="en_US">pdf_10903381</name>
@@ -104,7 +104,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903382</id>
-				<submission_file id="109033821" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033821" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903382" filesize="1894291" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903382</name>
 						<name locale="en_US">pdf_10903382</name>
@@ -150,7 +150,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903383</id>
-				<submission_file id="109033831" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033831" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903383" filesize="2900282" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903383</name>
 						<name locale="en_US">pdf_10903383</name>
@@ -196,7 +196,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903385</id>
-				<submission_file id="109033851" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033851" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903385" filesize="1460299" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903385</name>
 						<name locale="en_US">pdf_10903385</name>
@@ -242,7 +242,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903387</id>
-				<submission_file id="109033871" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033871" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903387" filesize="5027921" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903387</name>
 						<name locale="en_US">pdf_10903387</name>
@@ -288,7 +288,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903390</id>
-				<submission_file id="109033901" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033901" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903390" filesize="497710" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903390</name>
 						<name locale="en_US">pdf_10903390</name>
@@ -334,7 +334,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903391</id>
-				<submission_file id="109033911" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033911" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903391" filesize="1391255" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903391</name>
 						<name locale="en_US">pdf_10903391</name>
@@ -380,7 +380,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903392</id>
-				<submission_file id="109033921" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033921" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903392" filesize="1745365" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903392</name>
 						<name locale="en_US">pdf_10903392</name>
@@ -428,7 +428,7 @@
 			</article>
 			<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<id advice="ignore" type="internal">10903393</id>
-				<submission_file id="109033931" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+				<submission_file id="109033931" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 					<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903393" filesize="3002636" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 						<name locale="de_DE">pdf_10903393</name>
 						<name locale="en_US">pdf_10903393</name>

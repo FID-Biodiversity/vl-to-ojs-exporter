@@ -17,7 +17,7 @@
 			<email>dummy@mactest.com</email>
 		</author>
 	</authors>
-	<submission_file id="109021111" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<submission_file id="109021111" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10902111" filesize="12625027" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 			<name locale="de_DE">pdf_10902111</name>
 			<name locale="en_US">pdf_10902111</name>

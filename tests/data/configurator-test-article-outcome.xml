@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id advice="ignore" type="internal">10903392</id>
-	<submission_file id="109033921" stage="final" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<submission_file id="109033921" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903392" filesize="1745365" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
 			<name locale="de_DE">pdf_10903392</name>
 			<name locale="en_US">pdf_10903392</name>
