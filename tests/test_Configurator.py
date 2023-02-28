@@ -1,6 +1,6 @@
 import os
-
 import pathlib
+
 from VisualLibrary import VisualLibrary
 
 from configuration.Configurator import Configurator
@@ -8,34 +8,40 @@ from ojs.xmlgenerator import OjsXmlGenerator
 from tests.test_XmlGeneration import add_dummy_submission_file_data
 
 this_files_directory = os.path.dirname(os.path.realpath(__file__))
-TEST_DATA_DIRECTORY = '{base_dir}/data'.format(base_dir=this_files_directory)
+TEST_DATA_DIRECTORY = "{base_dir}/data".format(base_dir=this_files_directory)
 
-DEFAULT_XML_INPUT_DATA_FILE = 'configurator-test-article.xml'
+DEFAULT_XML_INPUT_DATA_FILE = "configurator-test-article.xml"
 
 
 class TestConfigurator:
     def test_file_parsing(self):
-        test_config_file_path = '{base_dir}/test-configuration.ini'.format(base_dir=TEST_DATA_DIRECTORY)
+        test_config_file_path = "{base_dir}/test-configuration.ini".format(
+            base_dir=TEST_DATA_DIRECTORY
+        )
 
         configurator = Configurator()
         configurator.parse_configuration(test_config_file_path)
         parameters_in_python_format = configurator.get_configuration()
 
         languages = ["de_DE", "en_US"]
-        assert parameters_in_python_format['languages'] == languages
-        assert parameters_in_python_format['items'] == {'10812612', '10773114'}
+        assert parameters_in_python_format["languages"] == languages
+        assert parameters_in_python_format["items"] == {"10812612", "10773114"}
 
-        template_confguration = parameters_in_python_format[Configurator.SECTION_TEMPLATES]
-        assert template_confguration['user_group_reference_label'] == 'Autor/in'
-        assert template_confguration['file_uploading_ojs_user'] == 'ojs_admin'
-        assert template_confguration['article_reference_label'] == 'ART'
-        assert template_confguration['languages'] == languages
-        assert template_confguration['a_boolean_value'] is True
-        assert template_confguration['another_boolean_value'] is False
-        assert template_confguration['root_every_issue_in_issues_tag'] is False
+        template_confguration = parameters_in_python_format[
+            Configurator.SECTION_TEMPLATES
+        ]
+        assert template_confguration["user_group_reference_label"] == "Autor/in"
+        assert template_confguration["file_uploading_ojs_user"] == "ojs_admin"
+        assert template_confguration["article_reference_label"] == "ART"
+        assert template_confguration["languages"] == languages
+        assert template_confguration["a_boolean_value"] is True
+        assert template_confguration["another_boolean_value"] is False
+        assert template_confguration["root_every_issue_in_issues_tag"] is False
 
     def test_inserting_of_configuration_in_templates(self):
-        test_config_file_path = '{base_dir}/test-configuration.ini'.format(base_dir=TEST_DATA_DIRECTORY)
+        test_config_file_path = "{base_dir}/test-configuration.ini".format(
+            base_dir=TEST_DATA_DIRECTORY
+        )
 
         configurator = Configurator()
         configurator.parse_configuration(test_config_file_path)
@@ -46,8 +52,9 @@ class TestConfigurator:
         assert xml_string == expected_xml_string
 
     def get_ojs_xml_from_configuration(self, configurator: Configurator) -> str:
-        xml_test_file = '{base_dir}/{file_name}'.format(base_dir=TEST_DATA_DIRECTORY,
-                                                        file_name=DEFAULT_XML_INPUT_DATA_FILE)
+        xml_test_file = "{base_dir}/{file_name}".format(
+            base_dir=TEST_DATA_DIRECTORY, file_name=DEFAULT_XML_INPUT_DATA_FILE
+        )
 
         vl = VisualLibrary()
         vl_issue = vl.get_element_from_xml_file(xml_test_file)
@@ -63,10 +70,11 @@ class TestConfigurator:
 
     def get_expected_xml_string_for_input_file(self, input_file):
         input_file_path = pathlib.Path(input_file)
-        outcome_file_path = '{base_dir}/{input_file_name}-outcome.xml'.format(base_dir=TEST_DATA_DIRECTORY,
-                                                                              input_file_name=input_file_path.stem)
+        outcome_file_path = "{base_dir}/{input_file_name}-outcome.xml".format(
+            base_dir=TEST_DATA_DIRECTORY, input_file_name=input_file_path.stem
+        )
 
-        with open(outcome_file_path, 'r') as outcome_file:
+        with open(outcome_file_path, "r") as outcome_file:
             outcome_string = outcome_file.read()
 
         return outcome_string
