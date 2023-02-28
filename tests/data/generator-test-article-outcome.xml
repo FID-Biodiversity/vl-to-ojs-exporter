@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<article date_submitted="2020-06-05" stage="production" status="5" submission_progress="0" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id advice="ignore" type="internal">10903392</id>
-	<submission_file id="109033921" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10903392" filesize="1745365" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
+<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
+	<id type="internal" advice="ignore">10903392</id>
+	<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033921" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+		<revision number="1" filename="pdf_10903392" viewable="false" date_uploaded="2020-06-05" date_modified="2020-06-05" filesize="1745365" filetype="application/pdf" uploader="ojs_admin" genre="Artikeltext">
 			<name locale="de_DE">pdf_10903392</name>
 			<name locale="en_US">pdf_10903392</name>
 			<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 		</revision>
 	</submission_file>
-	<publication access_status="0" date_published="1942-01-01" locale="de_DE" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<id advice="update" type="doi">https://doi.org/10.1234/test.123</id>
+	<publication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="de_DE" version="1" status="5" seq="0" section_ref="ART" access_status="0" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" date_published="1942-01-01">
+		<id type="doi" advice="update">https://doi.org/10.1234/test.123</id>
 		<title locale="de_DE">Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="de_DE">Die</prefix>
 		<subtitle locale="de_DE">mit 2 Abbildungen und 1 Tafel</subtitle>
@@ -21,21 +21,21 @@
 			<keyword>another-keyword</keyword>
 		</keywords>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+			<author include_in_browse="true" user_group_ref="Autor*in" seq="0" id="1">
 				<givenname>Werner</givenname>
 				<familyname>Paeckelmann</familyname>
 				<email>dummy@mactest.com</email>
 			</author>
 		</authors>
-		<article_galley approved="false" locale="de_DE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+		<article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" locale="de_DE">
 			<name locale="de_DE">PDF</name>
 			<seq>0</seq>
 			<submission_file_ref id="109033921" revision="1"/>
 		</article_galley>
 		<pages>108-116</pages>
 	</publication>
-	<publication access_status="0" date_published="1942-01-01" locale="en_US" section_ref="ART" seq="0" status="5" version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<id advice="update" type="doi">https://doi.org/10.1234/test.123</id>
+	<publication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="en_US" version="1" status="5" seq="0" section_ref="ART" access_status="0" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" date_published="1942-01-01">
+		<id type="doi" advice="update">https://doi.org/10.1234/test.123</id>
 		<title locale="en_US">Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk</title>
 		<prefix locale="en_US">Die</prefix>
 		<subtitle locale="en_US">mit 2 Abbildungen und 1 Tafel</subtitle>
@@ -47,13 +47,13 @@
 			<keyword>another-keyword</keyword>
 		</keywords>
 		<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-			<author id="1" include_in_browse="true" seq="0" user_group_ref="Autor*in">
+			<author include_in_browse="true" user_group_ref="Autor*in" seq="0" id="1">
 				<givenname>Werner</givenname>
 				<familyname>Paeckelmann</familyname>
 				<email>dummy@mactest.com</email>
 			</author>
 		</authors>
-		<article_galley approved="false" locale="en_US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+		<article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" locale="en_US">
 			<name locale="en_US">PDF</name>
 			<seq>0</seq>
 			<submission_file_ref id="109033921" revision="1"/>

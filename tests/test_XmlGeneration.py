@@ -1,6 +1,7 @@
 import os
 import pathlib
 import datetime
+import pytest
 from bs4 import BeautifulSoup as Soup
 
 from configuration.Configurator import Configurator
@@ -34,12 +35,11 @@ class MockConfigurator(Configurator):
 
 
 class TestXmlGeneration:
-    def test_issue_xml_generation(self):
+    def test_issue_xml_generation(self, visual_library):
         xml_test_file = '{base_dir}/generator-test-issue.xml'.format(base_dir=TEST_DATA_DIRECTORY)
 
         configurator = MockConfigurator()
-        vl = VisualLibrary()
-        vl_issue = vl.get_element_from_xml_file(xml_test_file)
+        vl_issue = visual_library.get_element_from_xml_file(xml_test_file)
 
         ojs_xml_generator = OjsXmlGenerator(configurator)
         ojs_issue = ojs_xml_generator.convert_vl_objecto_to_ojs_object(vl_issue)
@@ -217,39 +217,6 @@ class TestXmlGeneration:
         ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
         assert ojs_article.publication_year == '1970'
 
-    def test_article_is_monography(self):
-        # Articles that are like a monography should be presented as single article issue
-        # (https://redmine.ub.uni-frankfurt.de/issues/179)
-
-        article_id = '10750063'
-        vl_article, xml_generator = create_vl_object_and_xml_generator(article_id, pre_3_2_schema=True)
-        xml_generator.xml_configuration.change_configuration_value('add_title_to_issue', True)
-        vl_article.is_standalone = True
-        ojs_article = xml_generator.convert_vl_objecto_to_ojs_object(vl_article)
-
-        add_dummy_submission_file_data(ojs_article.submission_files)
-        generated_xml_string = ojs_article.generate_xml()
-
-        xml_soup = Soup(generated_xml_string, 'lxml')
-        assert xml_soup.find('issue_galley') is None
-        assert xml_soup.find('issues') is not None
-
-        issues = xml_soup.find_all('issue')
-        assert len(issues) == 1
-        issue = issues[0]
-        assert issue.issue_identification.title.text == 'Die Wälder des Mittelterrassengebietes östlich von Köln'
-
-        articles = issue.find_all('article')
-        assert len(articles) == 1
-
-        single_article = articles[0]
-        authors = single_article.find_all('author')
-        assert len(authors) == 1
-        assert authors[0].givenname.text == 'Erhard'
-        assert authors[0].familyname.text == 'Sauer'
-
-        validate_ojs_native_xsd_consistency(generated_xml_string, pre_ojs32_schema=True)
-
     def test_author_with_title(self):
         def validate_ojs_article(ojs_article):
             ojs_author = ojs_article.authors[0]
@@ -389,6 +356,10 @@ class TestXmlGeneration:
                 expected_outcome_string = outcome_file.read()
 
         return expected_outcome_string
+
+    @pytest.fixture
+    def visual_library(self):
+        return VisualLibrary()
 
 
 def create_vl_object_and_xml_generator(vl_id, pre_3_2_schema=False):

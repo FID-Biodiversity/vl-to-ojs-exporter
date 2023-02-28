@@ -1,10 +1,10 @@
 <OAI-PMH xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
     <responseDate>2020-07-22T09:32:39Z</responseDate>
-    <request verb="GetRecord" metadataPrefix="mets" identifier="10802368">http://vl.ub.uni-frankfurt.de/oai/</request>
+    <request verb="GetRecord" metadataPrefix="mets" identifier="10802368">https://sammlungen.ub.uni-frankfurt.de/oai/</request>
     <GetRecord>
         <record>
             <header>
-                <identifier>oai:vl.ub.uni-frankfurt.de:10802368</identifier>
+                <identifier>oai:sammlungen.ub.uni-frankfurt.de:10802368</identifier>
                 <datestamp>2020-06-04T14:06:38Z</datestamp>
                 <setSpec>ubffmbiodiv</setSpec>
                 <setSpec>journal_issue</setSpec>
@@ -19,7 +19,7 @@
                             <mets:name>ubffm</mets:name>
                         </mets:agent>
                         <mets:agent ROLE="OTHER" TYPE="OTHER" OTHERTYPE="REPOSITORY">
-                            <mets:name>vl.ub.uni-frankfurt.de</mets:name>
+                            <mets:name>sammlungen.ub.uni-frankfurt.de</mets:name>
                         </mets:agent>
                         <mets:agent ROLE="OTHER" TYPE="OTHER" OTHERTYPE="BUILDER">
                             <mets:name>vd</mets:name>
@@ -1062,9 +1062,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1076,9 +1076,9 @@
                                         <dv:reference>
                                             https://hds.hebis.de/ubffm/Record/HEBubffm%3A10802368
                                         </dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10802368</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10802368</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10802368
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10802368
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1091,9 +1091,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1103,9 +1103,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB46095329X</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903383</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903383</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903383
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903383
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1118,9 +1118,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1130,9 +1130,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460953893</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903390</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903390</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903390
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903390
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1145,9 +1145,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1157,9 +1157,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460954016</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903391</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903391</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903391
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903391
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1172,9 +1172,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1184,9 +1184,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB46095315X</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903382</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903382</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903382
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903382
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1199,9 +1199,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1211,9 +1211,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460952994</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903381</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903381</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903381
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903381
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1226,9 +1226,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1238,9 +1238,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB451149114</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10916017</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10916017</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10916017
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10916017
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1253,9 +1253,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1267,9 +1267,9 @@
                                         <dv:reference>
                                             https://hds.hebis.de/ubffm/Record/HEBubffm%3A10801960
                                         </dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10801960</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10801960</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10801960
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10801960
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1282,9 +1282,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1294,9 +1294,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460954393</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903393</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903393</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903393
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903393
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1309,9 +1309,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1321,9 +1321,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460953494</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903387</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903387</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903387
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903387
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1336,9 +1336,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1348,9 +1348,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460949403</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903380</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903380</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903380
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903380
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1363,9 +1363,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1375,9 +1375,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460954148</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903392</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903392</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903392
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903392
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1390,9 +1390,9 @@
                                 <mets:xmlData>
                                     <dv:rights>
                                         <dv:ownerLogo>
-                                            http://vl.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
+                                            https://sammlungen.ub.uni-frankfurt.de//domainresource/static/graphics/connectors/viewerLogo.gif
                                         </dv:ownerLogo>
-                                        <dv:ownerSiteURL>http://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
+                                        <dv:ownerSiteURL>https://sammlungen.ub.uni-frankfurt.de</dv:ownerSiteURL>
                                     </dv:rights>
                                 </mets:xmlData>
                             </mets:mdWrap>
@@ -1402,9 +1402,9 @@
                                 <mets:xmlData>
                                     <dv:links>
                                         <dv:reference>https://hds.hebis.de/ubffm/Record/HEB460953419</dv:reference>
-                                        <dv:presentation>http://vl.ub.uni-frankfurt.de/id/10903385</dv:presentation>
+                                        <dv:presentation>https://sammlungen.ub.uni-frankfurt.de/id/10903385</dv:presentation>
                                         <dv:sru>
-                                            http://vl.ub.uni-frankfurt.de/proto_ftsearch/10903385
+                                            https://sammlungen.ub.uni-frankfurt.de/proto_ftsearch/10903385
                                         </dv:sru>
                                     </dv:links>
                                 </mets:xmlData>
@@ -1414,559 +1414,559 @@
                     <mets:fileSec>
                         <mets:fileGrp USE="FRONTIMAGE">
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:09.349100Z" ID="IMG_FRONTIMAGE_10801661">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/304/10801661" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/304/10801661" LOCTYPE="URL"/>
                             </mets:file>
                         </mets:fileGrp>
                         <mets:fileGrp USE="DOWNLOAD">
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="e90371428a08134aa68cd1b7bbbf28abf4619ffb" CREATED="2020-06-05T10:44:05.648400Z" CHECKSUMTYPE="SHA-1" SIZE="4335648" ID="PDF_10903380">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903380" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903380" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="ff9b7418a1bdde342cf86a3eee309b83d8f21bd4" CREATED="2020-06-05T10:44:07.341000Z" CHECKSUMTYPE="SHA-1" SIZE="2479171" ID="PDF_10903381">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903381" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903381" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="346a9875f5c3e1c7e270cae91678f7f8fa02cdb3" CREATED="2020-06-05T10:40:19.649000Z" CHECKSUMTYPE="SHA-1" SIZE="1894291" ID="PDF_10903382">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903382" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903382" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="00e98aa0d35b49eef6c1da9e1c7c4d78c6c5550b" CREATED="2020-06-05T10:44:13.665600Z" CHECKSUMTYPE="SHA-1" SIZE="2900282" ID="PDF_10903383">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903383" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903383" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="aed977f30f20e4088611b29b69064007832383a4" CREATED="2020-06-05T10:44:15.086000Z" CHECKSUMTYPE="SHA-1" SIZE="1460299" ID="PDF_10903385">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903385" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903385" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="21b5b21702ae18e45f110d7b41fcc99695dd1eed" CREATED="2020-06-05T10:38:56.274300Z" CHECKSUMTYPE="SHA-1" SIZE="5027921" ID="PDF_10903387">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903387" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903387" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="885a0bbca0d1c00d634ea14eee7fa98cd5156e26" CREATED="2020-06-05T10:44:18.537800Z" CHECKSUMTYPE="SHA-1" SIZE="497710" ID="PDF_10903390">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903390" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903390" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="a34fd72ae27516d9c96fd04aac2cbc0464c6093b" CREATED="2020-06-05T10:38:53.802400Z" CHECKSUMTYPE="SHA-1" SIZE="1391255" ID="PDF_10903391">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903391" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903391" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="8f2c9bc57d2cc79d0b979a4902f96f5c96ac2fde" CREATED="2020-06-05T10:44:17.536200Z" CHECKSUMTYPE="SHA-1" SIZE="1745365" ID="PDF_10903392">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903392" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903392" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="application/pdf" CHECKSUM="e2b63d8853bd4c76821f1755c07d7c60292ce9fa" CREATED="2020-06-05T10:40:21.596600Z" CHECKSUMTYPE="SHA-1" SIZE="3002636" ID="PDF_10903393">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/pdf/10903393" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/pdf/10903393" LOCTYPE="URL"/>
                             </mets:file>
                         </mets:fileGrp>
                         <mets:fileGrp USE="DEFAULT">
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:09.349100Z" ID="IMG_DEFAULT_10801661">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801661" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801661" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:10.793100Z" ID="IMG_DEFAULT_10801662">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801662" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801662" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:17.652900Z" ID="IMG_DEFAULT_10801803">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801803" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801803" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:20.708900Z" ID="IMG_DEFAULT_10801804">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801804" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801804" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:23.888900Z" ID="IMG_DEFAULT_10801805">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801805" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801805" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:25.376900Z" ID="IMG_DEFAULT_10801806">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801806" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801806" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:27.176900Z" ID="IMG_DEFAULT_10801807">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801807" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801807" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:28.836900Z" ID="IMG_DEFAULT_10801808">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801808" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801808" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:30.372900Z" ID="IMG_DEFAULT_10801809">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801809" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801809" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:31.840900Z" ID="IMG_DEFAULT_10801810">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801810" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801810" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:33.312900Z" ID="IMG_DEFAULT_10801811">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801811" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801811" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:34.940900Z" ID="IMG_DEFAULT_10801812">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801812" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801812" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:36.552900Z" ID="IMG_DEFAULT_10801813">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801813" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801813" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:37.844900Z" ID="IMG_DEFAULT_10801814">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801814" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801814" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:39.336900Z" ID="IMG_DEFAULT_10801815">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801815" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801815" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:40.820900Z" ID="IMG_DEFAULT_10801816">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801816" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801816" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:42.420900Z" ID="IMG_DEFAULT_10801817">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801817" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801817" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:45.812900Z" ID="IMG_DEFAULT_10801818">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801818" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801818" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:49.588900Z" ID="IMG_DEFAULT_10801819">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801819" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801819" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:51.268900Z" ID="IMG_DEFAULT_10801820">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801820" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801820" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:52.372900Z" ID="IMG_DEFAULT_10801821">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801821" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801821" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:53.456900Z" ID="IMG_DEFAULT_10801822">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801822" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801822" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:54.780900Z" ID="IMG_DEFAULT_10801823">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801823" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801823" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:56.164900Z" ID="IMG_DEFAULT_10801824">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801824" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801824" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:57.600900Z" ID="IMG_DEFAULT_10801825">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801825" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801825" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:59.056900Z" ID="IMG_DEFAULT_10801826">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801826" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801826" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:00.408900Z" ID="IMG_DEFAULT_10801827">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801827" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801827" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:01.772900Z" ID="IMG_DEFAULT_10801828">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801828" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801828" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:03.508900Z" ID="IMG_DEFAULT_10801829">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801829" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801829" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:06.120900Z" ID="IMG_DEFAULT_10801830">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801830" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801830" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:09.700900Z" ID="IMG_DEFAULT_10801831">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801831" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801831" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:14.176900Z" ID="IMG_DEFAULT_10801832">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801832" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801832" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:15.628900Z" ID="IMG_DEFAULT_10801833">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801833" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801833" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:17.216900Z" ID="IMG_DEFAULT_10801834">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1000/10801834" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1000/10801834" LOCTYPE="URL"/>
                             </mets:file>
                         </mets:fileGrp>
                         <mets:fileGrp USE="THUMBS">
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:09.349100Z" ID="IMG_THUMBS_10801661">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801661" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801661" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:10.793100Z" ID="IMG_THUMBS_10801662">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801662" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801662" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:17.652900Z" ID="IMG_THUMBS_10801803">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801803" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801803" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:20.708900Z" ID="IMG_THUMBS_10801804">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801804" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801804" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:23.888900Z" ID="IMG_THUMBS_10801805">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801805" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801805" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:25.376900Z" ID="IMG_THUMBS_10801806">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801806" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801806" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:27.176900Z" ID="IMG_THUMBS_10801807">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801807" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801807" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:28.836900Z" ID="IMG_THUMBS_10801808">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801808" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801808" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:30.372900Z" ID="IMG_THUMBS_10801809">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801809" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801809" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:31.840900Z" ID="IMG_THUMBS_10801810">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801810" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801810" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:33.312900Z" ID="IMG_THUMBS_10801811">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801811" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801811" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:34.940900Z" ID="IMG_THUMBS_10801812">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801812" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801812" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:36.552900Z" ID="IMG_THUMBS_10801813">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801813" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801813" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:37.844900Z" ID="IMG_THUMBS_10801814">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801814" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801814" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:39.336900Z" ID="IMG_THUMBS_10801815">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801815" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801815" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:40.820900Z" ID="IMG_THUMBS_10801816">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801816" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801816" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:42.420900Z" ID="IMG_THUMBS_10801817">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801817" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801817" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:45.812900Z" ID="IMG_THUMBS_10801818">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801818" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801818" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:49.588900Z" ID="IMG_THUMBS_10801819">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801819" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801819" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:51.268900Z" ID="IMG_THUMBS_10801820">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801820" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801820" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:52.372900Z" ID="IMG_THUMBS_10801821">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801821" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801821" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:53.456900Z" ID="IMG_THUMBS_10801822">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801822" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801822" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:54.780900Z" ID="IMG_THUMBS_10801823">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801823" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801823" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:56.164900Z" ID="IMG_THUMBS_10801824">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801824" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801824" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:57.600900Z" ID="IMG_THUMBS_10801825">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801825" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801825" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:59.056900Z" ID="IMG_THUMBS_10801826">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801826" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801826" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:00.408900Z" ID="IMG_THUMBS_10801827">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801827" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801827" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:01.772900Z" ID="IMG_THUMBS_10801828">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801828" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801828" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:03.508900Z" ID="IMG_THUMBS_10801829">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801829" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801829" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:06.120900Z" ID="IMG_THUMBS_10801830">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801830" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801830" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:09.700900Z" ID="IMG_THUMBS_10801831">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801831" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801831" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:14.176900Z" ID="IMG_THUMBS_10801832">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801832" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801832" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:15.628900Z" ID="IMG_THUMBS_10801833">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801833" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801833" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:17.216900Z" ID="IMG_THUMBS_10801834">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/128/10801834" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/128/10801834" LOCTYPE="URL"/>
                             </mets:file>
                         </mets:fileGrp>
                         <mets:fileGrp USE="MIN">
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:09.349100Z" ID="IMG_MIN_10801661">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801661" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801661" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:10.793100Z" ID="IMG_MIN_10801662">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801662" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801662" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:17.652900Z" ID="IMG_MIN_10801803">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801803" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801803" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:20.708900Z" ID="IMG_MIN_10801804">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801804" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801804" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:23.888900Z" ID="IMG_MIN_10801805">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801805" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801805" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:25.376900Z" ID="IMG_MIN_10801806">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801806" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801806" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:27.176900Z" ID="IMG_MIN_10801807">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801807" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801807" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:28.836900Z" ID="IMG_MIN_10801808">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801808" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801808" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:30.372900Z" ID="IMG_MIN_10801809">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801809" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801809" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:31.840900Z" ID="IMG_MIN_10801810">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801810" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801810" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:33.312900Z" ID="IMG_MIN_10801811">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801811" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801811" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:34.940900Z" ID="IMG_MIN_10801812">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801812" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801812" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:36.552900Z" ID="IMG_MIN_10801813">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801813" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801813" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:37.844900Z" ID="IMG_MIN_10801814">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801814" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801814" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:39.336900Z" ID="IMG_MIN_10801815">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801815" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801815" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:40.820900Z" ID="IMG_MIN_10801816">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801816" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801816" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:42.420900Z" ID="IMG_MIN_10801817">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801817" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801817" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:45.812900Z" ID="IMG_MIN_10801818">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801818" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801818" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:49.588900Z" ID="IMG_MIN_10801819">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801819" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801819" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:51.268900Z" ID="IMG_MIN_10801820">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801820" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801820" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:52.372900Z" ID="IMG_MIN_10801821">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801821" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801821" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:53.456900Z" ID="IMG_MIN_10801822">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801822" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801822" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:54.780900Z" ID="IMG_MIN_10801823">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801823" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801823" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:56.164900Z" ID="IMG_MIN_10801824">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801824" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801824" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:57.600900Z" ID="IMG_MIN_10801825">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801825" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801825" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:59.056900Z" ID="IMG_MIN_10801826">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801826" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801826" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:00.408900Z" ID="IMG_MIN_10801827">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801827" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801827" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:01.772900Z" ID="IMG_MIN_10801828">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801828" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801828" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:03.508900Z" ID="IMG_MIN_10801829">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801829" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801829" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:06.120900Z" ID="IMG_MIN_10801830">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801830" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801830" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:09.700900Z" ID="IMG_MIN_10801831">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801831" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801831" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:14.176900Z" ID="IMG_MIN_10801832">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801832" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801832" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:15.628900Z" ID="IMG_MIN_10801833">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801833" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801833" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:17.216900Z" ID="IMG_MIN_10801834">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/600/10801834" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/600/10801834" LOCTYPE="URL"/>
                             </mets:file>
                         </mets:fileGrp>
                         <mets:fileGrp USE="MAX">
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:09.349100Z" ID="IMG_MAX_10801661">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801661" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801661" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:06:10.793100Z" ID="IMG_MAX_10801662">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801662" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801662" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:17.652900Z" ID="IMG_MAX_10801803">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801803" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801803" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:20.708900Z" ID="IMG_MAX_10801804">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801804" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801804" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:23.888900Z" ID="IMG_MAX_10801805">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801805" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801805" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:25.376900Z" ID="IMG_MAX_10801806">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801806" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801806" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:27.176900Z" ID="IMG_MAX_10801807">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801807" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801807" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:28.836900Z" ID="IMG_MAX_10801808">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801808" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801808" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:30.372900Z" ID="IMG_MAX_10801809">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801809" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801809" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:31.840900Z" ID="IMG_MAX_10801810">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801810" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801810" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:33.312900Z" ID="IMG_MAX_10801811">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801811" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801811" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:34.940900Z" ID="IMG_MAX_10801812">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801812" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801812" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:36.552900Z" ID="IMG_MAX_10801813">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801813" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801813" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:37.844900Z" ID="IMG_MAX_10801814">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801814" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801814" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:39.336900Z" ID="IMG_MAX_10801815">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801815" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801815" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:40.820900Z" ID="IMG_MAX_10801816">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801816" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801816" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:42.420900Z" ID="IMG_MAX_10801817">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801817" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801817" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:45.812900Z" ID="IMG_MAX_10801818">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801818" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801818" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:49.588900Z" ID="IMG_MAX_10801819">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801819" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801819" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:51.268900Z" ID="IMG_MAX_10801820">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801820" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801820" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:52.372900Z" ID="IMG_MAX_10801821">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801821" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801821" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:53.456900Z" ID="IMG_MAX_10801822">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801822" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801822" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:54.780900Z" ID="IMG_MAX_10801823">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801823" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801823" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:56.164900Z" ID="IMG_MAX_10801824">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801824" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801824" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:57.600900Z" ID="IMG_MAX_10801825">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801825" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801825" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:10:59.056900Z" ID="IMG_MAX_10801826">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801826" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801826" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:00.408900Z" ID="IMG_MAX_10801827">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801827" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801827" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:01.772900Z" ID="IMG_MAX_10801828">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801828" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801828" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:03.508900Z" ID="IMG_MAX_10801829">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801829" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801829" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:06.120900Z" ID="IMG_MAX_10801830">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801830" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801830" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:09.700900Z" ID="IMG_MAX_10801831">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801831" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801831" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:14.176900Z" ID="IMG_MAX_10801832">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801832" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801832" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:15.628900Z" ID="IMG_MAX_10801833">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801833" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801833" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="image/jpeg" CREATED="2019-12-12T16:11:17.216900Z" ID="IMG_MAX_10801834">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/webcache/1504/10801834" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/webcache/1504/10801834" LOCTYPE="URL"/>
                             </mets:file>
                         </mets:fileGrp>
                         <mets:fileGrp USE="FULLTEXT">
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:16:36.081000Z" ID="ALTO10801661">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801661" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801661" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:16:36.355300Z" ID="ALTO10801662">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801662" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801662" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:04.330300Z" ID="ALTO10801803">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801803" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801803" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:03.095400Z" ID="ALTO10801804">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801804" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801804" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:27.730400Z" ID="ALTO10801805">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801805" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801805" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:08.390900Z" ID="ALTO10801806">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801806" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801806" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:24.264600Z" ID="ALTO10801807">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801807" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801807" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:08.520900Z" ID="ALTO10801808">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801808" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801808" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:16.443800Z" ID="ALTO10801809">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801809" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801809" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:13.339000Z" ID="ALTO10801810">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801810" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801810" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:37.497100Z" ID="ALTO10801811">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801811" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801811" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:20.438400Z" ID="ALTO10801812">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801812" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801812" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:36.157400Z" ID="ALTO10801813">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801813" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801813" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:28.683600Z" ID="ALTO10801814">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801814" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801814" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:35.882600Z" ID="ALTO10801815">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801815" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801815" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:33.347600Z" ID="ALTO10801816">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801816" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801816" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:50.619400Z" ID="ALTO10801817">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801817" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801817" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:39.845800Z" ID="ALTO10801818">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801818" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801818" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:51.950700Z" ID="ALTO10801819">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801819" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801819" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:45.401300Z" ID="ALTO10801820">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801820" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801820" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:52.301700Z" ID="ALTO10801821">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801821" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801821" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:49.702300Z" ID="ALTO10801822">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801822" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801822" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:00.184200Z" ID="ALTO10801823">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801823" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801823" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:55.044600Z" ID="ALTO10801824">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801824" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801824" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:49.386900Z" ID="ALTO10801825">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801825" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801825" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:25:59.097900Z" ID="ALTO10801826">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801826" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801826" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:05.644600Z" ID="ALTO10801827">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801827" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801827" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:02.889500Z" ID="ALTO10801828">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801828" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801828" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:21.521500Z" ID="ALTO10801829">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801829" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801829" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:27:31.479500Z" ID="ALTO10801830">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801830" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801830" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:20.148200Z" ID="ALTO10801831">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801831" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801831" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:11.043900Z" ID="ALTO10801832">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801832" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801832" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:15.879400Z" ID="ALTO10801833">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801833" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801833" LOCTYPE="URL"/>
                             </mets:file>
                             <mets:file MIMETYPE="text/xml" CREATED="2019-12-12T23:26:24.637100Z" ID="ALTO10801834">
-                                <mets:FLocat xlink:href="http://vl.ub.uni-frankfurt.de/download/fulltext/alto3/10801834" LOCTYPE="URL"/>
+                                <mets:FLocat xlink:href="https://sammlungen.ub.uni-frankfurt.de/download/fulltext/alto3/10801834" LOCTYPE="URL"/>
                             </mets:file>
                         </mets:fileGrp>
                     </mets:fileSec>
@@ -2214,43 +2214,43 @@
                     </mets:structMap>
                     <mets:structMap TYPE="LOGICAL">
                         <mets:div ID="log10916017" DMDID="md10916017" ADMID="amd10916017" TYPE="section" LABEL="Decheniana" ORDER="1">
-                            <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10916017"/>
+                            <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10916017"/>
                             <mets:fptr FILEID="IMG_FRONTIMAGE_10801661"/>
                             <mets:div ID="log10801960" DMDID="md10801960" ADMID="amd10801960" TYPE="section" LABEL="101 AB (1942)" ORDER="1">
-                                <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10801960"/>
+                                <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10801960"/>
                                 <mets:fptr FILEID="IMG_FRONTIMAGE_10801661"/>
                                 <mets:div ID="log10802368" DMDID="md10802368" ADMID="amd10802368" TYPE="section" LABEL="1. Lieferung (1942)" ORDER="1">
                                     <mets:fptr FILEID="IMG_FRONTIMAGE_10801661"/>
                                     <mets:div ID="log10903378" TYPE="section" ORDER="1"/>
                                     <mets:div ID="log10903380" DMDID="md10903380" ADMID="amd10903380" TYPE="section" LABEL="Geologie des Rodderberges südlich von Bonn" ORDER="2">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903380"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903380"/>
                                     </mets:div>
                                     <mets:div ID="log10903381" DMDID="md10903381" ADMID="amd10903381" TYPE="section" LABEL="Einige neue Krinoiden aus dem Mittel-Devon der Eifel" ORDER="3">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903381"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903381"/>
                                     </mets:div>
                                     <mets:div ID="log10903382" DMDID="md10903382" ADMID="amd10903382" TYPE="section" LABEL="Ueber die Realstruktur der Kristalle" ORDER="4">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903382"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903382"/>
                                     </mets:div>
                                     <mets:div ID="log10903383" DMDID="md10903383" ADMID="amd10903383" TYPE="section" LABEL="Nach Goniatiten gegliederte Profile im sauerländischen Kulm" ORDER="5">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903383"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903383"/>
                                     </mets:div>
                                     <mets:div ID="log10903385" DMDID="md10903385" ADMID="amd10903385" TYPE="section" LABEL="Ungedruckte Briefe von Adolf Overweg" ORDER="6">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903385"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903385"/>
                                     </mets:div>
                                     <mets:div ID="log10903387" DMDID="md10903387" ADMID="amd10903387" TYPE="section" LABEL="Individualität und Ganzheit in der Biologie" ORDER="7">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903387"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903387"/>
                                     </mets:div>
                                     <mets:div ID="log10903390" DMDID="md10903390" ADMID="amd10903390" TYPE="section" LABEL="Revision der südamerikanischen Lycoriiden aus der Sammlung des Naturkundemuseums Stettin" ORDER="8">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903390"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903390"/>
                                     </mets:div>
                                     <mets:div ID="log10903391" DMDID="md10903391" ADMID="amd10903391" TYPE="section" LABEL="Beobachtungen über den Rosenkelch" ORDER="9">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903391"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903391"/>
                                     </mets:div>
                                     <mets:div ID="log10903392" DMDID="md10903392" ADMID="amd10903392" TYPE="section" LABEL="Die Flinzschiefer des Bergischen Landes und ihre Beziehungen zum Massenkalk" ORDER="10">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903392"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903392"/>
                                     </mets:div>
                                     <mets:div ID="log10903393" DMDID="md10903393" ADMID="amd10903393" TYPE="section" LABEL="Beitrag zur Flechtenflora des Vereinsgebietes" ORDER="11">
-                                        <mets:mptr LOCTYPE="URL" xlink:href="http://vl.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903393"/>
+                                        <mets:mptr LOCTYPE="URL" xlink:href="https://sammlungen.ub.uni-frankfurt.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=10903393"/>
                                     </mets:div>
                                     <mets:div ID="log10903414" TYPE="section" LABEL="Tafeln I-XIII, Karte" ORDER="12"/>
                                     <mets:div ID="log10903394" TYPE="section" ORDER="13"/>

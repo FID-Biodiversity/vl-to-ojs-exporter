@@ -5,7 +5,7 @@ from VisualLibrary import VisualLibrary
 
 from configuration.Configurator import Configurator
 from ojs.xmlgenerator import OjsXmlGenerator
-from .testXmlGeneration import add_dummy_submission_file_data
+from tests.test_XmlGeneration import add_dummy_submission_file_data
 
 this_files_directory = os.path.dirname(os.path.realpath(__file__))
 TEST_DATA_DIRECTORY = '{base_dir}/data'.format(base_dir=this_files_directory)

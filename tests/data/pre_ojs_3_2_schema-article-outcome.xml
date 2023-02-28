@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
-<article date_published="1991-01-01" locale="de_DE" section_ref="ART" stage="production" xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-	<id advice="ignore" type="internal">10902111</id>
+<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="de_DE" section_ref="ART" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" stage="production" date_published="1991-01-01">
+	<id type="internal" advice="ignore">10902111</id>
 	<title locale="de_DE">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
 	<title locale="en_US">Mollusken aus dem Mitteloligozän des Schachtes Sophoa Jacoba 8 (Erkelenz, NW-Deutschland)</title>
 	<subtitle locale="de_DE">Seite 149-211, 2 Abbildungen, 3 Tabellen und 4 Tafeln</subtitle>
@@ -17,14 +17,14 @@
 			<email>dummy@mactest.com</email>
 		</author>
 	</authors>
-	<submission_file id="109021111" stage="proof" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-		<revision date_modified="2020-06-05" date_uploaded="2020-06-05" filename="pdf_10902111" filesize="12625027" filetype="application/pdf" genre="Artikeltext" number="1" uploader="ojs_admin" viewable="false">
+	<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109021111" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+		<revision number="1" filename="pdf_10902111" viewable="false" date_uploaded="2020-06-05" date_modified="2020-06-05" filesize="12625027" filetype="application/pdf" uploader="ojs_admin" genre="Artikeltext">
 			<name locale="de_DE">pdf_10902111</name>
 			<name locale="en_US">pdf_10902111</name>
 			<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 		</revision>
 	</submission_file>
-	<article_galley approved="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+	<article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
 		<name locale="de_DE">PDF</name>
 		<seq>0</seq>
 		<submission_file_ref id="109021111" revision="1"/>
