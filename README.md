@@ -104,7 +104,7 @@ The tests will run and also make a check against the OJS native.xsd format (with
 
 To run the tests, install the requirements and simply call:
 
-`pytest tests/*py`
+`pytest`
 
 ## Import to OJS
 ### Post-processing Data

@@ -4,19 +4,15 @@
     <id type="internal" advice="ignore">{{ article.id }}</id>
 
     {% for submission in article.submission_files %}
-        {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
+        {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission), suffix = submission.mime_type|get_name_for_mime_type|lower %}
             <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="{{ submission_id }}"
                              xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
-              <revision number="{{ revision_number }}" filename="{{ submission.name }}" viewable="false"
-                        date_uploaded="{{ submission.date_uploaded|to_iso_date }}"
-                        date_modified="{{ submission.date_modified|to_iso_date }}" filesize="{{ submission.size }}"
-                        filetype="{{ submission.mime_type }}" uploader="{{ file_uploading_ojs_user }}"
-                        genre="{{ article_text_genre_label }}">
                   {% for language in languages %}
-                    <name locale="{{ language }}">{{ submission.name|get_value_for_language(language) }}</name>
+                    <name locale="{{ language }}">{{file_uploading_ojs_user }}, {{ submission.name|get_value_for_language(language) }}.{{ suffix }}</name>
                   {% endfor %}
-                <embed encoding="base64">{{ submission.get_data_in_base64_encoding() }}</embed>
-              </revision>
+                <file id="1" extension="{{ suffix }}" filesize="{{ submission.size }}">
+                    <embed encoding="base64">{{ submission.get_data_in_base64_encoding() }}</embed>
+                </file>
             </submission_file>
         {% endwith %}
     {% endfor %}
@@ -80,7 +76,7 @@
                                     xsi:schemaLocation="http://pkp.sfu.ca native.xsd" locale="{{ language }}">
                     <name locale="{{ language }}">{{ submission.mime_type|get_name_for_mime_type }}</name>
                     <seq>{{ loop.index0 }}</seq>
-                    <submission_file_ref id="{{ submission_id }}" revision="{{ revision_number }}"/>
+                    <submission_file_ref id="{{ submission_id }}"/>
                 </article_galley>
             {% endwith %}
         {% endfor %}

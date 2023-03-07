@@ -1,15 +1,14 @@
-import pathlib
-from datetime import datetime
 from collections import namedtuple
+
+import pathlib
 import re
+from datetime import datetime
 
 MIME_TYPE_DISPLAY_NAMES = {
     'application/pdf': 'PDF',
     'application/msword': 'DOC',
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'DOCX',
 }
-
-UNIQUE_INTEGER_COUNTER = 0
 
 
 def extract_isodate_from_datetime(date):
@@ -67,11 +66,6 @@ def get_name_for_mime_type(mime_type):
     """
 
     return MIME_TYPE_DISPLAY_NAMES.get(mime_type)
-
-
-def get_unique_integer():
-    UNIQUE_INTEGER_COUNTER += 1
-    return UNIQUE_INTEGER_COUNTER
 
 
 def normalize_user_name(author):
