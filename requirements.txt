@@ -4,4 +4,3 @@ Jinja2~=3.1
 lxml==4.5.2
 requests==2.24.0
 -e git+https://github.com/ubffm/python-visual-library.git#egg=VisualLibrary
--e .

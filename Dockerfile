@@ -8,7 +8,13 @@ RUN mkdir /code
 WORKDIR /code
 
 # Install dependencies:
-COPY requirements.txt /code/
+COPY requirements.txt ./
+
+RUN useradd bot -m \
+	&& chown -R bot /code
+
+USER bot
+
 RUN pip install -r requirements.txt
 
 COPY example/* ./
