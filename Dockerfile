@@ -10,7 +10,7 @@ WORKDIR /code
 # Install dependencies:
 COPY requirements.txt ./
 
-RUN useradd bot -m \
+RUN useradd bot --uid 20333 -m \
 	&& chown -R bot /code
 
 USER bot
