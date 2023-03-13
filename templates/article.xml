@@ -4,13 +4,13 @@
     <id type="internal" advice="ignore">{{ article.id }}</id>
 
     {% for submission in article.submission_files %}
-        {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission), suffix = submission.mime_type|get_name_for_mime_type|lower %}
+        {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission), suffix = submission.mime_type|get_name_for_mime_type|lower, file_id = 1 %}
             <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="{{ submission_id }}"
-                             xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
+                             xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="{{ file_id }}">
                   {% for language in languages %}
                     <name locale="{{ language }}">{{file_uploading_ojs_user }}, {{ submission.name|get_value_for_language(language) }}.{{ suffix }}</name>
                   {% endfor %}
-                <file id="1" extension="{{ suffix }}" filesize="{{ submission.size }}">
+                <file id="{{ file_id }}" extension="{{ suffix }}" filesize="{{ submission.size }}">
                     <embed encoding="base64">{{ submission.get_data_in_base64_encoding() }}</embed>
                 </file>
             </submission_file>
