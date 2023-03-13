@@ -18,6 +18,9 @@ USER bot
 RUN pip install -r requirements.txt
 
 COPY example/* ./
+COPY ojs ./ojs
+COPY templates ./templates
+COPY configuration ./configuration
 
 RUN mkdir xml
 
