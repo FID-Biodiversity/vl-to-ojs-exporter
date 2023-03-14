@@ -91,12 +91,12 @@ You can code your own script using the example given above or from the [tests](/
 The other possibility is, if you have Docker installed, to run everything in a container, using the Dockerfile in the repo.
 
 ```shell script
-docker build .
+docker build --tag vl-to-ojs-exporter .
 
 # This folder will be mounted to the container and the results will be stored in. 
 mkdir xml
 
-docker run -v `pwd`/xml:/code/xml [docker-image-id]
+docker run -v `pwd`/xml:/code/xml vl-to-ojs-exporter
 ```
 
 ## Tests
