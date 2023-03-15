@@ -100,11 +100,14 @@ docker run -v `pwd`/xml:/code/xml vl-to-ojs-exporter
 ```
 
 ## Tests
-The tests will run and also make a check against the OJS native.xsd format (with local files as of 2020-07-23 in `OJS 3.2.1.4`) to guarantee perfect OJS compatibility.
+The tests will run and also make a check against the OJS native.xsd format (with local files as of 2023-03-15 in `OJS 3.3.0-14`) to guarantee perfect OJS compatibility.
 
-To run the tests, install the requirements and simply call:
+To run the tests, install the dev requirements and call pytest:
 
-`pytest`
+```bash
+pip install -r dev-requierements.txt
+pytest
+```
 
 ## Import to OJS
 ### Post-processing Data
