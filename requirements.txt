@@ -1,6 +1,5 @@
-beautifulsoup4==4.9.1
-importlib-metadata==1.7.0
+beautifulsoup4==4.11.2
 Jinja2~=3.1
 lxml==4.9.2
-requests==2.24.0
+requests==2.28.2
 -e git+https://github.com/ubffm/python-visual-library.git#egg=VisualLibrary
