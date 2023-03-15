@@ -19,7 +19,7 @@
 
     {% for language in languages %}
     <publication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" locale="{{ language }}" version="1"
-                 status="5" seq="0" section_ref="{{ article_reference_label }}"
+                 status="5" seq="{{ article_sequence|default(1) }}" section_ref="{{ article_reference_label }}"
                  access_status="0" xsi:schemaLocation="http://pkp.sfu.ca native.xsd"
                     {% if issue and issue.date_published %}
                         date_published="{{ issue.date_published|to_iso_date }}"

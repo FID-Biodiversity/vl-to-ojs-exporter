@@ -6,7 +6,7 @@
     {% endif %}
 
     {% for article in articles %}
-        {% with article_loop = loop %}
+        {% with article_sequence = loop.index0 %}
             {% include article_template %}
         {% endwith %}
     {% endfor %}
