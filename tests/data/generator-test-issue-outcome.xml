@@ -58,10 +58,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903381</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033811" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033811" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="2" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903381.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903381.pdf</name>
-					<file id="1" extension="pdf" filesize="2479171">
+					<file id="2" extension="pdf" filesize="2479171">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -104,10 +104,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903382</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033821" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033821" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="3" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903382.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903382.pdf</name>
-					<file id="1" extension="pdf" filesize="1894291">
+					<file id="3" extension="pdf" filesize="1894291">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -150,10 +150,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903383</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033831" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033831" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="4" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903383.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903383.pdf</name>
-					<file id="1" extension="pdf" filesize="2900282">
+					<file id="4" extension="pdf" filesize="2900282">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -196,10 +196,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903385</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033851" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033851" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="5" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903385.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903385.pdf</name>
-					<file id="1" extension="pdf" filesize="1460299">
+					<file id="5" extension="pdf" filesize="1460299">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -242,10 +242,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903387</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033871" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033871" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="6" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903387.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903387.pdf</name>
-					<file id="1" extension="pdf" filesize="5027921">
+					<file id="6" extension="pdf" filesize="5027921">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -288,10 +288,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903390</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033901" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033901" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="7" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903390.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903390.pdf</name>
-					<file id="1" extension="pdf" filesize="497710">
+					<file id="7" extension="pdf" filesize="497710">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -334,10 +334,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903391</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033911" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033911" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="8" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903391.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903391.pdf</name>
-					<file id="1" extension="pdf" filesize="1391255">
+					<file id="8" extension="pdf" filesize="1391255">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -380,10 +380,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903392</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033921" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033921" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="9" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903392.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903392.pdf</name>
-					<file id="1" extension="pdf" filesize="1745365">
+					<file id="9" extension="pdf" filesize="1745365">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>
@@ -428,10 +428,10 @@
 			</article>
 			<article xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" date_submitted="2020-06-05" stage="production" status="5" submission_progress="0">
 				<id type="internal" advice="ignore">10903393</id>
-				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033931" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="1" genre="Artikeltext">
+				<submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="109033931" xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="10" genre="Artikeltext">
 					<name locale="de_DE">ojs_admin, pdf_10903393.pdf</name>
 					<name locale="en_US">ojs_admin, pdf_10903393.pdf</name>
-					<file id="1" extension="pdf" filesize="3002636">
+					<file id="10" extension="pdf" filesize="3002636">
 						<embed encoding="base64">VGhpcyBzaG91bGQgYmUgYSBQREYh</embed>
 					</file>
 				</submission_file>

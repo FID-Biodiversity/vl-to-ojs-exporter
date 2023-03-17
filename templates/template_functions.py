@@ -1,7 +1,6 @@
-from collections import namedtuple
-
 import pathlib
 import re
+from collections import namedtuple
 from datetime import datetime
 
 MIME_TYPE_DISPLAY_NAMES = {
@@ -9,6 +8,8 @@ MIME_TYPE_DISPLAY_NAMES = {
     'application/msword': 'DOC',
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document': 'DOCX',
 }
+
+STATIC_FILE_ID_COUNTER = 0
 
 
 def extract_isodate_from_datetime(date):
@@ -77,6 +78,19 @@ def normalize_user_name(author):
         return generate_dummy_author()
 
 
+def generate_unique_file_id() -> int:
+    """Generates a unique integer."""
+    global STATIC_FILE_ID_COUNTER
+    STATIC_FILE_ID_COUNTER += 1
+
+    return STATIC_FILE_ID_COUNTER
+
+
+def reset_file_id_counter() -> None:
+    global STATIC_FILE_ID_COUNTER
+    STATIC_FILE_ID_COUNTER = 0
+
+
 def register_custom_filters_to_environment(environment):
     """ Registers the created methods to the Jinja environment. """
 
@@ -88,4 +102,5 @@ def register_custom_filters_to_environment(environment):
     environment.globals.update({
         'generate_dummy_author': generate_dummy_author,
         'normalize_user': normalize_user_name,
+        'generate_unique_file_id': generate_unique_file_id
     })

@@ -4,7 +4,7 @@
     <id type="internal" advice="ignore">{{ article.id }}</id>
 
     {% for submission in article.submission_files %}
-        {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission), suffix = submission.mime_type|get_name_for_mime_type|lower, file_id = 1 %}
+        {% with submission_id = article.get_submission_id_for_file(submission), suffix = submission.mime_type|get_name_for_mime_type|lower, file_id = generate_unique_file_id() %}
             <submission_file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" stage="proof" id="{{ submission_id }}"
                              xsi:schemaLocation="http://pkp.sfu.ca native.xsd" file_id="{{ file_id }}" genre="{{ article_text_genre_label }}">
                   {% for language in languages %}
@@ -71,7 +71,7 @@
         </authors>
 
         {% for submission in article.submission_files %}
-            {% with revision_number = 1, submission_id = article.get_submission_id_for_file(submission) %}
+            {% with submission_id = article.get_submission_id_for_file(submission) %}
                 <article_galley xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" approved="false"
                                     xsi:schemaLocation="http://pkp.sfu.ca native.xsd" locale="{{ language }}">
                     <name locale="{{ language }}">{{ submission.mime_type|get_name_for_mime_type }}</name>
