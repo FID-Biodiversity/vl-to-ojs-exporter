@@ -398,6 +398,15 @@ class TestXmlGeneration:
         assert multi_language_article.find("subtitle", {"locale": "en_US"}) is None
         assert multi_language_article.find("prefix", {"locale": "en_US"}).text == "The"
 
+    def test_inclusion_of_teaser_image(self):
+        issue_id = "12543583"
+        vl_issue, xml_generator = create_vl_object_and_xml_generator(issue_id)
+        ojs_issue = xml_generator.convert_vl_objecto_to_ojs_object(vl_issue)
+        generated_volume_xml_string = ojs_issue.generate_xml()
+
+        assert "<cover>" in generated_volume_xml_string
+        assert "<cover_image>cover_issue_12543583.jpg</cover_image>" in generated_volume_xml_string
+
     def get_expectation_xml_string(self, test_file_path):
         input_file_path = pathlib.Path(test_file_path)
         output_file_path = input_file_path.parent / "{file_name}-outcome.xml".format(

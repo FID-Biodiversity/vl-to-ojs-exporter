@@ -37,6 +37,16 @@
         </sections>
     {% endif %}
 
+    {% if issue.teaser_image_file and not use_pre_3_2_schema %}
+        <covers>
+            <cover>
+                <cover_image>cover_issue_{{ issue.id }}.jpg</cover_image>
+                <cover_image_alt_text/>
+                <embed encoding="base64">{{ issue.teaser_image_file.get_data_in_base64_encoding() }}</embed>
+            </cover>
+        </covers>
+    {% endif %}
+
     {% if issue.files %}
         <issue_galleys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca native.xsd">
             {% for galley in issue.files %}

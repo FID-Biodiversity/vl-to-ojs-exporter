@@ -408,6 +408,7 @@ class OjsIssue(XmlGenerator):
         self.date_modified = None
         self.files = None
         self.title = None
+        self.teaser_image_file = None
 
         self.add_variable_to_template_configuration(self.ISSUES_STRING, [self])
 
@@ -436,6 +437,8 @@ class OjsIssue(XmlGenerator):
             if vl_issue.publication_date is not None:
                 self.date_published = datetime.strptime(vl_issue.publication_date, "%Y")
                 self.date_modified = datetime.strptime(vl_issue.publication_date, "%Y")
+
+            self.teaser_image_file = vl_issue.teaser_image_file
 
     @property
     def template_file_name(self) -> str:
