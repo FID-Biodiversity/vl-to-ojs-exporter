@@ -2,4 +2,4 @@ beautifulsoup4==4.11.2
 Jinja2~=3.1
 lxml==4.9.2
 requests==2.28.2
--e git+https://github.com/ubffm/python-visual-library.git#egg=VisualLibrary
+git+https://github.com/ubffm/python-visual-library.git#egg=VisualLibrary
