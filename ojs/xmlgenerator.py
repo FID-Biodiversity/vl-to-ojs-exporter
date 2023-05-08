@@ -14,8 +14,8 @@ from VisualLibrary import (
     Journal,
     VisualLibraryExportElement,
     Volume,
-    remove_letters_from_alphanumeric_string,
 )
+from VisualLibrary.VisualLibrary import remove_letters_from_alphanumeric_string
 
 from configuration.Configurator import Configurator
 from templates.template_functions import register_custom_filters_to_environment
